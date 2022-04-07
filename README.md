@@ -4,6 +4,28 @@ Toolkits for Power Apps developers
 
 ## Components
 
+Use components library to accelerate the speed of Power Apps development with high quality, by reusing the existing components assets and sharing with the team.
+
+This component library is made for my daily POC projects, and you can use this as example or make your own library.
+
+Hope this could be a good start point for you to quickly understand how components library can benefits our dialy low code development.
+
+Components library includes:
+
+- TopBanner
+- UserBottomPanel
+- ImageButton
+- Tab
+- GeneralTopBanner
+- GeneralBottomPanel
+- TopPanelWithWaffle
+- Card
+- GeneralCard
+- KPICard
+- UserProfileCard
+- TagList
+- SearchBar
+
 Sample app made with these components
 
 ![1649356035579.png](image/README/1649356035579.png)
