@@ -10,6 +10,12 @@ Sample app made with these components
 
 ![1649356045113.png](image/README/1649356045113.png)
 
+## Installation
+
+- Download the solution in Release folder.
+- Import solution into your environment.
+- Use these componets in your solutions.
+
 ### TopBanner
 
 ![1649355859205.png](image/README/1649355859205.png)
@@ -46,7 +52,33 @@ Sample app made with these components
 
 ### KPICard
 
+#### Screen shot
+
 ![1649355971462.png](image/README/1649355971462.png)
+
+#### Input properties
+
+- Background Fill - Color
+- KPI - Text
+- KPI Color - Color
+- KPI Font Size - Number
+- KPI Font Weight - FontWeight
+- Title - Text
+- Subtitle - Text
+- Title and Subtitle Font Size - Number
+- Font Color - Color
+- Subtitle Icon Image - Image
+- Subtitle Icon Size - Number
+- Show Icon Instead of Subtitle - Booleana
+- Enable OnClick - Boolean
+
+#### Behaviours
+
+- OnClick - Boolean
+
+#### Output properties
+
+- N/A
 
 ### UserProfileCard
 
@@ -57,4 +89,31 @@ Sample app made with these components
 
 ### SearchBar
 
+#### Screen shot
+
 ![1649355992457.png](image/README/1649355992457.png)
+
+#### Input propoerties
+
+- Background Fill - Color
+- Font Size - Number
+- Font Weight - Text(Bold,SemiBold, Lighter)
+- Search Hint - Text
+- Button Color - Color
+- Result Count - Number
+- Show Search Result - Boolean
+- Show Refresh Button - Boolean
+- Show Add New Button - Boolean
+- Show Sort Button - Boolean
+- Show Searh Button - Boolean
+
+#### Behaviors
+
+- On Add New Clicked - Boolean
+- On Refresh Clicked - Boolean
+- On Search Clicked - Boolean
+
+#### Output properties
+
+- Srarch Text - Text
+- Sort Order - SortOrder(Ascending/Descending)
