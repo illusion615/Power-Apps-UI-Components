@@ -42,7 +42,7 @@ Sample app made with these components
 
 ### GeneralCard
 
-![1649355934789.png](https://file+.vscode-resource.vscode-webview.net/Users/wellszhang/Documents/GitHub/PowerAppsDeveloperKits/image/README/1649355934789.png)
+![1649356147126.png](image/README/1649356147126.png)
 
 ### KPICard
 
