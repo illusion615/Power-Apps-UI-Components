@@ -28,9 +28,7 @@ Components library includes:
 
 Sample app made with these components
 
-![1649356035579.png](image/README/1649356035579.png)
-
-![1649356045113.png](image/README/1649356045113.png)
+![1649380255950.png](image/README/1649380255950.png)
 
 ## Installation
 
