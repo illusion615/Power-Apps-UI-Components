@@ -1,0 +1,261 @@
+GeneralBottomPanel As CanvasComponent:
+    BackgroundFill: =RGBA(237, 237, 237, .5)
+    Button1Clicked: =Notify("Button1 Clicked")
+    Button1Disabled: =false
+    Button1Image: |-
+        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%200q141%200%20272%2036t244%20104%20207%20160%20161%20207%20103%20245%2037%20272q0%20141-36%20272t-104%20244-160%20207-207%20161-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-141%2036-272t104-244%20160-207%20207-161T752%2037t272-37zm0%201920q124%200%20238-32t214-90%20181-140%20140-181%2091-214%2032-239q0-124-32-238t-90-214-140-181-181-140-214-91-239-32q-124%200-238%2032t-214%2090-181%20140-140%20181-91%20214-32%20239q0%20124%2032%20238t90%20214%20140%20182%20181%20140%20214%2090%20239%2032zm64-961h448v128h-448v449H960v-449H512V959h448V512h128v447z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+    Button1Text: ="Button1"
+    Button2Clicked: =Notify("Button2 Clicked")
+    Button2Disabled: =false
+    Button2Image: |-
+        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%200q141%200%20272%2036t244%20104%20207%20160%20161%20207%20103%20245%2037%20272q0%20141-36%20272t-104%20244-160%20207-207%20161-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-141%2036-272t104-244%20160-207%20207-161T752%2037t272-37zm0%201920q124%200%20238-32t214-90%20181-140%20140-181%2091-214%2032-239q0-124-32-238t-90-214-140-181-181-140-214-91-239-32q-124%200-238%2032t-214%2090-181%20140-140%20181-91%20214-32%20239q0%20124%2032%20238t90%20214%20140%20182%20181%20140%20214%2090%20239%2032zm64-961h448v128h-448v449H960v-449H512V959h448V512h128v447z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+    Button2Text: ="Button2"
+    Button3Clicked: =Notify("Button3 Clicked")
+    Button3Disabled: =false
+    Button3Image: |-
+        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%200q141%200%20272%2036t244%20104%20207%20160%20161%20207%20103%20245%2037%20272q0%20141-36%20272t-104%20244-160%20207-207%20161-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-141%2036-272t104-244%20160-207%20207-161T752%2037t272-37zm0%201920q124%200%20238-32t214-90%20181-140%20140-181%2091-214%2032-239q0-124-32-238t-90-214-140-181-181-140-214-91-239-32q-124%200-238%2032t-214%2090-181%20140-140%20181-91%20214-32%20239q0%20124%2032%20238t90%20214%20140%20182%20181%20140%20214%2090%20239%2032zm64-961h448v128h-448v449H960v-449H512V959h448V512h128v447z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+    Button3Text: ="Button3"
+    Button4Clicked: =Notify("Button4 Clicked")
+    Button4Disabled: =false
+    Button4Image: |-
+        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%200q141%200%20272%2036t244%20104%20207%20160%20161%20207%20103%20245%2037%20272q0%20141-36%20272t-104%20244-160%20207-207%20161-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-141%2036-272t104-244%20160-207%20207-161T752%2037t272-37zm0%201920q124%200%20238-32t214-90%20181-140%20140-181%2091-214%2032-239q0-124-32-238t-90-214-140-181-181-140-214-91-239-32q-124%200-238%2032t-214%2090-181%20140-140%20181-91%20214-32%20239q0%20124%2032%20238t90%20214%20140%20182%20181%20140%20214%2090%20239%2032zm64-961h448v128h-448v449H960v-449H512V959h448V512h128v447z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+    Button4Text: ="Button4"
+    Button5Clicked: =true
+    Button5Disabled: =false
+    Button5Image: |-
+        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%200q141%200%20272%2036t244%20104%20207%20160%20161%20207%20103%20245%2037%20272q0%20141-36%20272t-104%20244-160%20207-207%20161-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-141%2036-272t104-244%20160-207%20207-161T752%2037t272-37zm0%201920q124%200%20238-32t214-90%20181-140%20140-181%2091-214%2032-239q0-124-32-238t-90-214-140-181-181-140-214-91-239-32q-124%200-238%2032t-214%2090-181%20140-140%20181-91%20214-32%20239q0%20124%2032%20238t90%20214%20140%20182%20181%20140%20214%2090%20239%2032zm64-961h448v128h-448v449H960v-449H512V959h448V512h128v447z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+    Button5Text: ="Button5"
+    ButtonBorderRadius: =20
+    ButtonNumber: =5
+    Fill: =GeneralBottomPanel.BackgroundFill
+    FontSize: =14
+    FontWeight: =FontWeight.Lighter
+    Height: =100
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =3
+
+    gbp_button1_image As image:
+        DisplayMode: =If(GeneralBottomPanel.Button1Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =40
+        Image: =GeneralBottomPanel.Button1Image
+        OnSelect: =true
+        Width: =45
+        X: =(Parent.Width / GeneralBottomPanel.ButtonNumber - Self.Width) / 2
+        Y: =(Parent.Height-Self.Height-gbp_button1_text.Height)/2
+        ZIndex: =1
+
+    gbp_button1_text As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        DisplayMode: =If(GeneralBottomPanel.Button1Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =Parent.FontWeight
+        Height: =70
+        OnSelect: =true
+        PaddingBottom: =0
+        Size: =Parent.FontSize
+        Text: =Parent.Button1Text
+        Width: =Parent.Width/Parent.ButtonNumber
+        X: =(Parent.Width / GeneralBottomPanel.ButtonNumber - Self.Width) / 2
+        Y: =gbp_button1_image.Y+gbp_button1_image.Height
+        ZIndex: =2
+
+    gbp_button2_image As image:
+        DisplayMode: =If(GeneralBottomPanel.Button2Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =40
+        Image: =GeneralBottomPanel.Button2Image
+        OnSelect: =true
+        Visible: =If(GeneralBottomPanel.ButtonNumber>1,true,false)
+        Width: =45
+        X: =Parent.Width/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =(Parent.Height-Self.Height-gbp_button2_text.Height)/2
+        ZIndex: =3
+
+    gbp_button2_text As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        DisplayMode: =If(GeneralBottomPanel.Button2Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =Parent.FontWeight
+        Height: =70
+        OnSelect: =true
+        PaddingBottom: =0
+        Size: =Parent.FontSize
+        Text: =Parent.Button2Text
+        Visible: =If(GeneralBottomPanel.ButtonNumber>1,true,false)
+        Width: =Parent.Width/Parent.ButtonNumber
+        X: =Parent.Width/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =gbp_button2_image.Y+gbp_button2_image.Height
+        ZIndex: =4
+
+    gbp_button3_image As image:
+        DisplayMode: =If(GeneralBottomPanel.Button3Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =40
+        Image: =GeneralBottomPanel.Button3Image
+        OnSelect: =true
+        Visible: =If(GeneralBottomPanel.ButtonNumber>2,true,false)
+        Width: =45
+        X: =Parent.Width*2/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =(Parent.Height-Self.Height-gbp_button3_text.Height)/2
+        ZIndex: =5
+
+    gbp_button3_text As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        DisplayMode: =If(GeneralBottomPanel.Button3Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =Parent.FontWeight
+        Height: =70
+        OnSelect: =true
+        PaddingBottom: =0
+        Size: =Parent.FontSize
+        Text: =Parent.Button3Text
+        Visible: =If(GeneralBottomPanel.ButtonNumber>2,true,false)
+        Width: =Parent.Width/Parent.ButtonNumber
+        X: =Parent.Width*2/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =gbp_button3_image.Y+gbp_button3_image.Height
+        ZIndex: =6
+
+    gbp_button4_image As image:
+        DisplayMode: =If(GeneralBottomPanel.Button4Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =40
+        Image: =GeneralBottomPanel.Button4Image
+        OnSelect: =true
+        Visible: =If(GeneralBottomPanel.ButtonNumber>3,true,false)
+        Width: =45
+        X: =Parent.Width*3/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =(Parent.Height-Self.Height-gbp_button4_text.Height)/2
+        ZIndex: =7
+
+    gbp_button4_text As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        DisplayMode: =If(GeneralBottomPanel.Button4Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =Parent.FontWeight
+        Height: =70
+        OnSelect: =true
+        PaddingBottom: =0
+        Size: =Parent.FontSize
+        Text: =Parent.Button4Text
+        Visible: =If(GeneralBottomPanel.ButtonNumber>3,true,false)
+        Width: =Parent.Width/Parent.ButtonNumber
+        X: =Parent.Width*3/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =gbp_button4_image.Y+gbp_button4_image.Height
+        ZIndex: =8
+
+    gbp_button5_image As image:
+        DisplayMode: =If(GeneralBottomPanel.Button5Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =40
+        Image: =GeneralBottomPanel.Button5Image
+        OnSelect: =true
+        Visible: =If(GeneralBottomPanel.ButtonNumber>3,true,false)
+        Width: =45
+        X: =Parent.Width*4/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =(Parent.Height-Self.Height-gbp_button5_text.Height)/2
+        ZIndex: =9
+
+    gbp_button5_text As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        DisplayMode: =If(GeneralBottomPanel.Button5Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =Parent.FontWeight
+        Height: =70
+        OnSelect: =true
+        PaddingBottom: =0
+        Size: =Parent.FontSize
+        Text: =Parent.Button5Text
+        Visible: =If(GeneralBottomPanel.ButtonNumber>3,true,false)
+        Width: =Parent.Width/Parent.ButtonNumber
+        X: =Parent.Width*4/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
+        Y: =gbp_button5_image.Y+gbp_button5_image.Height
+        ZIndex: =10
+
+    gbp_button1 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =gbp_button1_text.Y+gbp_button1_image.Height-gbp_button1_image.Y
+        HoverFill: =ColorFade(RGBA(237, 237, 237, .2), -20%)
+        OnSelect: =Parent.Button1Clicked()
+        RadiusBottomLeft: =Parent.ButtonBorderRadius
+        RadiusBottomRight: =Parent.ButtonBorderRadius
+        RadiusTopLeft: =Parent.ButtonBorderRadius
+        RadiusTopRight: =Parent.ButtonBorderRadius
+        Size: =24
+        Text: =""
+        Width: =gbp_button1_image.Width+40
+        X: =gbp_button1_image.X+(gbp_button1_image.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =11
+
+    gbp_button2 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =gbp_button1_text.Y+gbp_button1_image.Height-gbp_button1_image.Y
+        HoverFill: =ColorFade(RGBA(237, 237, 237, .2), -20%)
+        OnSelect: =Parent.Button2Clicked()
+        RadiusBottomLeft: =Parent.ButtonBorderRadius
+        RadiusBottomRight: =Parent.ButtonBorderRadius
+        RadiusTopLeft: =Parent.ButtonBorderRadius
+        RadiusTopRight: =Parent.ButtonBorderRadius
+        Size: =24
+        Text: =""
+        Width: =gbp_button1_image.Width+40
+        X: =gbp_button2_image.X+(gbp_button2_image.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =12
+
+    gbp_button3 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =gbp_button1_text.Y+gbp_button1_image.Height-gbp_button1_image.Y
+        HoverFill: =ColorFade(RGBA(237, 237, 237, .2), -20%)
+        OnSelect: =Parent.Button3Clicked()
+        RadiusBottomLeft: =Parent.ButtonBorderRadius
+        RadiusBottomRight: =Parent.ButtonBorderRadius
+        RadiusTopLeft: =Parent.ButtonBorderRadius
+        RadiusTopRight: =Parent.ButtonBorderRadius
+        Size: =24
+        Text: =""
+        Width: =gbp_button1_image.Width+40
+        X: =gbp_button3_image.X+(gbp_button3_image.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =13
+
+    gbp_button4 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =gbp_button1_text.Y+gbp_button1_image.Height-gbp_button1_image.Y
+        HoverFill: =ColorFade(RGBA(237, 237, 237, .2), -20%)
+        OnSelect: =Parent.Button4Clicked()
+        RadiusBottomLeft: =Parent.ButtonBorderRadius
+        RadiusBottomRight: =Parent.ButtonBorderRadius
+        RadiusTopLeft: =Parent.ButtonBorderRadius
+        RadiusTopRight: =Parent.ButtonBorderRadius
+        Size: =24
+        Text: =""
+        Width: =gbp_button1_image.Width+40
+        X: =gbp_button4_image.X+(gbp_button4_image.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =14
+
+    gbp_button5 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =gbp_button1_text.Y+gbp_button1_image.Height-gbp_button1_image.Y
+        HoverFill: =ColorFade(RGBA(237, 237, 237, .2), -20%)
+        OnSelect: =Parent.Button5Clicked()
+        RadiusBottomLeft: =Parent.ButtonBorderRadius
+        RadiusBottomRight: =Parent.ButtonBorderRadius
+        RadiusTopLeft: =Parent.ButtonBorderRadius
+        RadiusTopRight: =Parent.ButtonBorderRadius
+        Size: =24
+        Text: =""
+        Width: =gbp_button1_image.Width+40
+        X: =gbp_button5_image.X+(gbp_button5_image.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =15
+

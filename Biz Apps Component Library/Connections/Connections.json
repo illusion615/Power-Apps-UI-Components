@@ -1,0 +1,42 @@
+{
+  "0f00f53b-1034-4e38-ab43-cc8bd3361360": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1587/1.0.1587.2924/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0f00f53b-1034-4e38-ab43-cc8bd3361360"
+  },
+  "4930fdc6-5836-498d-9635-1e2b6563b081": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "RSS",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1567/1.0.1567.2748/rss/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_rss",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "RSS"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4930fdc6-5836-498d-9635-1e2b6563b081"
+  }
+}

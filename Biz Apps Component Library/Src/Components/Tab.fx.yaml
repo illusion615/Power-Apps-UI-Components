@@ -1,0 +1,189 @@
+Tab As CanvasComponent:
+    DefaultSelectedTab: ="Tab1 Title"
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =50
+    IndicatorColor: =RGBA(129, 216, 208, 1)
+    IndicatorSize: =100
+    OnReset: =Set(selectedTab,Self.DefaultSelectedTab)
+    SelectedTab: =selectedTab
+    SelectedTabFillColor: =RGBA(56, 96, 178, 0)
+    SelectedTabFontColor: =Black
+    SelectedTabFontWeight: =FontWeight.Semibold
+    SplitterColor: =RGBA(237, 237, 237, 1)
+    Tab1Clicked: =true
+    Tab1Title: ="Tab1 Title"
+    Tab2Clicked: =true
+    Tab2Title: ="Tab2 Title"
+    Tab3Clicked: =true
+    Tab3Title: ="Tab3 Title"
+    Tab4Clicked: =true
+    Tab4Title: ="Tab4 Title"
+    TabFillColor: =RGBA(237, 237, 237, 0)
+    TabFontColor: =RGBA(0, 0, 0, 1)
+    TabFontSize: =12
+    TabFontWeight: =FontWeight.Lighter
+    TabTotal: =4
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    Label1_1 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
+        Fill: =If(Self.Text=selectedTab ,Parent.SelectedTabFillColor,Parent.TabFillColor)
+        FontWeight: |-
+            =If(
+                Or(Self.Text = selectedTab,And(IsBlank(selectedTab),Self.Text=Parent.DefaultSelectedTab)),
+                Parent.SelectedTabFontWeight,
+                Parent.TabFontWeight
+            )
+        Height: =50
+        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab1Clicked()
+        PaddingBottom: =12
+        Size: =Parent.TabFontSize
+        Text: =Tab.Tab1Title
+        Visible: =Tab.TabTotal>0
+        Width: =(Parent.Width-40)/Tab.TabTotal
+        X: =20
+        Y: =Parent.Height-Self.Height
+        ZIndex: =1
+
+    Label2 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
+        Fill: =If(Self.Text=selectedTab ,Parent.SelectedTabFillColor,Parent.TabFillColor)
+        FontWeight: |-
+            =If(
+                Or(Self.Text = selectedTab,And(IsBlank(selectedTab),Self.Text=Parent.DefaultSelectedTab)),
+                Parent.SelectedTabFontWeight,
+                Parent.TabFontWeight
+            )
+        Height: =50
+        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab2Clicked()
+        PaddingBottom: =12
+        Size: =Parent.TabFontSize
+        Text: =Tab.Tab2Title
+        Visible: =Tab.TabTotal>1
+        Width: =(Parent.Width-40)/Tab.TabTotal
+        X: =20+(Parent.Width-40)/Tab.TabTotal
+        Y: =Parent.Height-Self.Height
+        ZIndex: =2
+
+    Label3 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
+        Fill: =If(Self.Text=selectedTab ,Parent.SelectedTabFillColor,Parent.TabFillColor)
+        FontWeight: |-
+            =If(
+                Or(Self.Text = selectedTab,And(IsBlank(selectedTab),Self.Text=Parent.DefaultSelectedTab)),
+                Parent.SelectedTabFontWeight,
+                Parent.TabFontWeight
+            )
+        Height: =50
+        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab3Clicked()
+        PaddingBottom: =12
+        Size: =Parent.TabFontSize
+        Text: =Tab.Tab3Title
+        Visible: =Tab.TabTotal>2
+        Width: =(Parent.Width-40)/Tab.TabTotal
+        X: =20+(Parent.Width-40)*2/Tab.TabTotal
+        Y: =Parent.Height-Self.Height
+        ZIndex: =3
+
+    Label4 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
+        Fill: =If(Self.Text=selectedTab ,Parent.SelectedTabFillColor,Parent.TabFillColor)
+        FontWeight: |-
+            =If(
+                Or(Self.Text = selectedTab,And(IsBlank(selectedTab),Self.Text=Parent.DefaultSelectedTab)),
+                Parent.SelectedTabFontWeight,
+                Parent.TabFontWeight
+            )
+        Height: =50
+        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab4Clicked()
+        PaddingBottom: =12
+        Size: =Parent.TabFontSize
+        Text: =Tab.Tab4Title
+        Visible: =Tab.TabTotal>3
+        Width: =(Parent.Width-40)/Tab.TabTotal
+        X: =20+(Parent.Width-40)*3/Tab.TabTotal
+        Y: =Parent.Height-Self.Height
+        ZIndex: =4
+
+    Rectangle1 As rectangle:
+        Fill: =Parent.SplitterColor
+        Height: =6
+        Width: =Parent.Width
+        Y: =Parent.Height-Self.Height
+        ZIndex: =5
+
+    Rectangle1_1 As rectangle:
+        Fill: =Parent.IndicatorColor
+        Height: =6
+        Visible: |-
+            =Or(
+                Label1_1.Text = selectedTab,
+                And(
+                    IsBlank(selectedTab),
+                    Label1_1.Text = Parent.DefaultSelectedTab
+                )
+            )
+        Width: =Parent.IndicatorSize
+        X: =Label1_1.X+(Label1_1.Width-Self.Width)/2
+        Y: =Parent.Height-Self.Height
+        ZIndex: =6
+
+    Rectangle1_2 As rectangle:
+        Fill: =Parent.IndicatorColor
+        Height: =6
+        Visible: |-
+            =Or(
+                Label2.Text = selectedTab,
+                And(
+                    IsBlank(selectedTab),
+                    Label2.Text = Parent.DefaultSelectedTab
+                )
+            )
+        Width: =Parent.IndicatorSize
+        X: =Label2.X+(Label2.Width-Self.Width)/2
+        Y: =Parent.Height-Self.Height
+        ZIndex: =7
+
+    Rectangle1_3 As rectangle:
+        Fill: =Parent.IndicatorColor
+        Height: =6
+        Visible: |-
+            =Or(
+                Label3.Text = selectedTab,
+                And(
+                    IsBlank(selectedTab),
+                    Label3.Text = Parent.DefaultSelectedTab
+                )
+            )
+        Width: =Parent.IndicatorSize
+        X: =Label3.X+(Label3.Width-Self.Width)/2
+        Y: =Parent.Height-Self.Height
+        ZIndex: =8
+
+    Rectangle1_4 As rectangle:
+        Fill: =Parent.IndicatorColor
+        Height: =6
+        Visible: |-
+            =Or(
+                Label4.Text = selectedTab,
+                And(
+                    IsBlank(selectedTab),
+                    Label4.Text = Parent.DefaultSelectedTab
+                )
+            )
+        Width: =Parent.IndicatorSize
+        X: =Label4.X+(Label4.Width-Self.Width)/2
+        Y: =Parent.Height-Self.Height
+        ZIndex: =9
+

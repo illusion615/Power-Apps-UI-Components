@@ -1,0 +1,463 @@
+"'Customer 360' As screen":
+    OnVisible: =Reset(Tab_1)
+
+    GeneralTopBanner_2 As GeneralTopBanner:
+        BackgroundImage: ='10744401'
+        BackgroundImageYOffset: =-250
+        BackIconClicked: =Back()
+        IconColor: =RGBA(204, 231, 246, 1)
+        IconSize: =40
+        Subtitle: |-
+            =Concat(Table({Name:"珠宝爱好者"},{Name:"有型达人"},{Name:"好包必收藏"},{Name:"女王大人"}),Name,"; ")
+        SubtitleFontSize: =16
+        Title: ="Penelope Liu"
+        TitleColor: =RGBA(255, 255, 255, 1)
+        ZIndex: =1
+
+    Card_1 As Card:
+        Description: |-
+            ="Tiffany HardWear 系列
+            双链环项链
+            18K 玫瑰金铺镶钻石
+            ￥81,000
+            
+            当前到货情况：有货
+            库存：20"
+        ShadowMargin: =5
+        ShowImage: =false
+        Table: |-
+            =Table({Title:"Tiffany Jewery",Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ", Image: 'Screenshot 2022-02-15 023949'},{Title:"Tiffany Jewery",Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ", Image: 'Screenshot 2022-02-15 025008'},{Title:"Tiffany Jewery",Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ", Image: 'Screenshot 2022-02-15 024905'})
+        TextColor: =RGBA(255, 255, 255, 1)
+        Title: ="愿望清单"
+        Width: =611
+        X: =16
+        Y: =282
+        ZIndex: =2
+
+    GeneralBottomPanel_2 As GeneralBottomPanel:
+        Button1Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%201581l64%2032q32%2016%2064%2033v143l-128-64-640%20323V0h1280v1280h-128V128H512v1712q129-65%20256-130t256-129zm896%2083v128h-256v256h-128v-256h-256v-128h256v-256h128v256h256z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Button1Text: ="优质客户"
+        Button2Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M0%20128h2048v1408H731l-475%20475v-475H0V128zm1920%201280V256H128v1152h256v293l293-293h1243zm-256-896v128H384V512h1280zm0%20256v128H384V768h1280zm0%20256v128H384v-128h1280z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Button2Text: ="沟通"
+        Button3Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1936%20256q23%200%2043%209t36%2024%2024%2035%209%2044v1184q0%2023-9%2043t-24%2036-35%2024-44%209H112q-23%200-43-9t-36-24-24-35-9-44V368q0-23%209-43t24-36%2035-24%2044-9h1824zm-16%20128H640v139q33-11%2064-11%2040%200%2075%2015t61%2041%2041%2061%2015%2075q0%2031-11%2064h1035V384zM384%20704q0%2026%2019%2045t45%2019h64v-64q0-26-19-45t-45-19q-26%200-45%2019t-19%2045zm320%2064q26%200%2045-19t19-45q0-26-19-45t-45-19q-26%200-45%2019t-19%2045v64h64zM128%20384v384h139q-11-33-11-64%200-40%2015-75t41-61%2061-41%2075-15q31%200%2064%2011V384H128zm0%201152h384V987l-147%20146-90-90%20146-147H128v640zm1792%200V896H731l146%20147-90%2090-147-146v549h1280z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Button3Text: ="发送祝福"
+        Button4Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1664%20896q79%200%20149%2030t122%2082%2083%20123%2030%20149q0%2080-30%20149t-82%20122-123%2083-149%2030q-60%200-117-18t-105-53l-437%20436q-19%2019-45%2019t-45-19-19-45q0-26%2019-45l436-437q-35-48-53-105t-18-117q0-79%2030-149t82-122%20122-83%20150-30zm0%20640q53%200%2099-20t82-55%2055-81%2020-100q0-53-20-99t-55-82-81-55-100-20q-53%200-99%2020t-82%2055-55%2081-20%20100q0%2053%2020%2099t55%2082%2081%2055%20100%2020zm-1280%2064q0%2015%208%2027t19%2023q29%2029%2073%2051t95%2037%20100%2026%2089%2016v128h-8q-6%200-8-1-39-5-90-15t-107-27-108-40-95-56-68-74-26-95V448q0-48%2022-86t58-70%2083-54%2096-41%2095-29%2084-18q66-11%20132-16t132-6q67%200%20133%205t132%2018q36%206%2083%2017t95%2029%2096%2040%2083%2055%2059%2069%2023%2087v320h-128V637q-58%2037-130%2062t-148%2040-153%2022-145%207q-68%200-144-6t-153-22-149-41-130-62v963zM960%20256q-57%200-130%206t-148%2020-143%2040-115%2063q-14%2011-27%2027t-13%2036q0%2019%2013%2035t27%2028q46%2038%20114%2063t143%2039%20148%2021%20131%206q57%200%20130-6t148-20%20143-40%20114-63q14-11%2027-27t14-36q0-19-13-35t-28-28q-46-38-114-63t-142-39-148-21-131-6z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Button4Text: ="查找商品"
+        ButtonNumber: =4
+        Fill: =GeneralBottomPanel_2.BackgroundFill
+        FontSize: =12
+        Visible: =true
+        Y: =1036
+        ZIndex: =23
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        Image8 As image:
+            Height: =107
+            Image: ='Screenshot 2022-02-15 024905'
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =107
+            X: =45
+            Y: =695
+            ZIndex: =13
+
+        Image8_1 As image:
+            Height: =107
+            Image: ='Screenshot 2022-02-15 025008'
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =107
+            X: =45
+            Y: =827
+            ZIndex: =14
+
+        Label1_19 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="Tiffany Victoria™ 系列"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =173
+            Y: =827
+            ZIndex: =15
+
+        Label1_20 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="Tiffany & Co. Schlumberger 系列"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =297
+            X: =173
+            Y: =695
+            ZIndex: =16
+
+        Label1_21 As label:
+            AutoHeight: =true
+            Height: =50
+            Size: =14
+            Text: ="铂金镶钻藤蔓耳坠"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =173
+            Y: =861
+            ZIndex: =17
+
+        Label1_22 As label:
+            Align: =Align.Right
+            AutoHeight: =true
+            Height: =50
+            Size: =14
+            Text: ="2019-10-10"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =380
+            Y: =861
+            ZIndex: =18
+
+        Label1_23 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="¥ 307,000"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =173
+            Y: =895
+            ZIndex: =19
+
+        Label1_24 As label:
+            AutoHeight: =true
+            Height: =50
+            Size: =14
+            Text: ="Sixteen Stone 戒指"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =173
+            Y: =729
+            ZIndex: =20
+
+        Label1_25 As label:
+            Align: =Align.Right
+            AutoHeight: =true
+            Height: =50
+            Size: =14
+            Text: ="2019-10-10"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =380
+            Y: =729
+            ZIndex: =21
+
+        Label1_26 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="¥ 96,000"
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =227
+            X: =173
+            Y: =763
+            ZIndex: =22
+
+        Icon2_2 As icon.More:
+            Height: =31
+            Icon: =Icon.More
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =25
+            X: =571
+            Y: =695
+            ZIndex: =24
+
+        Icon2_4 As icon.More:
+            Height: =31
+            Icon: =Icon.More
+            Visible: =Tab_1.SelectedTab="购买记录"
+            Width: =25
+            X: =571
+            Y: =828
+            ZIndex: =25
+
+    Container6 As groupContainer:
+        Height: =313
+        Visible: =Tab_1.SelectedTab="服务记录"
+        Width: =631
+        X: =5
+        Y: =697
+        ZIndex: =42
+
+        Image8_2 As image:
+            Height: =107
+            Image: ='Screenshot 2022-02-15 024905'
+            Visible: =OnCommunicationHistory
+            Width: =107
+            X: =40
+            Y: =1
+            ZIndex: =1
+
+        Label1_27 As label:
+            FontWeight: =FontWeight.Lighter
+            Height: =24
+            Size: =14
+            Text: ="Tiffany & Co. Schlumberger 系列"
+            Visible: =OnCommunicationHistory
+            Width: =308
+            X: =167
+            Y: =4
+            ZIndex: =2
+
+        Label1_28 As label:
+            AutoHeight: =true
+            Height: =50
+            Size: =14
+            Text: ="Sixteen Stone 戒指"
+            Visible: =OnCommunicationHistory
+            Width: =227
+            X: =165
+            Y: =27
+            ZIndex: =3
+
+        Label1_29 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="2019-10-10"
+            Visible: =OnCommunicationHistory
+            Width: =120
+            X: =165
+            Y: =69
+            ZIndex: =4
+
+        Icon2_5 As icon.More:
+            Height: =31
+            Icon: =Icon.More
+            Visible: =OnCommunicationHistory
+            Width: =25
+            X: =572
+            ZIndex: =5
+
+        Label1_30 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="改尺寸"
+            Visible: =OnCommunicationHistory
+            Width: =227
+            X: =305
+            Y: =69
+            ZIndex: =6
+
+        Label1_35 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="清洗"
+            Visible: =OnCommunicationHistory
+            Width: =227
+            X: =305
+            Y: =108
+            ZIndex: =7
+
+        Label1_36 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="2020-02-01"
+            Visible: =OnCommunicationHistory
+            Width: =120
+            X: =165
+            Y: =108
+            ZIndex: =8
+
+        Label1_37 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="清洗"
+            Visible: =OnCommunicationHistory
+            Width: =227
+            X: =305
+            Y: =146
+            ZIndex: =9
+
+        Label1_38 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =50
+            Size: =14
+            Text: ="2021-01-18"
+            Visible: =OnCommunicationHistory
+            Width: =120
+            X: =165
+            Y: =146
+            ZIndex: =10
+
+    Label1_32 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Lighter
+        Height: =50
+        OnSelect: =
+        Size: =14
+        Text: ="纪念日：10月1日"
+        Width: =190
+        X: =95
+        Y: =116
+        ZIndex: =44
+
+    Image9 As image:
+        Height: =30
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1792%20768v1280H128V768h292q-35-59-35-128%200-53%2020-99t54-82%2081-55%20100-20q97%200%20181%2045t139%20127q54-81%20138-126t182-46q53%200%2099%2020t82%2055%2055%2081%2020%20100q0%2034-9%2066t-27%2062h292zM896%20896H256v1024h640V896zm0-128q0-53-20-99t-55-82-81-55-100-20q-27%200-50%2010t-40%2027-28%2041-10%2050q0%2027%2010%2050t27%2040%2041%2028%2050%2010h256zm384-256q-53%200-99%2020t-82%2055-55%2081-20%20100h256q27%200%2050-10t40-27%2028-41%2010-50q0-27-10-50t-27-40-41-28-50-10zm384%20384h-640v1024h640V896z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Width: =30
+        X: =57
+        Y: =116
+        ZIndex: =45
+
+    Label1_33 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Lighter
+        Height: =50
+        OnSelect: =
+        Size: =14
+        Text: ="手寸：5"
+        Width: =190
+        X: =95
+        Y: =156
+        ZIndex: =46
+
+    Image9_1 As image:
+        Height: =30
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20576%20512%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M234.9%2048.02c10.43%200%2020.72%205.834%2024.13%2019.17l47.33%20184.1c2.142%208.456%209.174%2012.62%2016.21%2012.62c7.326%200%2014.66-4.505%2016.51-13.37l31.72-155.1c2.921-14.09%2013.76-20.57%2024.67-20.57c13.01%200%2026.14%209.19%2026.14%2025.62c0%202.19-.2333%204.508-.7313%206.951l-28.48%20139.2c-.2389%201.156-.3514%202.265-.3514%203.323c0%208.644%207.504%2013.9%2014.86%2013.9c5.869%200%2011.65-3.341%2013.46-10.98l24.73-104.2c.2347-.9802%204.12-19.76%2024.28-19.76c13.21%200%2026.64%209.4%2026.64%2024.79c0%202.168-.2665%204.455-.8378%206.852l-48.06%20204.7c-13.59%2057.85-65.15%2098.74-124.5%2098.74l-48.79-.0234c-40.7-.0196-79.86-15.58-109.5-43.51l-75.93-71.55c-5.938-5.584-8.419-11.1-8.419-18.2c0-13.88%2012.45-26.69%2026.38-26.69c5.756%200%2011.76%202.182%2017.26%207.376l51.08%2048.14c1.682%201.569%203.599%202.249%205.448%202.249c4.192%200%208.04-3.49%208.04-8.001c0-23.76-3.372-47.39-10.12-70.28L142%20161.1C141.2%20159.1%20140.8%20156.3%20140.8%20153.7c0-15.23%2013.48-24.82%2026.75-24.82c10.11%200%2020.1%205.559%2023.94%2018.42l31.22%20105.8c2.231%207.546%208.029%2010.8%2013.9%2010.8c7.752%200%2015.64-5.659%2015.64-14.57c0-1.339-.1783-2.752-.562-4.23L209.3%2080.06C208.7%2077.45%20208.3%2074.97%20208.3%2072.62C208.3%2057.33%20221.7%2048.02%20234.9%2048.02zM234.9%200C201.5%200%20160.4%2025.24%20160.4%2072.72c0%202.807%20.1579%205.632%20.4761%208.463C129.9%2083.9%2092.84%20108.9%2092.84%20153.8c0%207.175%201.038%2014.47%203.148%2021.68l24.33%2081.94C115.8%20256.5%20111.1%20256%20106.4%20256C65.74%20256%2032%20290.6%2032%20330.8c0%2019.59%208.162%2038.58%2023.6%2053.1l75.89%2071.51c38.68%2036.45%2089.23%2056.53%20142.3%2056.56L322.6%20512c82.1%200%20152.5-55.83%20171.3-135.8l48.06-204.7C543.3%20165.7%20544%20159.7%20544%20153.9c0-54.55-49.55-72.95-74.59-72.95c-.7689%200-1.534%20.0117-2.297%20.0352c-10.49-39.43-46.46-54.11-71.62-54.11c-34.1%200-64.45%2024.19-71.63%2058.83L319.2%20108.5l-13.7-53.29C297.1%2022.22%20268.7%200%20234.9%200z%27%2F%3E%3C%2Fsvg%3E"
+        Width: =30
+        X: =57
+        Y: =156
+        ZIndex: =47
+
+    Label1_34 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Lighter
+        Height: =50
+        OnSelect: =
+        Size: =14
+        Text: ="偏好：铂金、钻石、Schlumberger系列、Victoria系列"
+        Width: =245
+        X: =95
+        Y: =197
+        ZIndex: =48
+
+    Image9_2 As image:
+        Height: =30
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20512%20512%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M244%2084L255.1%2096L267.1%2084.02C300.6%2051.37%20347%2036.51%20392.6%2044.1C461.5%2055.58%20512%20115.2%20512%20185.1V190.9C512%20232.4%20494.8%20272.1%20464.4%20300.4L283.7%20469.1C276.2%20476.1%20266.3%20480%20256%20480C245.7%20480%20235.8%20476.1%20228.3%20469.1L47.59%20300.4C17.23%20272.1%200%20232.4%200%20190.9V185.1C0%20115.2%2050.52%2055.58%20119.4%2044.1C164.1%2036.51%20211.4%2051.37%20244%2084C243.1%2084%20244%2084.01%20244%2084L244%2084zM255.1%20163.9L210.1%20117.1C188.4%2096.28%20157.6%2086.4%20127.3%2091.44C81.55%2099.07%2048%20138.7%2048%20185.1V190.9C48%20219.1%2059.71%20246.1%2080.34%20265.3L256%20429.3L431.7%20265.3C452.3%20246.1%20464%20219.1%20464%20190.9V185.1C464%20138.7%20430.4%2099.07%20384.7%2091.44C354.4%2086.4%20323.6%2096.28%20301.9%20117.1L255.1%20163.9z%27%2F%3E%3C%2Fsvg%3E"
+        Width: =30
+        X: =57
+        Y: =197
+        ZIndex: =49
+
+    Label1_39 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Lighter
+        Height: =50
+        OnSelect: =
+        Size: =14
+        Text: ="厌恶：18K金、玫瑰金、HardWear系列"
+        Width: =269
+        X: =358
+        Y: =197
+        ZIndex: =50
+
+    Image9_3 As image:
+        Height: =30
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1416%201536q51%202%2096%2022t79%2056%2053%2081%2020%2097q0%2053-20%2099t-55%2081-82%2055-99%2021q-53%200-99-20t-81-55-55-81-21-100q0-71%2036-132t100-94l-266-531-265%20529q32%2017%2057%2041t44%2054%2028%2063%2010%2070q0%2053-20%2099t-55%2081-82%2055-99%2021q-53%200-99-20t-81-55-55-81-21-100q0-51%2019-96t52-80%2077-56%2096-24l322-646-339-678%2058-175%20353%20708%20353-708%2058%20175-339%20678%20322%20646zm-776%20384q27%200%2050-10t40-27%2028-41%2010-50q0-27-10-50t-27-40-41-28-50-10q-27%200-50%2010t-40%2027-28%2041-10%2050q0%2027%2010%2050t27%2040%2041%2028%2050%2010zm768%200q27%200%2050-10t40-27%2028-41%2010-50q0-27-10-50t-27-40-41-28-50-10q-27%200-50%2010t-40%2027-28%2041-10%2050q0%2027%2010%2050t27%2040%2041%2028%2050%2010z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Width: =30
+        X: =328
+        Y: =197
+        ZIndex: =51
+
+    Label1_40 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Lighter
+        Height: =50
+        OnSelect: =
+        Size: =14
+        Text: ="上海虹口区"
+        Width: =190
+        X: =358
+        Y: =116
+        ZIndex: =52
+
+    Image9_4 As image:
+        Height: =30
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%20576%20512%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M565.6%2036.24C572.1%2040.72%20576%2048.11%20576%2056V392C576%20401.1%20569.8%20410.9%20560.5%20414.4L392.5%20478.4C387.4%20480.4%20381.7%20480.5%20376.4%20478.8L192.5%20417.5L32.54%20478.4C25.17%20481.2%2016.88%20480.2%2010.38%20475.8C3.882%20471.3%200%20463.9%200%20456V120C0%20110%206.15%20101.1%2015.46%2097.57L183.5%2033.57C188.6%2031.6%20194.3%2031.48%20199.6%2033.23L383.5%2094.52L543.5%2033.57C550.8%2030.76%20559.1%2031.76%20565.6%2036.24H565.6zM48%20421.2L168%20375.5V90.83L48%20136.5V421.2zM360%20137.3L216%2089.3V374.7L360%20422.7V137.3zM408%20421.2L528%20375.5V90.83L408%20136.5V421.2z%27%2F%3E%3C%2Fsvg%3E"
+        Width: =30
+        X: =328
+        Y: =116
+        ZIndex: =53
+
+    Label1_41 As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Lighter
+        Height: =50
+        OnSelect: =
+        Size: =14
+        Text: ="鞋号：5号；裤长：3尺5"
+        Width: =238
+        X: =358
+        Y: =156
+        ZIndex: =54
+
+    Image9_5 As image:
+        Height: =30
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1416%201536q51%202%2096%2022t79%2056%2053%2081%2020%2097q0%2053-20%2099t-55%2081-82%2055-99%2021q-53%200-99-20t-81-55-55-81-21-100q0-71%2036-132t100-94l-266-531-265%20529q32%2017%2057%2041t44%2054%2028%2063%2010%2070q0%2053-20%2099t-55%2081-82%2055-99%2021q-53%200-99-20t-81-55-55-81-21-100q0-51%2019-96t52-80%2077-56%2096-24l322-646-339-678%2058-175%20353%20708%20353-708%2058%20175-339%20678%20322%20646zm-776%20384q27%200%2050-10t40-27%2028-41%2010-50q0-27-10-50t-27-40-41-28-50-10q-27%200-50%2010t-40%2027-28%2041-10%2050q0%2027%2010%2050t27%2040%2041%2028%2050%2010zm768%200q27%200%2050-10t40-27%2028-41%2010-50q0-27-10-50t-27-40-41-28-50-10q-27%200-50%2010t-40%2027-28%2041-10%2050q0%2027%2010%2050t27%2040%2041%2028%2050%2010z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Width: =30
+        X: =328
+        Y: =156
+        ZIndex: =55
+
+    Icon2_6 As icon.More:
+        Height: =31
+        Icon: =Icon.More
+        Visible: =OnPurchaseHistory
+        Width: =25
+        X: =582
+        Y: =23
+        ZIndex: =56
+
+    Tab_1 As Tab:
+        DefaultSelectedTab: ="购买记录"
+        SelectedTabFontWeight: =FontWeight.Normal
+        Tab1Clicked: |-
+            =UpdateContext({OnPurchaseHistory:true,OnCommunicationHistory:false})
+        Tab1Title: ="购买记录"
+        Tab2Clicked: |-
+            =UpdateContext({OnPurchaseHistory:false,OnCommunicationHistory:true})
+        Tab2Title: ="服务记录"
+        TabFontSize: =16
+        TabTotal: =2
+        Width: =Parent.Width-Self.X*2
+        X: =25
+        Y: =Card_1.Y+Card_1.Height+5
+        ZIndex: =57
+

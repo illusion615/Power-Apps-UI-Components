@@ -1,0 +1,78 @@
+TopPanelWithWaffle As CanvasComponent:
+    BackgroundFill: =RGBA(0, 0, 0, 0)
+    Fill: =Self.BackgroundFill
+    FontColor: =RGBA(9, 33, 98, 1)
+    Height: =100
+    Title: ="Text"
+    TitleFontSize: =20
+    WaffleClicked: =true
+    WaffleSize: =40
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =4
+
+    Icon3_2 As icon.Waffle:
+        Color: =Parent.FontColor
+        Height: =Parent.WaffleSize
+        Icon: =Icon.Waffle
+        OnSelect: =TopPanelWithWaffle.WaffleClicked()
+        Width: =Parent.WaffleSize
+        X: =20
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =1
+
+    Label12_1 As label:
+        AutoHeight: =true
+        Color: =Parent.FontColor
+        Height: =70
+        PaddingLeft: =10
+        Size: =Parent.TitleFontSize
+        Text: =Parent.Title
+        Width: =560
+        X: =Icon3_2.X+Icon3_2.Width
+        Y: =Icon3_2.Y+(Icon3_2.Height-Self.Height)/2
+        ZIndex: =2
+
+    UserBottoPanel_Title_2 As label:
+        Align: =Align.Right
+        AutoHeight: =true
+        Color: =Parent.FontColor
+        Height: =70
+        PaddingBottom: =0
+        PaddingLeft: =10
+        PaddingTop: =0
+        Size: =16
+        Text: =User().FullName
+        Width: =200
+        X: =Image2_2.X-Self.Width
+        Y: =UserBottomPanel_Subtitle_2.Y+UserBottomPanel_Subtitle_2.Height-2
+        ZIndex: =3
+
+    UserBottomPanel_Subtitle_2 As label:
+        Align: =Align.Right
+        AutoHeight: =true
+        Color: =Parent.FontColor
+        FontWeight: =FontWeight.Lighter
+        Height: =70
+        PaddingBottom: =0
+        PaddingTop: =0
+        Size: =12
+        Text: ="Welcome,"
+        Width: =100
+        X: =Image2_2.X-Self.Width
+        Y: =Image2_2.Y+(Image2_2.Height-Self.Height-UserBottoPanel_Title_2.Height+2)/2
+        ZIndex: =4
+
+    Image2_2 As image:
+        Height: =50
+        Image: =User().Image
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =50
+        X: =Parent.Width-Self.Width-20
+        Y: =Icon3_2.Y+(Icon3_2.Height-Self.Height)/2
+        ZIndex: =5
+

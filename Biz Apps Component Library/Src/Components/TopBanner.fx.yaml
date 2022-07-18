@@ -1,0 +1,120 @@
+TopBanner As CanvasComponent:
+    BackgroundImage: =SampleImage
+    BackgroundImagePosition: =ImagePosition.Fill
+    CapitalFont: =Font.'Open Sans'
+    CapitalWeight: ="Text"
+    Caption: ="Text"
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =400
+    LogoImage: =SampleImage
+    LogoWidth: =100
+    LogoX: =20
+    LogoY: =20
+    LogoYOffset: =0
+    ShowLogo: =false
+    ShowWaffle: =true
+    TextBackgroundFill: =RGBA(129, 216, 208, 1)
+    TextColor: =RGBA(0, 0, 0, 1)
+    WaffleClicked: =true
+    WaffleColor: =RGBA(0, 0, 0, 1)
+    WaffleSize: =60
+    Width: =640
+    X: =0
+    Y: =0
+    YOffset: =-20
+    ZIndex: =5
+
+    imgBackground As image:
+        Height: =TopBanner.Height+Abs(Self.Y)
+        Image: =TopBanner.BackgroundImage
+        ImagePosition: =Parent.BackgroundImagePosition
+        Width: =Parent.Width+400
+        X: =(Parent.Width-Self.Width)/2
+        Y: =0+TopBanner.YOffset
+        ZIndex: =1
+
+    lblAppName As label:
+        AutoHeight: =true
+        Color: =Parent.TextColor
+        Font: =Parent.CapitalFont
+        FontWeight: =Parent.CapitalWeight
+        Height: =70
+        PaddingLeft: =10
+        PaddingRight: =10
+        Size: =Parent.WaffleSize-(Self.PaddingTop+Self.PaddingBottom)
+        Text: =TopBanner.Caption
+        Width: =TopPanel_UserName.X-Self.X
+        X: =If(And(Not Parent.ShowLogo,Not Parent.ShowWaffle),20,Parent.ShowLogo,imgLogo.X+imgLogo.Width,Parent.ShowWaffle,iconWaffle.X+iconWaffle.Width)
+        Y: =imgUserProfile.Y+(imgUserProfile.Height-Self.Height)/2
+        ZIndex: =3
+
+    iconWaffle As icon.Waffle:
+        Color: =Parent.WaffleColor
+        Height: =Parent.WaffleSize
+        Icon: =Icon.Waffle
+        OnSelect: =Parent.WaffleClicked()
+        Visible: =Parent.ShowWaffle
+        Width: =Parent.WaffleSize
+        X: =20
+        Y: =40
+        ZIndex: =4
+
+    TopPanel_UserName As label:
+        Align: =Align.Right
+        AutoHeight: =true
+        Color: =Parent.TextColor
+        Fill: =TopPanel_Welcome.Fill
+        Font: =Parent.CapitalFont
+        FontWeight: =Parent.CapitalWeight
+        Height: =70
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =10
+        PaddingTop: =0
+        Size: =lblAppName.Size*2/3
+        Text: =User().FullName
+        Width: =Len(Self.Text)*Self.Size*.8
+        X: =imgUserProfile.X-Self.Width
+        Y: =TopPanel_Welcome.Y+TopPanel_Welcome.Height
+        ZIndex: =5
+
+    TopPanel_Welcome As label:
+        Align: =Align.Right
+        AutoHeight: =true
+        Color: =Parent.TextColor
+        Fill: =TopBanner.TextBackgroundFill
+        Font: =Parent.CapitalFont
+        FontWeight: =Parent.CapitalWeight
+        Height: =70
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =10
+        PaddingTop: =0
+        Size: =TopPanel_UserName.Size-4
+        Text: ="Welcome,"
+        Width: =Len(Self.Text)*Self.Size
+        X: =imgUserProfile.X-Self.Width
+        Y: =imgUserProfile.Y+(imgUserProfile.Height-Self.Height-TopPanel_UserName.Height)/2
+        ZIndex: =6
+
+    imgUserProfile As image:
+        Height: =50
+        Image: =User().Image
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =50
+        X: =Parent.Width-Self.Width-20
+        Y: =iconWaffle.Y+(iconWaffle.Height-Self.Height)/2
+        ZIndex: =7
+
+    imgLogo As image:
+        Height: =Parent.WaffleSize
+        Image: =Parent.LogoImage
+        Visible: =Parent.ShowLogo
+        Width: =Parent.LogoWidth
+        X: =Parent.LogoX
+        Y: =Parent.LogoY+Parent.LogoYOffset
+        ZIndex: =8
+

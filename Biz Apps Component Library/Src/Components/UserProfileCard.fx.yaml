@@ -1,0 +1,130 @@
+UserProfileCard As CanvasComponent:
+    AlignToRight: =false
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =190
+    IconSize: =50
+    IconXOffset: =-20
+    ImageSize: =60
+    NameFontSize: =18
+    UserEmail: ="wellszha@microsoft.com"
+    Width: =200
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container11 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =8
+
+        imgUserProfilePhoto As image:
+            BorderColor: =RGBA(202, 202, 202, 1)
+            BorderThickness: =1
+            Height: =Self.Width
+            HoverBorderColor: =ColorFade(imgUserProfilePhoto.BorderColor, 20%)
+            HoverFill: =ColorFade(imgUserProfilePhoto.Fill, 20%)
+            Image: |
+                =User().Image
+            LayoutMinHeight: =320
+            LayoutMinWidth: =320
+            OnSelect: =true
+            PressedBorderColor: =ColorFade(imgUserProfilePhoto.BorderColor, -20%)
+            PressedFill: =ColorFade(imgUserProfilePhoto.Fill, -20%)
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Width: =UserProfileCard.ImageSize
+            X: =10
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =1
+
+        lblUserProfileName As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            OnSelect: =true
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingTop: =0
+            Size: =UserProfileCard.NameFontSize
+            Text: =If(IsBlankOrError(UserProfileCard.UserEmail),"N/A",Office365Users.UserProfileV2(UserProfileCard.UserEmail).displayName)
+            Width: =Parent.Width
+            X: =imgUserProfilePhoto.X+imgUserProfilePhoto.Width
+            Y: =imgUserProfilePhoto.Y+(imgUserProfilePhoto.Height-Self.Height-lblUserProfileJobTitle.Height)/2
+            ZIndex: =2
+
+        lblUserProfileJobTitle As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            FontWeight: =FontWeight.Lighter
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            OnSelect: =true
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingTop: =0
+            Size: =lblUserProfileName.Size-6
+            Text: =If(IsBlankOrError(UserProfileCard.UserEmail),"N/A",Office365Users.UserProfile(UserProfileCard.UserEmail).JobTitle)
+            Width: =Parent.Width
+            X: =imgUserProfilePhoto.X+imgUserProfilePhoto.Width
+            Y: =lblUserProfileName.Y+lblUserProfileName.Height
+            ZIndex: =3
+
+        Container10 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =UserProfileCard.IconSize
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =112
+            LayoutMinWidth: =UserProfileCard.IconSize
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =5
+            PaddingRight: =5
+            Width: =Parent.Width
+            ZIndex: =4
+
+            imgSendEmail As image:
+                Height: =Self.Width
+                Image: |-
+                    ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%202048%202048%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M2048%20384v1280H0V384h2048zM143%20512l881%20441%20881-441H143zm1777%201024V648l-896%20447-896-447v888h1792z%27%2F%3E%3C%2Fsvg%3E"
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: |-
+                    =Launch("mailto:"&UserProfileCard.UserEmail)
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Tooltip: =UserProfileCard.UserEmail
+                Width: =UserProfileCard.IconSize
+                X: =
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+            imgCall As image:
+                Height: =Self.Width
+                Image: |-
+                    ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%202048%202048%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M1607%201213q44%200%2084%2016t72%2048l220%20220q31%2031%2047%2071t17%2085q0%2044-16%2084t-48%2072l-14%2014q-54%2054-99%2096t-94%2070-109%2044-143%2015q-125%200-257-39t-262-108-256-164-237-207-206-238-162-256T38%20775%200%20523q0-83%2014-142t43-108%2070-93%2096-99l16-16q31-31%2071-48t85-17q44%200%2084%2017t72%2048l220%20220q31%2031%2047%2071t17%2085q0%2044-15%2078t-37%2063-48%2051-49%2045-37%2044-15%2049q0%2038%2027%2065l551%20551q27%2027%2065%2027%2026%200%2048-15t45-37%2045-48%2051-49%2062-37%2079-15zm-83%20707q72%200%20120-13t88-39%2076-64%2085-86q27-27%2027-65%200-18-14-42t-38-52-51-55-56-54-51-47-37-35q-27-27-66-27-26%200-48%2015t-44%2037-45%2048-52%2049-62%2037-79%2015q-44%200-84-16t-72-48L570%20927q-31-31-47-71t-17-85q0-44%2015-78t37-63%2048-51%2049-46%2037-44%2015-48q0-39-27-66-13-13-34-36t-47-51-54-56-56-52-51-37-43-15q-38%200-65%2027l-85%2085q-37%2037-64%2076t-40%2087-14%20120q0%20112%2036%20231t101%20238%20153%20234%20192%20219%20219%20190%20234%20150%20236%2099%20226%2036z%27%2F%3E%3C%2Fsvg%3E"
+                LayoutMinHeight: =320
+                LayoutMinWidth: =320
+                OnSelect: |-
+                    =Launch("tel:"&Office365Users.UserProfileV2(UserProfileCard.UserEmail).mobilePhone)
+                PaddingBottom: =10
+                PaddingLeft: =10
+                PaddingRight: =10
+                PaddingTop: =10
+                Tooltip: =Office365Users.UserProfileV2(UserProfileCard.UserEmail).mobilePhone
+                Width: =UserProfileCard.IconSize
+                X: =
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =4
+

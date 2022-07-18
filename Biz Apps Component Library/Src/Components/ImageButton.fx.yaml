@@ -1,0 +1,60 @@
+ImageButton As CanvasComponent:
+    BackgroundFill: =RGBA(237, 237, 237, 1)
+    ButtonIcon: |-
+        ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M2048%20128v1064q-57-62-128-107V640H128v1152h898q11%2034%2025%2066t34%2062H0V128h384V0h128v128h1024V0h128v128h384zm-128%20128h-256v128h-128V256H512v128H384V256H128v256h1792V256zM896%201408H768v-128h128v128zm256-384h128v61q-47%2030-88%2067h-40v-128zm128-128h-128V768h128v128zm384%200h-128V768h128v128zM512%201408H384v-128h128v128zm-128%20128h128v128H384v-128zm128-384H384v-128h128v128zm384-256H768V768h128v128zm-128%20640h128v128H768v-128zm128-384H768v-128h128v128zm1142%20336l-124%2051q6%2030%206%2061t-6%2061l124%2051-49%20119-124-52q-35%2051-86%2086l52%20124-119%2049-51-124q-30%206-61%206t-61-6l-51%20124-119-49%2052-124q-51-35-86-86l-124%2052-49-119%20124-51q-6-30-6-61t6-61l-124-51%2049-119%20124%2052q35-51%2086-86l-52-124%20119-49%2051%20124q30-6%2061-6t61%206l51-124%20119%2049-52%20124q51%2035%2086%2086l124-52%2049%20119zm-438%20304q40%200%2075-15t61-41%2041-61%2015-75q0-40-15-75t-41-61-61-41-75-15q-40%200-75%2015t-61%2041-41%2061-15%2075q0%2040%2015%2075t41%2061%2061%2041%2075%2015z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+    Disabled: =false
+    Fill: =If(ImageButton.TransperentBackground,RGBA(0,0,0,0),ImageButton.BackgroundFill)
+    Height: =84
+    IconSize: =60
+    OnClick: =true
+    Text: ="Button"
+    TextSize: =18
+    TransperentBackground: =true
+    Width: =120
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Image5_3 As image:
+        DisplayMode: =If(ImageButton.Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =Parent.IconSize
+        HoverFill: |-
+            =//ColorFade(Self.Fill, 20%)
+            ColorFade(Parent.BackgroundFill,20%)
+        Image: =If(Parent.ButtonIcon="",SampleImage,Parent.ButtonIcon)
+        OnSelect: =true
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =Parent.IconSize
+        X: =(Parent.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height-Label6_5.Height+5)/2
+        ZIndex: =1
+
+    Label6_5 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        DisplayMode: =If(ImageButton.Disabled,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Open Sans Condensed'
+        Height: =
+        OnSelect: =true
+        PaddingBottom: =0
+        PaddingTop: =0
+        Size: =Parent.TextSize
+        Text: =Parent.Text
+        Width: =Parent.Width
+        X: =(Parent.Width-Self.Width)/2
+        Y: =Image5_3.Height+Image5_3.Y-5
+        ZIndex: =2
+
+    Button1 As button:
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =Parent.Height
+        HoverFill: =ColorFade(RGBA(237, 237, 237, .2), -20%)
+        OnSelect: =Parent.OnClick()
+        Size: =24
+        Text: =""
+        Width: =Parent.Width
+        ZIndex: =3
+

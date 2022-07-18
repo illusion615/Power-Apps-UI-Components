@@ -1,0 +1,24 @@
+{
+  "NamedValues": [
+    {
+      "Kind": "Page",
+      "Name": "PS Solution Submit",
+      "Value": "custompage:cr486_pssolutionsubmit_8d89c"
+    },
+    {
+      "Kind": "Page",
+      "Name": "SVG Icon Page",
+      "Value": "custompage:biz_svgiconpage_1ab31"
+    },
+    {
+      "Kind": "Page",
+      "Name": "Page - SVG Icon List",
+      "Value": "custompage:biz_pagesvgiconlist_9fd4d"
+    },
+    {
+      "Kind": "Page",
+      "Name": "Custom Page Template",
+      "Value": "custompage:cat_custompagetemplate_231d0"
+    }
+  ]
+}

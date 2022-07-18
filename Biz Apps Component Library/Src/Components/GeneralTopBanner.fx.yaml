@@ -1,0 +1,68 @@
+GeneralTopBanner As CanvasComponent:
+    BackgroundFill: =RGBA(237, 237, 237, .5)
+    BackgroundImage: =SampleImage
+    BackgroundImageYOffset: =-50
+    BackIconClicked: =true
+    Fill: =Self.BackgroundFill
+    Height: =100
+    IconColor: =RGBA(0, 0, 0, 1)
+    IconSize: =60
+    IconX: =40
+    IconYOffset: =0
+    ResponsiveHeight: =Label4_4.Height+Label4_5.Height+Label4_4.Y*2-10
+    Subtitle: ="Text"
+    SubtitleFontSize: =20
+    Title: ="Text"
+    TitleColor: =RGBA(0, 0, 0, 1)
+    TitleFontSize: =24
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =6
+
+    Image3 As image:
+        Height: =If(Parent.BackgroundImageYOffset<0,Parent.Height-Parent.BackgroundImageYOffset,Parent.BackgroundImageYOffset+Parent.Height)
+        Image: =Parent.BackgroundImage
+        ImagePosition: =ImagePosition.Fill
+        Visible: =!IsBlank(Parent.BackgroundImage)
+        Width: =Parent.Width
+        Y: =If(Parent.BackgroundImageYOffset<0,0,-Parent.BackgroundImageYOffset)
+        ZIndex: =1
+
+    Icon2_3 As icon.BackArrow:
+        Color: =Parent.IconColor
+        Height: =Self.Width
+        Icon: =Icon.BackArrow
+        OnSelect: =GeneralTopBanner.BackIconClicked()
+        Width: =Parent.IconSize
+        X: =Parent.IconX
+        Y: =(Parent.Height-Self.Height)/2+Parent.IconYOffset
+        ZIndex: =2
+
+    Label4_4 As label:
+        AutoHeight: =true
+        Color: =Parent.TitleColor
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        PaddingLeft: =10
+        PaddingTop: =10
+        Size: =Parent.TitleFontSize
+        Text: =GeneralTopBanner.Title
+        Width: =Parent.Width-Self.X
+        X: =Icon2_3.X+Icon2_3.Width
+        Y: =Icon2_3.Y+(Icon2_3.Height-Self.Height-Label4_5.Height+10)/2
+        ZIndex: =3
+
+    Label4_5 As label:
+        AutoHeight: =true
+        Color: =Parent.TitleColor
+        Height: =64
+        PaddingBottom: =10
+        PaddingLeft: =10
+        Size: =Parent.SubtitleFontSize
+        Text: =GeneralTopBanner.Subtitle
+        Width: =Parent.Width-Self.X
+        X: =Label4_4.X
+        Y: =Label4_4.Y+Label4_4.Height-10
+        ZIndex: =4
+

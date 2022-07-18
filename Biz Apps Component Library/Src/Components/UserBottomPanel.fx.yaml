@@ -1,0 +1,49 @@
+UserBottomPanel As CanvasComponent:
+    BackgroundFill: =RGBA(237, 237, 237, .5)
+    Fill: =UserBottomPanel.BackgroundFill
+    Height: =100
+    Subtitle: =User().Email
+    Title: =User().FullName
+    UserImage: =User().Image
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    UserBottoPanel_Title As label:
+        AutoHeight: =true
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        PaddingLeft: =10
+        PaddingTop: =0
+        Size: =20
+        Text: =UserBottomPanel.Title
+        Width: =200
+        X: =Image2.X+Image2.Width
+        Y: =(Parent.Height-Self.Height-UserBottomPanel_Subtitle.Height+15)/2
+        ZIndex: =1
+
+    UserBottomPanel_Subtitle As label:
+        AutoHeight: =true
+        Height: =70
+        PaddingBottom: =0
+        PaddingLeft: =10
+        Size: =16
+        Text: =UserBottomPanel.Subtitle
+        Width: =300
+        X: =Image2.X+Image2.Width
+        Y: =UserBottoPanel_Title.Y+UserBottoPanel_Title.Height-15
+        ZIndex: =2
+
+    Image2 As image:
+        Height: =50
+        Image: =UserBottomPanel.UserImage
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =50
+        X: =40
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =3
+

@@ -1,0 +1,153 @@
+SearchBar As CanvasComponent:
+    BackgroundFill: =RGBA(250, 250, 250, 1)
+    ButtonColor: |-
+        =ColorValue("#055d66")
+    Default: ="Text"
+    Fill: =RGBA(0, 0, 0, 0)
+    FontSize: =12
+    FontWeight: ="Text"
+    Height: =70
+    OnAddNewClicked: =true
+    OnRefreshClicked: =true
+    OnSearchButtonClicked: =true
+    ResultCount: =99999
+    SearchHint: ="Search hint..."
+    SearchText: =TextInput3.Text
+    ShowAddNewButton: =true
+    ShowRefreshButton: =true
+    ShowSearchButton: =true
+    ShowSearchResult: =true
+    ShowSortButton: =true
+    SortOrder: =SortDirection
+    Width: =620
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    searchBarBackground As button:
+        DisplayMode: =DisplayMode.View
+        Fill: =SearchBar.BackgroundFill
+        Height: =Parent.Height
+        Size: =24
+        Text: ="Button"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    TextInput3 As text:
+        BorderColor: =RGBA(237, 237, 237, 1)
+        Default: =SearchBar.Default
+        FontWeight: =SearchBar.FontWeight
+        Height: =50
+        HintText: =SearchBar.SearchHint
+        HoverBorderColor: =Self.BorderColor//RGBA(0, 18, 107, 1)
+        HoverFill: =Self.Fill//RGBA(186, 202, 226, 1)
+        PaddingLeft: =50
+        Size: =SearchBar.FontSize
+        Width: =Container9.X-Self.X-10
+        X: =20
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =2
+
+    resultIndicator As button:
+        Color: =RGBA(116, 116, 116, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =30
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =SearchBar.FontSize
+        Text: =SearchBar.ResultCount
+        Visible: =SearchBar.ShowSearchResult
+        Width: =70
+        X: =TextInput3.X+TextInput3.Width-Self.Width-10
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =3
+
+    Container9 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =iconRefresh.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: |-
+            =If(SearchBar.ShowRefreshButton,iconRefresh.Width,0) 
+            + If(SearchBar.ShowSortButton,iconSort.Width,0) 
+            + If(SearchBar.ShowAddNewButton,iconAddNew.Width,0) 
+            + If(SearchBar.ShowSearchButton,iconSearch.Width,0) 
+            + If(Or(SearchBar.ShowAddNewButton,SearchBar.ShowRefreshButton,SearchBar.ShowSortButton,SearchBar.ShowSearchButton),Self.PaddingLeft + Self.PaddingRight,0)
+        X: =searchBarBackground.X+searchBarBackground.Width-Self.Width-10
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =4
+
+        iconSearch As icon.Check:
+            Color: =SearchBar.ButtonColor
+            Height: =40
+            Icon: =Icon.Check
+            OnSelect: =SearchBar.OnSearchButtonClicked()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowSearchButton
+            Width: =40
+            ZIndex: =1
+
+        iconAddNew As icon.Add:
+            Color: =SearchBar.ButtonColor
+            Height: =40
+            Icon: =Icon.Add
+            OnSelect: =SearchBar.OnAddNewClicked()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowAddNewButton
+            Width: =40
+            ZIndex: =2
+
+        iconRefresh As icon.Reload:
+            Color: =SearchBar.ButtonColor
+            Height: =40
+            Icon: =Icon.Reload
+            OnSelect: =SearchBar.OnRefreshClicked()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowRefreshButton
+            Width: =40
+            ZIndex: =3
+
+        iconSort As icon.ArrowsUpDown:
+            Color: =SearchBar.ButtonColor
+            Height: =40
+            Icon: =Icon.Sort
+            OnSelect: |-
+                =Set(
+                    SortDirection,
+                    If(
+                        SortDirection = SortOrder.Ascending,
+                        Descending,
+                        Ascending
+                    )
+                )
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowSortButton
+            Width: =40
+            ZIndex: =4
+
+    Icon8 As icon.Search:
+        Color: =RGBA(219, 219, 219, 1)
+        Height: =40
+        Icon: =Icon.Search
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        Width: =40
+        X: =TextInput3.X+10
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =5
+

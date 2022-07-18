@@ -1,0 +1,94 @@
+"'Theme Editor' As screen":
+    OnVisible: =
+
+    GeneralTopBanner_3 As GeneralTopBanner:
+        BackgroundFill: =RGBA(0, 0, 0, 0)
+        BackgroundImage: ='10744401'
+        BackIconClicked: =Back()
+        IconColor: =RGBA(153, 207, 236, 1)
+        IconSize: =40
+        Subtitle: ="Create your theme in one single place"
+        SubtitleFontSize: =16
+        Title: ="Theme Editor"
+        TitleColor: =RGBA(255, 255, 255, 1)
+        TitleFontSize: =20
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Button2 As button:
+        Height: =70
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =42
+        Y: =323
+        ZIndex: =2
+
+    Label8 As label:
+        Height: =70
+        Size: =21
+        Text: ="Label"
+        Width: =560
+        X: =47
+        Y: =242
+        ZIndex: =3
+
+    Label9 As label:
+        AutoHeight: =true
+        Height: =70
+        Size: =21
+        Text: ="Select Theme"
+        Width: =560
+        X: =40
+        Y: =104
+        ZIndex: =4
+
+    TextInput1 As text:
+        Default: ="Text input"
+        Height: =70
+        Size: =21
+        Width: =560
+        X: =42
+        Y: =425
+        ZIndex: =5
+
+    HtmlText1 As htmlViewer:
+        Height: =70
+        Width: =560
+        X: =47
+        Y: =526
+        ZIndex: =6
+
+    RichTextEditor1 As richTextEditor:
+        Default: ="Enter some <strong>rich text</strong> here."
+        Height: =222
+        Width: =579
+        X: =42
+        Y: =611
+        ZIndex: =7
+
+    Dropdown1 As dropdown:
+        Height: =70
+        Items: =DropDownSample
+        Size: =21
+        Width: =467
+        X: =42
+        Y: =154
+        ZIndex: =8
+
+    ComboBox1 As combobox:
+        Height: =70
+        Items: =ComboBoxSample
+        SearchItems: =Search(ComboBoxSample,ComboBox1.SearchText,"Value1")
+        Size: =21
+        Width: =575
+        X: =46
+        Y: =848
+        ZIndex: =9
+
+    Icon3 As icon.Check:
+        Icon: =Icon.Check
+        X: =536
+        Y: =154
+        ZIndex: =10
+
