@@ -26,7 +26,7 @@ Home As screen:
         CapitalWeight: =FontWeight.Semibold
         Caption: ="Clienteling App"
         Height: =322
-        LogoImage: =Tiffany__Co_logo_wordmark_logotype
+        LogoImage: =
         LogoWidth: =120
         TextBackgroundFill: =RGBA(129, 216, 208, 0)
         TextColor: =RGBA(255, 255, 255, 1)
