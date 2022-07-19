@@ -1,8 +1,6 @@
-# PowerAppsDeveloperKits
+# Power Apps Developer Toolkit
 
-Toolkits for Power Apps developers
-
-## Components
+## Component Library
 
 Use components library to accelerate the speed of Power Apps development with high quality, by reusing the existing components assets and sharing with the team.
 
@@ -23,12 +21,19 @@ Components library includes:
 - GeneralCard
 - KPICard
 - UserProfileCard
-- TagList
 - SearchBar
 
 Sample app made with these components
 
-![1649380255950.png](image/README/1649380255950.png)
+**Home Screen**
+
+![image-20220719211228608](image/README/image-20220719211228608.png)
+
+**Detail Screen**
+
+![image-20220719212014688](image/README/image-20220719212014688.png)
+
+
 
 ## Installation
 
@@ -38,37 +43,39 @@ Sample app made with these components
 
 ### TopBanner
 
-![1649355859205.png](image/README/1649355859205.png)
+![image-20220719184748769](image/README/image-20220719184748769.png)
 
 ### UserBottomPanel
 
-![1649355873743.png](image/README/1649355873743.png)
+![image-20220719184814149](image/README/image-20220719184814149.png)
 
 ### ImageButton
 
-![1649355883273.png](image/README/1649355883273.png)
+![image-20220719222936189](image/README/image-20220719222936189.png)
 
 ### Tab
 
-![1649355893000.png](image/README/1649355893000.png)
+![image-20220719223017904](image/README/image-20220719223017904.png)
 
 ### GeneralTopBanner
 
-![1649355901075.png](image/README/1649355901075.png)
+![image-20220719184939517](image/README/image-20220719184939517.png)
 
 ### GeneralBottomPanel
 
 ![1649355909739.png](image/README/1649355909739.png)
 
-### TopPanelWithWaffle![1649355919202.png](image/README/1649355919202.png)
+### TopPanelWithWaffle
+
+![image-20220719223107315](image/README/image-20220719223107315.png)
 
 ### Card
 
-![1649355960565.png](image/README/1649355960565.png)
+![image-20220719222239206](image/README/image-20220719222239206.png)
 
 ### GeneralCard
 
-![1649356147126.png](image/README/1649356147126.png)
+![image-20220719215738817](image/README/image-20220719215738817.png)
 
 ### KPICard
 
@@ -102,16 +109,15 @@ Sample app made with these components
 
 ### UserProfileCard
 
+#### Screen shot
 
-### TagList
-
-![1649356000858.png](image/README/1649356000858.png)
+![image-20220719223152631](image/README/image-20220719223152631.png)
 
 ### SearchBar
 
 #### Screen shot
 
-![1649355992457.png](image/README/1649355992457.png)
+![image-20220719185726497](image/README/image-20220719185726497.png)
 
 #### Input propoerties
 
