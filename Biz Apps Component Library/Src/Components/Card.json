@@ -1454,7 +1454,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Width-Self.Width-20",
+            "InvariantScript": "Parent.Width-Self.Width-Label5.PaddingLeft-Parent.ShadowMargin",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -2685,7 +2685,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637938373152399325",
+    "LastModifiedTimestamp": "637938388742112144",
     "Name": "Card",
     "Rules": [
       {
@@ -3068,7 +3068,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637938373152399325",
+  "LastModifiedTimestamp": "637938388742112144",
   "Name": "407bdd61b7d04898bd8727daf3be6a61",
   "OverridableProperties": {},
   "Version": "637804646579860574"

@@ -132,7 +132,7 @@ Card As CanvasComponent:
         Image: =Card.RightTopIconImage
         OnSelect: =Card.RightTopIconClicked()
         Width: =30
-        X: =Parent.Width-Self.Width-20
+        X: =Parent.Width-Self.Width-Label5.PaddingLeft-Parent.ShadowMargin
         Y: =Label5.Y+(Label5.Height-Self.Height)/2
         ZIndex: =5
 

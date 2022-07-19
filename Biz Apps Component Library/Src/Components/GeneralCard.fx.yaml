@@ -15,7 +15,7 @@ GeneralCard As CanvasComponent:
     RightTopIconClicked: =true
     RightTopIconSize: =30
     ShadowColor: =RGBA(200, 200, 200, 1)
-    ShadowMargin: =5
+    ShadowMargin: =10
     ShowImage: =true
     ShowRightTopIcon: =true
     ShowShadow: =true
@@ -30,7 +30,7 @@ GeneralCard As CanvasComponent:
     HtmlText2_1 As htmlViewer:
         Height: =Parent.Height
         HtmlText: |-
-            ="<div style='margin:" & GeneralCard.ShadowMargin & "px;width:" & Self.Width - GeneralCard.ShadowMargin*2 - 10 & "px;height:" & Self.Height - 11 - Parent.ShadowMargin*2 & "px;background-color:"&GeneralCardBackgroundFill&";box-shadow:0 3px 6px 1px  #ccc; border-radius:" & Parent.BorderRadius & "px'></div>"
+            ="<div style='margin:" & GeneralCard.ShadowMargin & "px;width:" & Self.Width - GeneralCard.ShadowMargin*2 - 10 & "px;height:" & Self.Height - 11 - Parent.ShadowMargin*2 & "px;background-color:"&GeneralCardBackgroundFill&";box-shadow:0px 0px 5px #888888; border-radius:" & Parent.BorderRadius & "px'></div>"
         Width: =Parent.Width
         ZIndex: =1
 
@@ -70,7 +70,7 @@ GeneralCard As CanvasComponent:
         OnSelect: =GeneralCard.RightTopIconClicked()
         Visible: =GeneralCard.ShowRightTopIcon
         Width: =Parent.RightTopIconSize
-        X: =Parent.Width-Self.Width-lblGeneralCardTitle.PaddingLeft
+        X: =Parent.Width-Self.Width-lblGeneralCardTitle.PaddingLeft-Parent.ShadowMargin
         Y: =lblGeneralCardTitle.Y+(lblGeneralCardTitle.Height-Self.Height)/2
         ZIndex: =4
 

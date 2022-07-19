@@ -68,7 +68,14 @@
             "NameMapSourceSchema": "?"
           },
           "ZIndex",
-          "RadiusTopLeft",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "10",
+            "InvariantPropertyName": "RadiusTopLeft",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "RadiusTopRight",
           "RadiusBottomLeft",
           "RadiusBottomRight",
@@ -144,7 +151,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "10",
+            "InvariantScript": "Parent.BackgroundRadius",
             "Property": "RadiusTopLeft",
             "RuleProviderType": "Unknown"
           },
@@ -3057,9 +3064,24 @@
       "OnAddNewClicked",
       "OnRefreshClicked",
       "OnSearchButtonClicked",
-      "Default"
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "\"Text\"",
+        "InvariantPropertyName": "Default",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "BackgroundRadius",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
-    "LastModifiedTimestamp": "637938241089696013",
+    "LastModifiedTimestamp": "637938382964777063",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3142,8 +3164,14 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "\"Text\"",
+        "InvariantScript": "\"Default Text\"",
         "Property": "Default",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "10",
+        "Property": "BackgroundRadius",
         "RuleProviderType": "System"
       },
       {
@@ -3364,6 +3392,15 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Background Radius",
+      "Hidden": false,
+      "Name": "BackgroundRadius",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -3374,7 +3411,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637938241089696013",
+  "LastModifiedTimestamp": "637938382964777063",
   "Name": "db0c539aa39f4254a16cbcb3053024a5",
   "OverridableProperties": {},
   "Version": "637839018344508624"

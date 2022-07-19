@@ -60,7 +60,7 @@
         Image8 As image:
             Height: =107
             Image: ='Screenshot 2022-02-15 024905'
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =107
             X: =45
             Y: =695
@@ -69,7 +69,7 @@
         Image8_1 As image:
             Height: =107
             Image: ='Screenshot 2022-02-15 025008'
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =107
             X: =45
             Y: =827
@@ -81,7 +81,7 @@
             Height: =50
             Size: =14
             Text: ="Victoria™ Series"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =827
@@ -93,7 +93,7 @@
             Height: =50
             Size: =14
             Text: ="Schlumberger Series"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =297
             X: =173
             Y: =695
@@ -104,7 +104,7 @@
             Height: =50
             Size: =14
             Text: ="铂金镶钻藤蔓耳坠"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =861
@@ -116,7 +116,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =380
             Y: =861
@@ -128,7 +128,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 307,000"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =895
@@ -139,7 +139,7 @@
             Height: =50
             Size: =14
             Text: ="Sixteen Stone"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =729
@@ -151,7 +151,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =380
             Y: =729
@@ -163,7 +163,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 96,000"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =763
@@ -172,7 +172,7 @@
         Icon2_2 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =25
             X: =571
             Y: =695
@@ -181,7 +181,7 @@
         Icon2_4 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =25
             X: =571
             Y: =828
@@ -189,7 +189,7 @@
 
     Container6 As groupContainer:
         Height: =313
-        Visible: =Tab_1.SelectedTab="服务记录"
+        Visible: =Tab_1.SelectedTab="Service"
         Width: =631
         X: =5
         Y: =697
