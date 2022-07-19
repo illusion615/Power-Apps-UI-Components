@@ -1,11 +1,11 @@
 GeneralTopBanner As CanvasComponent:
     BackgroundFill: =RGBA(237, 237, 237, .5)
-    BackgroundImage: =SampleImage
+    BackgroundImage: ='10744401'
     BackgroundImageYOffset: =-50
     BackIconClicked: =true
     Fill: =Self.BackgroundFill
     Height: =100
-    IconColor: =RGBA(0, 0, 0, 1)
+    IconColor: =White
     IconSize: =60
     IconX: =40
     IconYOffset: =0
@@ -13,7 +13,7 @@ GeneralTopBanner As CanvasComponent:
     Subtitle: ="Text"
     SubtitleFontSize: =20
     Title: ="Text"
-    TitleColor: =RGBA(0, 0, 0, 1)
+    TitleColor: =White
     TitleFontSize: =24
     Width: =640
     X: =0

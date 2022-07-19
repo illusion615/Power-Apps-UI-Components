@@ -1,5 +1,5 @@
 TopBanner As CanvasComponent:
-    BackgroundImage: =SampleImage
+    BackgroundImage: ='10744401'
     BackgroundImagePosition: =ImagePosition.Fill
     CapitalFont: =Font.'Open Sans'
     CapitalWeight: ="Text"
@@ -14,9 +14,9 @@ TopBanner As CanvasComponent:
     ShowLogo: =false
     ShowWaffle: =true
     TextBackgroundFill: =RGBA(129, 216, 208, 1)
-    TextColor: =RGBA(0, 0, 0, 1)
+    TextColor: =White
     WaffleClicked: =true
-    WaffleColor: =RGBA(0, 0, 0, 1)
+    WaffleColor: =White
     WaffleSize: =60
     Width: =640
     X: =0

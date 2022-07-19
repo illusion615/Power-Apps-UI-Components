@@ -1,18 +1,22 @@
 GeneralCard As CanvasComponent:
-    BackgroundFill: =RGBA(250, 250, 250, 1)
+    BackgroundFill: =RGBA(250, 250, 250, 0)
     BorderColor: =RGBA(0, 0, 0, 1)
+    BorderRadius: =10
+    CardPressed: =true
     Description: ="Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 "
     Fill: =RGBA(0, 0, 0, 0)
-    FontColor: =RGBA(0, 0, 0, 1)
+    FontColor: =White
     FontSize: =18
     Height: =340
-    Image: =SampleImage
+    Image: ='10744401'
+    OnReset: =Set(GeneralCardBackgroundFill,Substitute(JSON(GeneralCard.BackgroundFill,JSONFormat.IgnoreUnsupportedTypes),Char(34),""))
     RightTopIcon: |-
         ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%202048%202048%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M256%20896q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10zm768%200q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10zm768%200q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10z%27%2F%3E%3C%2Fsvg%3E"
     RightTopIconClicked: =true
     RightTopIconSize: =30
     ShadowColor: =RGBA(200, 200, 200, 1)
-    ShowImage: =false
+    ShadowMargin: =5
+    ShowImage: =true
     ShowRightTopIcon: =true
     ShowShadow: =true
     Title: ="Card Title"
@@ -23,32 +27,54 @@ GeneralCard As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    background_shadow_1 As button:
-        BorderColor: =Parent.BorderColor
-        BorderThickness: =5
-        DisplayMode: =DisplayMode.View
-        Fill: =Parent.ShadowColor
-        Height: =Parent.Height-5
-        Size: =24
-        Text: =""
-        Visible: =Parent.ShowShadow
-        Width: =Parent.Width-5
-        X: =5
-        Y: =5
+    HtmlText2_1 As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div style='margin:" & GeneralCard.ShadowMargin & "px;width:" & Self.Width - GeneralCard.ShadowMargin*2 - 10 & "px;height:" & Self.Height - 11 - Parent.ShadowMargin*2 & "px;background-color:"&GeneralCardBackgroundFill&";box-shadow:0 3px 6px 1px  #ccc; border-radius:" & Parent.BorderRadius & "px'></div>"
+        Width: =Parent.Width
         ZIndex: =1
+
+    imgGeneralCardBackgroundImage As image:
+        BorderStyle: =BorderStyle.None
+        Height: =GeneralCard.Height - 11 - GeneralCard.ShadowMargin*2
+        Image: =Parent.Image
+        ImagePosition: =ImagePosition.Fill
+        RadiusBottomLeft: =Parent.BorderRadius
+        RadiusBottomRight: =Parent.BorderRadius
+        RadiusTopLeft: =Parent.BorderRadius
+        RadiusTopRight: =Parent.BorderRadius
+        Visible: =GeneralCard.ShowImage
+        Width: =GeneralCard.Width - GeneralCard.ShadowMargin*2 - 10
+        X: =(GeneralCard.Width-Self.Width)/2
+        Y: =(GeneralCard.Height-Self.Height)/2
+        ZIndex: =2
 
     background_1 As button:
         BorderColor: =Parent.BorderColor
         BorderThickness: =5
         DisplayMode: =DisplayMode.View
         Fill: =Parent.BackgroundFill
-        Height: =Parent.Height-If(Parent.ShowShadow,5,0)
+        Height: =GeneralCard.Height - 11 - GeneralCard.ShadowMargin*2
+        OnSelect: =GeneralCard.CardPressed()
+        RadiusTopLeft: =GeneralCard.BorderRadius
         Size: =24
         Text: =""
-        Width: =Parent.Width-If(Parent.ShowShadow,5,0)
-        ZIndex: =2
+        Width: =GeneralCard.Width - GeneralCard.ShadowMargin*2 - 10
+        X: =(GeneralCard.Width-Self.Width)/2
+        Y: =(GeneralCard.Height-Self.Height)/2
+        ZIndex: =3
 
-    Label5_2 As label:
+    imgGeneralCardTopRightButton As image:
+        Height: =Self.Width
+        Image: =Parent.RightTopIcon
+        OnSelect: =GeneralCard.RightTopIconClicked()
+        Visible: =GeneralCard.ShowRightTopIcon
+        Width: =Parent.RightTopIconSize
+        X: =Parent.Width-Self.Width-lblGeneralCardTitle.PaddingLeft
+        Y: =lblGeneralCardTitle.Y+(lblGeneralCardTitle.Height-Self.Height)/2
+        ZIndex: =4
+
+    lblGeneralCardTitle As label:
         AutoHeight: =true
         Color: =Parent.FontColor
         FontWeight: =GeneralCard.TitleFontWeight
@@ -57,26 +83,7 @@ GeneralCard As CanvasComponent:
         Size: =Parent.FontSize
         Text: =Parent.Title
         Width: =560
-        Y: =(Image4_1.Y-Self.Height)/2+GeneralCard.TitleTopPadding
-        ZIndex: =3
-
-    Image4_1 As image:
-        Height: =267
-        Image: =Parent.Image
-        ImagePosition: =ImagePosition.Fill
-        Visible: =GeneralCard.ShowImage
-        Width: =background_1.Width
-        X: =background_1.X
-        Y: =50
-        ZIndex: =4
-
-    Image11 As image:
-        Height: =Self.Width
-        Image: =Parent.RightTopIcon
-        OnSelect: =GeneralCard.RightTopIconClicked()
-        Visible: =GeneralCard.ShowRightTopIcon
-        Width: =Parent.RightTopIconSize
-        X: =Parent.Width-Self.Width-Label5_2.PaddingLeft
-        Y: =Label5_2.Y+(Label5_2.Height-Self.Height)/2
+        X: =Parent.ShadowMargin
+        Y: =Parent.ShadowMargin+Parent.TitleTopPadding
         ZIndex: =5
 
