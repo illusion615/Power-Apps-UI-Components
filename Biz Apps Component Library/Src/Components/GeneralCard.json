@@ -15,6 +15,7 @@
       "Category": 0,
       "DisplayName": "Background Fill",
       "Hidden": false,
+      "IsResettable": true,
       "Name": "BackgroundFill",
       "PropertyDataTypeKey": "Color",
       "Tooltip": "A custom property",
@@ -154,6 +155,33 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Shadow Margin",
+      "Hidden": false,
+      "Name": "ShadowMargin",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Border Radius",
+      "Hidden": false,
+      "Name": "BorderRadius",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "CardPressed",
+      "Hidden": false,
+      "Name": "CardPressed",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -164,7 +192,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637937413329390711",
+  "LastModifiedTimestamp": "637938388233234936",
   "Name": "5387a4c22af54075a6ea960e8d942df1",
   "OverridableProperties": {},
   "TemplateOriginalName": "407bdd61b7d04898bd8727daf3be6a61",

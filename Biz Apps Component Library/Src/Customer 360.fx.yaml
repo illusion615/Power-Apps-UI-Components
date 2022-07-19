@@ -2,13 +2,12 @@
     OnVisible: =Reset(Tab_1)
 
     GeneralTopBanner_2 As GeneralTopBanner:
-        BackgroundImage: ='10744401'
         BackgroundImageYOffset: =-250
         BackIconClicked: =Back()
         IconColor: =RGBA(204, 231, 246, 1)
         IconSize: =40
         Subtitle: |-
-            =Concat(Table({Name:"珠宝爱好者"},{Name:"有型达人"},{Name:"好包必收藏"},{Name:"女王大人"}),Name,"; ")
+            =Concat(Table({Name:"Jewery lover"},{Name:"Fancy guy"},{Name:"Collector"},{Name:"Miss Queen"}),Name,"; ")
         SubtitleFontSize: =16
         Title: ="Penelope Liu"
         TitleColor: =RGBA(255, 255, 255, 1)
@@ -23,12 +22,9 @@
             
             当前到货情况：有货
             库存：20"
+        OnReset: =Set(CardBackgroundFill,Substitute(JSON(Card_1.ShadowColor,JSONFormat.IgnoreUnsupportedTypes),Char(34),""))
         ShadowMargin: =5
-        ShowImage: =false
-        Table: |-
-            =Table({Title:"Tiffany Jewery",Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ", Image: 'Screenshot 2022-02-15 023949'},{Title:"Tiffany Jewery",Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ", Image: 'Screenshot 2022-02-15 025008'},{Title:"Tiffany Jewery",Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ", Image: 'Screenshot 2022-02-15 024905'})
         TextColor: =RGBA(255, 255, 255, 1)
-        Title: ="愿望清单"
         Width: =611
         X: =16
         Y: =282
@@ -64,7 +60,7 @@
         Image8 As image:
             Height: =107
             Image: ='Screenshot 2022-02-15 024905'
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =107
             X: =45
             Y: =695
@@ -73,7 +69,7 @@
         Image8_1 As image:
             Height: =107
             Image: ='Screenshot 2022-02-15 025008'
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =107
             X: =45
             Y: =827
@@ -84,8 +80,8 @@
             FontWeight: =FontWeight.Lighter
             Height: =50
             Size: =14
-            Text: ="Tiffany Victoria™ 系列"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Text: ="Victoria™ Series"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =827
@@ -96,8 +92,8 @@
             FontWeight: =FontWeight.Lighter
             Height: =50
             Size: =14
-            Text: ="Tiffany & Co. Schlumberger 系列"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Text: ="Schlumberger Series"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =297
             X: =173
             Y: =695
@@ -108,7 +104,7 @@
             Height: =50
             Size: =14
             Text: ="铂金镶钻藤蔓耳坠"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =861
@@ -120,7 +116,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =380
             Y: =861
@@ -132,7 +128,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 307,000"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =895
@@ -142,8 +138,8 @@
             AutoHeight: =true
             Height: =50
             Size: =14
-            Text: ="Sixteen Stone 戒指"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Text: ="Sixteen Stone"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =729
@@ -155,7 +151,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =380
             Y: =729
@@ -167,7 +163,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 96,000"
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =227
             X: =173
             Y: =763
@@ -176,7 +172,7 @@
         Icon2_2 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =25
             X: =571
             Y: =695
@@ -185,7 +181,7 @@
         Icon2_4 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =Tab_1.SelectedTab="购买记录"
+            Visible: =Tab_1.SelectedTab="Purchased"
             Width: =25
             X: =571
             Y: =828
@@ -193,7 +189,7 @@
 
     Container6 As groupContainer:
         Height: =313
-        Visible: =Tab_1.SelectedTab="服务记录"
+        Visible: =Tab_1.SelectedTab="Service"
         Width: =631
         X: =5
         Y: =697
@@ -446,14 +442,14 @@
         ZIndex: =56
 
     Tab_1 As Tab:
-        DefaultSelectedTab: ="购买记录"
+        DefaultSelectedTab: ="Purchased"
         SelectedTabFontWeight: =FontWeight.Normal
         Tab1Clicked: |-
             =UpdateContext({OnPurchaseHistory:true,OnCommunicationHistory:false})
-        Tab1Title: ="购买记录"
+        Tab1Title: ="Purchased"
         Tab2Clicked: |-
             =UpdateContext({OnPurchaseHistory:false,OnCommunicationHistory:true})
-        Tab2Title: ="服务记录"
+        Tab2Title: ="Service"
         TabFontSize: =16
         TabTotal: =2
         Width: =Parent.Width-Self.X*2

@@ -8,32 +8,30 @@ Card As CanvasComponent:
     DescriptionFontSize: =14
     Fill: =RGBA(0, 0, 0, 0)
     Height: =340
+    OnReset: =Set(CardBackgroundFill,Substitute(JSON(Card.ShadowColor,JSONFormat.IgnoreUnsupportedTypes),Char(34),""))
     RightTopIconClicked: =true
     RightTopIconImage: |-
         ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%202048%202048%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M256%20896q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10zm768%200q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10zm768%200q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10z%27%2F%3E%3C%2Fsvg%3E"
-    ShadowMargin: =
+    ShadowColor: =RGBA(250, 250, 250, 1)
+    ShadowMargin: =10
+    ShowBackgroundImage: =true
     ShowImage: =true
     ShowShadow: =true
     Table: |-
         =Table(
             {
-                Title: "Tiffany Jewery",
-                Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ",
-                Image: 'Screenshot 2022-02-15 001833'
-            },
-            {
-                Title: "Tiffany Jewery",
-                Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ",
+                Title: "Forever Jewery",
+                Description: "Forever Love Heart Pendant Necklaces for Women 925 Sterling Silver with Birthstone Zirconia, Birthday Anniversary Jewelry Gift for Women Wife Girls.",
                 Image: 'Screenshot 2022-02-15 024905'
             },
             {
-                Title: "Tiffany Jewery",
-                Description: "Tiffany Sheer 淡香水尽显蒂芙尼特色香水的活力，令迷人肌肤享受精致奢华。绿柑橘和依兰芳香优雅地融入到黑醋栗的香气中，还融合了玫瑰精油的芬芳和莺尾花香调。 ",
+                Title: "Forever Jewery",
+                Description: "Forever Love Heart Pendant Necklaces for Women 925 Sterling Silver with Birthstone Zirconia, Birthday Anniversary Jewelry Gift for Women Wife Girls.",
                 Image: 'Screenshot 2022-02-15 023949'
             }
         )
     TextColor: =White
-    Title: ="当季新品"
+    Title: ="New Season"
     TitleBackgroundFill: =RGBA(0, 0, 0, 1)
     TitleFontSize: =18
     TitleTopPadding: =5
@@ -46,61 +44,50 @@ Card As CanvasComponent:
     HtmlText2 As htmlViewer:
         Height: =Parent.Height
         HtmlText: |-
-            ="<div style='margin:" & Parent.ShadowMargin & "px;width:" & Self.Width - Parent.ShadowMargin*2 - 10 & "px;height:" & Self.Height - 11 - Parent.ShadowMargin*2 & "px;background-color:white;box-shadow:0 3px 6px 1px  #ccc; border-radius:" & Parent.BorderRadius & "px'></div>"
+            ="<div style='margin:" & Card.ShadowMargin & "px;width:" & Self.Width - Card.ShadowMargin*2 - 10 & "px;height:" & Self.Height - 11 - Card.ShadowMargin*2 & "px;background-color:"&CardBackgroundFill&";box-shadow:0 3px 6px 1px  #ccc; border-radius:" & Parent.BorderRadius & "px'></div>"
         Width: =Parent.Width
         ZIndex: =1
 
-    background As button:
-        BorderColor: =Parent.BorderColor
-        BorderThickness: =5
-        DisplayMode: =DisplayMode.View
-        Fill: =Parent.BackgroundFill
-        Height: =Parent.Height-If(Parent.ShowShadow,5,0)-Self.Y*2+5
-        Size: =24
-        Text: =""
-        Width: =Parent.Width-If(Parent.ShowShadow,5,0)-Self.X*2+5
-        X: =Parent.ShadowMargin+5
-        Y: =Self.X
-        ZIndex: =3
-
     imgCardbackground As image:
-        Height: =background.Height
+        Height: =Card.Height - 11 - Card.ShadowMargin*2
         Image: =Card.BackgroundImage
         ImagePosition: =ImagePosition.Fill
         RadiusBottomLeft: =background.RadiusBottomLeft
         RadiusBottomRight: =background.RadiusBottomRight
         RadiusTopLeft: =background.RadiusTopLeft
         RadiusTopRight: =background.RadiusTopRight
-        Visible: =!IsBlank(Card.BackgroundImage)
-        Width: =background.Width
-        X: =background.X
-        Y: =background.Y
-        ZIndex: =4
+        Visible: =Card.ShowBackgroundImage
+        Width: =Card.Width - Card.ShadowMargin*2 - 10
+        X: =(Card.Width-Self.Width)/2
+        Y: =(Card.Height-Self.Height)/2
+        ZIndex: =2
 
-    Label5 As label:
-        AutoHeight: =true
-        Color: =Parent.TextColor
-        FontWeight: =FontWeight.Lighter
-        Height: =70
-        PaddingBottom: =Card.TitleVerticalPadding
-        PaddingLeft: =20
-        PaddingTop: =Card.TitleVerticalPadding
-        Size: =Card.CapitalTitleFontSize
-        Text: =Parent.Title
-        Width: =560
-        Y: =Parent.ShadowMargin+Parent.TitleTopPadding
-        ZIndex: =5
+    background As button:
+        BorderColor: =Parent.BorderColor
+        BorderThickness: =5
+        DisplayMode: =DisplayMode.View
+        Fill: =Parent.BackgroundFill
+        Height: =imgCardbackground.Height
+        RadiusTopLeft: =Card.BorderRadius
+        Size: =24
+        Text: =""
+        Width: =imgCardbackground.Width
+        X: =Parent.ShadowMargin+5
+        Y: =Self.X
+        ZIndex: =3
 
     Gallery1 As gallery.galleryHorizontal:
+        BorderColor: =White
         BorderStyle: =BorderStyle.None
         Height: =Parent.Height-Self.Y-20
         Items: =Parent.Table
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Self.Width, Self.Height)
-        Width: =Parent.Width
+        Width: =Parent.Width-Card.ShadowMargin*2
+        X: =(Parent.Width-Self.Width)/2
         Y: =50
-        ZIndex: =6
+        ZIndex: =4
 
         Label7 As Label:
             AutoHeight: =true
@@ -140,12 +127,27 @@ Card As CanvasComponent:
             Y: =Label7.Y+Label7.Height
             ZIndex: =3
 
-    Image13 As image:
+    imgCardTopRight As image:
         Height: =30
         Image: =Card.RightTopIconImage
         OnSelect: =Card.RightTopIconClicked()
         Width: =30
-        X: =Parent.Width-Self.Width-20
+        X: =Parent.Width-Self.Width-Label5.PaddingLeft-Parent.ShadowMargin
         Y: =Label5.Y+(Label5.Height-Self.Height)/2
-        ZIndex: =7
+        ZIndex: =5
+
+    Label5 As label:
+        AutoHeight: =true
+        Color: =Parent.TextColor
+        FontWeight: =FontWeight.Lighter
+        Height: =70
+        PaddingBottom: =Card.TitleVerticalPadding
+        PaddingLeft: =20
+        PaddingTop: =Card.TitleVerticalPadding
+        Size: =Card.CapitalTitleFontSize
+        Text: =Parent.Title
+        Width: =560
+        X: =Parent.ShadowMargin
+        Y: =Parent.ShadowMargin+Parent.TitleTopPadding
+        ZIndex: =6
 
