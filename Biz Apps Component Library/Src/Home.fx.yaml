@@ -30,6 +30,7 @@ Home As screen:
         LogoWidth: =120
         TextBackgroundFill: =RGBA(129, 216, 208, 0)
         TextColor: =RGBA(255, 255, 255, 1)
+        UserProfileClicked: =Navigate(About,Fade)
         WaffleColor: =RGBA(255, 255, 255, 1)
         WaffleSize: =30
         ZIndex: =1

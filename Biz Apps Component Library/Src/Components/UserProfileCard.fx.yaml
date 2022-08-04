@@ -4,7 +4,7 @@ UserProfileCard As CanvasComponent:
     FontColor: =RGBA(0, 0, 0, 1)
     Height: =190
     IconSize: =50
-    IconXOffset: =-20
+    IconXOffset: =10
     ImageSize: =90
     NameFontSize: =18
     UserEmail: ="wellszha@microsoft.com"
@@ -20,6 +20,7 @@ UserProfileCard As CanvasComponent:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
+        Y: =UserProfileCard.IconXOffset
         ZIndex: =8
 
         imgUserProfilePhoto As image:
