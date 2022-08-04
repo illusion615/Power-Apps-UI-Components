@@ -409,7 +409,14 @@
                 "NameMapSourceSchema": "?"
               },
               "Role",
-              "Color",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+                "InvariantPropertyName": "Color",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisabledColor",
               "PressedColor",
               "HoverColor",
@@ -619,7 +626,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(0, 0, 0, 1)",
+                "InvariantScript": "UserProfileCard.FontColor",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -859,7 +866,14 @@
                 "NameMapSourceSchema": "?"
               },
               "Role",
-              "Color",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+                "InvariantPropertyName": "Color",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisabledColor",
               "PressedColor",
               "HoverColor",
@@ -1220,7 +1234,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(0, 0, 0, 1)",
+                "InvariantScript": "UserProfileCard.FontColor",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -2582,9 +2596,10 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "UserImagePressed"
+      "UserImagePressed",
+      "FontColor"
     ],
-    "LastModifiedTimestamp": "637951961543912269",
+    "LastModifiedTimestamp": "637951965753555919",
     "Name": "UserProfileCard",
     "Rules": [
       {
@@ -2621,6 +2636,12 @@
         "Category": "Data",
         "InvariantScript": "false",
         "Property": "AlignToRight",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "RGBA(0, 0, 0, 1)",
+        "Property": "FontColor",
         "RuleProviderType": "System"
       },
       {
@@ -2739,6 +2760,15 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Font Color",
+      "Hidden": false,
+      "Name": "FontColor",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2749,7 +2779,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637951961543912269",
+  "LastModifiedTimestamp": "637951965753555919",
   "Name": "358a94f082174377b669900514930a86",
   "OverridableProperties": {},
   "Version": "637812244992815843"

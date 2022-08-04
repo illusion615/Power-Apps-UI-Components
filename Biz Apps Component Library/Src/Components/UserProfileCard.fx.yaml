@@ -1,6 +1,7 @@
 UserProfileCard As CanvasComponent:
     AlignToRight: =false
     Fill: =RGBA(0, 0, 0, 0)
+    FontColor: =RGBA(0, 0, 0, 1)
     Height: =190
     IconSize: =50
     IconXOffset: =-20
@@ -45,6 +46,7 @@ UserProfileCard As CanvasComponent:
         lblUserProfileName As label:
             Align: =Align.Center
             AutoHeight: =true
+            Color: =UserProfileCard.FontColor
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =560
@@ -62,6 +64,7 @@ UserProfileCard As CanvasComponent:
         lblUserProfileJobTitle As label:
             Align: =Align.Center
             AutoHeight: =true
+            Color: =UserProfileCard.FontColor
             FontWeight: =FontWeight.Lighter
             Height: =70
             LayoutMinHeight: =70
