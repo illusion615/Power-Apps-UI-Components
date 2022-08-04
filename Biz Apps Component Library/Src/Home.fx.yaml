@@ -242,7 +242,6 @@ Home As screen:
 
     Component1_1 As Card:
         Height: =GeneralBottomPanel_1.Y-Self.Y-10
-        OnReset: =Set(CardBackgroundFill,Substitute(JSON(Component1_1.ShadowColor,JSONFormat.IgnoreUnsupportedTypes),Char(34),""))
         ShadowMargin: =5
         Table: =Card_1.Table
         Width: =App.Width-Self.X*2

@@ -7,6 +7,7 @@ UserProfileCard As CanvasComponent:
     ImageSize: =60
     NameFontSize: =18
     UserEmail: ="wellszha@microsoft.com"
+    UserImagePressed: =true
     Width: =200
     X: =0
     Y: =0
@@ -27,11 +28,10 @@ UserProfileCard As CanvasComponent:
             Height: =Self.Width
             HoverBorderColor: =ColorFade(imgUserProfilePhoto.BorderColor, 20%)
             HoverFill: =ColorFade(imgUserProfilePhoto.Fill, 20%)
-            Image: |
-                =User().Image
+            Image: =IfError(Office365Users.UserPhotoV2(UserProfileCard.UserEmail),Blank())
             LayoutMinHeight: =320
             LayoutMinWidth: =320
-            OnSelect: =true
+            OnSelect: =UserProfileCard.UserImagePressed()
             PressedBorderColor: =ColorFade(imgUserProfilePhoto.BorderColor, -20%)
             PressedFill: =ColorFade(imgUserProfilePhoto.Fill, -20%)
             RadiusBottomLeft: =100

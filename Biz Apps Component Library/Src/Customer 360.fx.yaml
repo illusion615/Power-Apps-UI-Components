@@ -22,7 +22,6 @@
             
             当前到货情况：有货
             库存：20"
-        OnReset: =Set(CardBackgroundFill,Substitute(JSON(Card_1.ShadowColor,JSONFormat.IgnoreUnsupportedTypes),Char(34),""))
         ShadowMargin: =5
         TextColor: =RGBA(255, 255, 255, 1)
         Width: =611
