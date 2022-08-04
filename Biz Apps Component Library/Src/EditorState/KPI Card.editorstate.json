@@ -930,7 +930,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image10",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1515,7 +1515,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_31",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1927,7 +1927,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_42",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2336,7 +2336,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_43",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

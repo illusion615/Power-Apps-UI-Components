@@ -15,9 +15,10 @@ TopBanner As CanvasComponent:
     ShowWaffle: =true
     TextBackgroundFill: =RGBA(129, 216, 208, 1)
     TextColor: =White
+    UserProfileClicked: =true
     WaffleClicked: =true
     WaffleColor: =White
-    WaffleSize: =60
+    WaffleSize: =40
     Width: =640
     X: =0
     Y: =0
@@ -67,6 +68,7 @@ TopBanner As CanvasComponent:
         Font: =Parent.CapitalFont
         FontWeight: =Parent.CapitalWeight
         Height: =70
+        OnSelect: =TopBanner.UserProfileClicked()
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =10
@@ -86,6 +88,7 @@ TopBanner As CanvasComponent:
         Font: =Parent.CapitalFont
         FontWeight: =Parent.CapitalWeight
         Height: =70
+        OnSelect: =TopBanner.UserProfileClicked()
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =10
@@ -100,6 +103,7 @@ TopBanner As CanvasComponent:
     imgUserProfile As image:
         Height: =50
         Image: =User().Image
+        OnSelect: =TopBanner.UserProfileClicked()
         RadiusBottomLeft: =100
         RadiusBottomRight: =100
         RadiusTopLeft: =100

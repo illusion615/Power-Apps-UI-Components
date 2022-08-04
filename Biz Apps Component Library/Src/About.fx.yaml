@@ -1,0 +1,17 @@
+About As screen:
+
+    GeneralTopBanner_1 As GeneralTopBanner:
+        Height: =300
+        IconSize: =40
+        IconYOffset: =-100
+        Subtitle: =""
+        Title: ="User Profile"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    UserProfileCard_1 As UserProfileCard:
+        IconSize: =60
+        X: =(Parent.Width-Self.Width)/2
+        Y: =250
+        ZIndex: =2
+
