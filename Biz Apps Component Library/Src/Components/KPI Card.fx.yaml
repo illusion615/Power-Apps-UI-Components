@@ -1,6 +1,7 @@
 "'KPI Card' As CanvasComponent":
     BackgroundFill: |-
         =ColorValue("#158bb8")
+    BackgroundImage: ='10744401'
     EnableOnClick: =true
     Fill: =RGBA(0, 0, 0, 0)
     FontColor: =White
@@ -11,6 +12,7 @@
         =20
     KPIFontWeight: ="Text"
     OnClick: =true
+    ShowBackgroundImage: =true
     ShowIconInsteadOfSubtitle: =false
     Subtitle: ="Subtitle"
     SubtitleIconImage: |-
@@ -31,20 +33,32 @@
         Fill: ='KPI Card'.BackgroundFill
         Font: =Font.'Open Sans Condensed'
         FontWeight: =FontWeight.Lighter
-        Height: =Parent.Height
+        Height: ='KPI Card'.Height
         Size: =24
         Text: =
-        Width: =Parent.Width
+        Width: ='KPI Card'.Width
         ZIndex: =1
 
+    Image4 As image:
+        Height: ='KPI Card'.Height
+        Image: ='KPI Card'.BackgroundImage
+        ImagePosition: =ImagePosition.Fill
+        RadiusBottomLeft: =Button4_3.RadiusBottomLeft
+        RadiusBottomRight: =Button4_3.RadiusBottomRight
+        RadiusTopLeft: =Button4_3.RadiusTopLeft
+        RadiusTopRight: =Button4_3.RadiusTopRight
+        Visible: ='KPI Card'.ShowBackgroundImage
+        Width: ='KPI Card'.Width
+        ZIndex: =2
+
     Container7 As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height
+        Height: ='KPI Card'.Height
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
-        ZIndex: =6
+        Width: ='KPI Card'.Width
+        ZIndex: =3
 
         Label1_31 As label:
             Align: =Align.Center
@@ -125,13 +139,13 @@
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Open Sans Condensed'
         FontWeight: =FontWeight.Lighter
-        Height: =Parent.Height
+        Height: ='KPI Card'.Height
         HoverColor: =RGBA(255, 255, 255, 0)
         HoverFill: =//ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnSelect: ='KPI Card'.OnClick()
         Size: =24
         Text: =
         Visible: ='KPI Card'.EnableOnClick
-        Width: =Parent.Width
-        ZIndex: =7
+        Width: ='KPI Card'.Width
+        ZIndex: =4
 

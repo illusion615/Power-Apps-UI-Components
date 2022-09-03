@@ -1673,7 +1673,9 @@
           "InvariantPropertyName": "KPIFontWeight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "BackgroundImage",
+        "ShowBackgroundImage"
       ],
       "DynamicProperties": [
         {
@@ -1795,6 +1797,16 @@
           "Category": "Data",
           "PropertyName": "KPIFontWeight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BackgroundImage",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ShowBackgroundImage",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -1955,7 +1967,9 @@
           "InvariantPropertyName": "KPIFontWeight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "BackgroundImage",
+        "ShowBackgroundImage"
       ],
       "DynamicProperties": [
         {
@@ -2077,6 +2091,16 @@
           "Category": "Data",
           "PropertyName": "KPIFontWeight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BackgroundImage",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ShowBackgroundImage",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -2237,7 +2261,9 @@
           "InvariantPropertyName": "KPIFontWeight",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "BackgroundImage",
+        "ShowBackgroundImage"
       ],
       "DynamicProperties": [
         {
@@ -2359,6 +2385,16 @@
           "Category": "Data",
           "PropertyName": "KPIFontWeight",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "BackgroundImage",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ShowBackgroundImage",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

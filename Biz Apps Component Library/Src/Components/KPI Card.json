@@ -263,13 +263,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Width",
+            "InvariantScript": "'KPI Card'.Width",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height",
+            "InvariantScript": "'KPI Card'.Height",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -358,485 +358,317 @@
       },
       {
         "AllowAccessToGlobals": true,
-        "Children": [
+        "Children": [],
+        "ControlPropertyState": [
           {
-            "AllowAccessToGlobals": true,
-            "Children": [],
-            "ControlPropertyState": [
-              "Live",
-              "Overflow",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Text",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              "Role",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Color",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              "DisabledColor",
-              "PressedColor",
-              "HoverColor",
-              "BorderColor",
-              "DisabledBorderColor",
-              "PressedBorderColor",
-              "HoverBorderColor",
-              "BorderStyle",
-              "FocusedBorderColor",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Fill",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              "DisabledFill",
-              "PressedFill",
-              "HoverFill",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Font",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "FontWeight",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Align",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              "VerticalAlign",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "45",
-                "InvariantPropertyName": "X",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "89",
-                "InvariantPropertyName": "Y",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Width",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              "Height",
-              "DisplayMode",
-              "ZIndex",
-              "LineHeight",
-              "BorderThickness",
-              "FocusedBorderThickness",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "Size",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              "Italic",
-              "Underline",
-              "Strikethrough",
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "PaddingTop",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "PaddingRight",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "PaddingBottom",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "PaddingLeft",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "",
-                "InvariantPropertyName": "AutoHeight",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              },
-              {
-                "AFDDataSourceName": "",
-                "AutoRuleBindingEnabled": false,
-                "AutoRuleBindingString": "true",
-                "InvariantPropertyName": "Visible",
-                "IsLockable": false,
-                "NameMapSourceSchema": "?"
-              }
-            ],
-            "ControlUniqueId": "58",
-            "DynamicProperties": [
-              {
-                "ControlPropertyState": "FillPortions",
-                "PropertyName": "FillPortions",
-                "Rule": {
-                  "Category": "Design",
-                  "InvariantScript": "0",
-                  "Property": "FillPortions",
-                  "RuleProviderType": "Unknown"
-                }
-              },
-              {
-                "ControlPropertyState": "AlignInContainer",
-                "PropertyName": "AlignInContainer",
-                "Rule": {
-                  "Category": "Design",
-                  "InvariantScript": "AlignInContainer.SetByContainer",
-                  "Property": "AlignInContainer",
-                  "RuleProviderType": "Unknown"
-                }
-              },
-              {
-                "ControlPropertyState": "LayoutMinWidth",
-                "PropertyName": "LayoutMinWidth",
-                "Rule": {
-                  "Category": "Design",
-                  "InvariantScript": "560",
-                  "Property": "LayoutMinWidth",
-                  "RuleProviderType": "Unknown"
-                }
-              },
-              {
-                "ControlPropertyState": "LayoutMinHeight",
-                "PropertyName": "LayoutMinHeight",
-                "Rule": {
-                  "Category": "Design",
-                  "InvariantScript": "70",
-                  "Property": "LayoutMinHeight",
-                  "RuleProviderType": "Unknown"
-                }
-              }
-            ],
-            "HasDynamicProperties": true,
-            "Index": 0,
-            "IsAutoGenerated": false,
-            "IsDataControl": false,
-            "IsFromScreenLayout": false,
-            "IsGroupControl": false,
-            "IsLocked": false,
-            "LayoutName": "",
-            "MetaDataIDKey": "",
-            "Name": "Label1_42",
-            "Parent": "Container7",
-            "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 137,
-            "Rules": [
-              {
-                "Category": "Data",
-                "InvariantScript": "Live.Off",
-                "Property": "Live",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Data",
-                "InvariantScript": "'KPI Card'.Subtitle",
-                "Property": "Text",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Data",
-                "InvariantScript": "TextRole.Default",
-                "Property": "Role",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Overflow.Hidden",
-                "Property": "Overflow",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "'KPI Card'.FontColor",
-                "Property": "Color",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "RGBA(166, 166, 166, 1)",
-                "Property": "DisabledColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.Color",
-                "Property": "PressedColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.Color",
-                "Property": "HoverColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "RGBA(0, 18, 107, 1)",
-                "Property": "BorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "RGBA(56, 56, 56, 1)",
-                "Property": "DisabledBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
-                "Property": "PressedBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
-                "Property": "HoverBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "BorderStyle.Solid",
-                "Property": "BorderStyle",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.BorderColor",
-                "Property": "FocusedBorderColor",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "RGBA(129, 216, 208, 0)",
-                "Property": "Fill",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "RGBA(0, 0, 0, 0)",
-                "Property": "DisabledFill",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.Fill",
-                "Property": "PressedFill",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Self.Fill",
-                "Property": "HoverFill",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Font.'Open Sans'",
-                "Property": "Font",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "FontWeight.Lighter",
-                "Property": "FontWeight",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Align.Center",
-                "Property": "Align",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "VerticalAlign.Middle",
-                "Property": "VerticalAlign",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "(Parent.Width-Self.Width)/2",
-                "Property": "X",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "(Parent.Height-Self.Height)/2+'KPI Card'.KPIFontSize/2",
-                "Property": "Y",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "Parent.Width",
-                "Property": "Width",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "23",
-                "Property": "Height",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "DisplayMode.Edit",
-                "Property": "DisplayMode",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "3",
-                "Property": "ZIndex",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "1.2",
-                "Property": "LineHeight",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "0",
-                "Property": "BorderThickness",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "0",
-                "Property": "FocusedBorderThickness",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "'KPI Card'.TitleAndSubtitleFontSize",
-                "Property": "Size",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "false",
-                "Property": "Italic",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "false",
-                "Property": "Underline",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "false",
-                "Property": "Strikethrough",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "0",
-                "Property": "PaddingTop",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "0",
-                "Property": "PaddingRight",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "0",
-                "Property": "PaddingBottom",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "0",
-                "Property": "PaddingLeft",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "true",
-                "Property": "AutoHeight",
-                "RuleProviderType": "Unknown"
-              },
-              {
-                "Category": "Design",
-                "InvariantScript": "!'KPI Card'.ShowIconInsteadOfSubtitle",
-                "Property": "Visible",
-                "RuleProviderType": "Unknown"
-              }
-            ],
-            "StyleName": "defaultLabelStyle",
-            "Template": {
-              "CustomGroupControlTemplateName": "",
-              "FirstParty": true,
-              "Id": "http://microsoft.com/appmagic/label",
-              "IsComponentDefinition": false,
-              "IsCustomGroupControlTemplate": false,
-              "IsPremiumPcfControl": false,
-              "LastModifiedTimestamp": "0",
-              "Name": "label",
-              "OverridableProperties": {},
-              "Version": "2.5.1"
-            },
-            "Type": "ControlInfo",
-            "VariantName": ""
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "SampleImage",
+            "InvariantPropertyName": "Image",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "ImagePosition",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "ImageRotation",
+          "X",
+          "Y",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "150",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "150",
+            "InvariantPropertyName": "Height",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "Fill",
+          "DisabledFill",
+          "PressedFill",
+          "HoverFill",
+          "BorderColor",
+          "DisabledBorderColor",
+          "PressedBorderColor",
+          "HoverBorderColor",
+          "FocusedBorderColor",
+          "BorderStyle",
+          "DisplayMode",
+          "ZIndex",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "0",
+            "InvariantPropertyName": "RadiusTopLeft",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "0",
+            "InvariantPropertyName": "RadiusTopRight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "0",
+            "InvariantPropertyName": "RadiusBottomLeft",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "0",
+            "InvariantPropertyName": "RadiusBottomRight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          "BorderThickness",
+          "FocusedBorderThickness",
+          "PaddingTop",
+          "PaddingRight",
+          "PaddingBottom",
+          "PaddingLeft",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "true",
+            "InvariantPropertyName": "Visible",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
+        ],
+        "ControlUniqueId": "177",
+        "HasDynamicProperties": false,
+        "Index": 0,
+        "IsAutoGenerated": false,
+        "IsDataControl": false,
+        "IsFromScreenLayout": false,
+        "IsGroupControl": false,
+        "IsLocked": false,
+        "LayoutName": "",
+        "MetaDataIDKey": "",
+        "Name": "Image4",
+        "Parent": "KPI Card",
+        "PersistMetaDataIDKey": false,
+        "PublishOrderIndex": 136,
+        "Rules": [
+          {
+            "Category": "Data",
+            "InvariantScript": "'KPI Card'.BackgroundImage",
+            "Property": "Image",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ImagePosition.Fill",
+            "Property": "ImagePosition",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ImageRotation.None",
+            "Property": "ImageRotation",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "X",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "Y",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "'KPI Card'.Width",
+            "Property": "Width",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "'KPI Card'.Height",
+            "Property": "Height",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 0, 0, 0)",
+            "Property": "Fill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(244, 244, 244, 1)",
+            "Property": "DisabledFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.Fill, -20%)",
+            "Property": "PressedFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.Fill, 20%)",
+            "Property": "HoverFill",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(0, 18, 107, 1)",
+            "Property": "BorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "RGBA(166, 166, 166, 1)",
+            "Property": "DisabledBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.BorderColor, -20%)",
+            "Property": "PressedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "ColorFade(Self.BorderColor, 20%)",
+            "Property": "HoverBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Self.BorderColor",
+            "Property": "FocusedBorderColor",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "BorderStyle.Solid",
+            "Property": "BorderStyle",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "DisplayMode.Edit",
+            "Property": "DisplayMode",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "ZIndex",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Button4_3.RadiusTopLeft",
+            "Property": "RadiusTopLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Button4_3.RadiusTopRight",
+            "Property": "RadiusTopRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Button4_3.RadiusBottomLeft",
+            "Property": "RadiusBottomLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "Button4_3.RadiusBottomRight",
+            "Property": "RadiusBottomRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "BorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "2",
+            "Property": "FocusedBorderThickness",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingTop",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingBottom",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "0",
+            "Property": "PaddingLeft",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "'KPI Card'.ShowBackgroundImage",
+            "Property": "Visible",
+            "RuleProviderType": "Unknown"
+          }
+        ],
+        "StyleName": "defaultImageStyle",
+        "Template": {
+          "CustomGroupControlTemplateName": "",
+          "FirstParty": true,
+          "Id": "http://microsoft.com/appmagic/image",
+          "IsComponentDefinition": false,
+          "IsCustomGroupControlTemplate": false,
+          "IsPremiumPcfControl": false,
+          "LastModifiedTimestamp": "0",
+          "Name": "image",
+          "OverridableProperties": {},
+          "Version": "2.2.2"
+        },
+        "Type": "ControlInfo",
+        "VariantName": ""
+      },
+      {
+        "AllowAccessToGlobals": true,
+        "Children": [
           {
             "AllowAccessToGlobals": true,
             "Children": [],
@@ -2095,6 +1927,484 @@
             },
             "Type": "ControlInfo",
             "VariantName": ""
+          },
+          {
+            "AllowAccessToGlobals": true,
+            "Children": [],
+            "ControlPropertyState": [
+              "Live",
+              "Overflow",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Text",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              "Role",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Color",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              "DisabledColor",
+              "PressedColor",
+              "HoverColor",
+              "BorderColor",
+              "DisabledBorderColor",
+              "PressedBorderColor",
+              "HoverBorderColor",
+              "BorderStyle",
+              "FocusedBorderColor",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Fill",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              "DisabledFill",
+              "PressedFill",
+              "HoverFill",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Font",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "FontWeight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Align",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              "VerticalAlign",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "45",
+                "InvariantPropertyName": "X",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "89",
+                "InvariantPropertyName": "Y",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Width",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              "Height",
+              "DisplayMode",
+              "ZIndex",
+              "LineHeight",
+              "BorderThickness",
+              "FocusedBorderThickness",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Size",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              "Italic",
+              "Underline",
+              "Strikethrough",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "PaddingTop",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "PaddingRight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "PaddingBottom",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "PaddingLeft",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "AutoHeight",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "true",
+                "InvariantPropertyName": "Visible",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              }
+            ],
+            "ControlUniqueId": "58",
+            "DynamicProperties": [
+              {
+                "ControlPropertyState": "FillPortions",
+                "PropertyName": "FillPortions",
+                "Rule": {
+                  "Category": "Design",
+                  "InvariantScript": "0",
+                  "Property": "FillPortions",
+                  "RuleProviderType": "Unknown"
+                }
+              },
+              {
+                "ControlPropertyState": "AlignInContainer",
+                "PropertyName": "AlignInContainer",
+                "Rule": {
+                  "Category": "Design",
+                  "InvariantScript": "AlignInContainer.SetByContainer",
+                  "Property": "AlignInContainer",
+                  "RuleProviderType": "Unknown"
+                }
+              },
+              {
+                "ControlPropertyState": "LayoutMinWidth",
+                "PropertyName": "LayoutMinWidth",
+                "Rule": {
+                  "Category": "Design",
+                  "InvariantScript": "560",
+                  "Property": "LayoutMinWidth",
+                  "RuleProviderType": "Unknown"
+                }
+              },
+              {
+                "ControlPropertyState": "LayoutMinHeight",
+                "PropertyName": "LayoutMinHeight",
+                "Rule": {
+                  "Category": "Design",
+                  "InvariantScript": "70",
+                  "Property": "LayoutMinHeight",
+                  "RuleProviderType": "Unknown"
+                }
+              }
+            ],
+            "HasDynamicProperties": true,
+            "Index": 0,
+            "IsAutoGenerated": false,
+            "IsDataControl": false,
+            "IsFromScreenLayout": false,
+            "IsGroupControl": false,
+            "IsLocked": false,
+            "LayoutName": "",
+            "MetaDataIDKey": "",
+            "Name": "Label1_42",
+            "Parent": "Container7",
+            "PersistMetaDataIDKey": false,
+            "PublishOrderIndex": 141,
+            "Rules": [
+              {
+                "Category": "Data",
+                "InvariantScript": "Live.Off",
+                "Property": "Live",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Data",
+                "InvariantScript": "'KPI Card'.Subtitle",
+                "Property": "Text",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Data",
+                "InvariantScript": "TextRole.Default",
+                "Property": "Role",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Overflow.Hidden",
+                "Property": "Overflow",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "'KPI Card'.FontColor",
+                "Property": "Color",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "RGBA(166, 166, 166, 1)",
+                "Property": "DisabledColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.Color",
+                "Property": "PressedColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.Color",
+                "Property": "HoverColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "RGBA(0, 18, 107, 1)",
+                "Property": "BorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "RGBA(56, 56, 56, 1)",
+                "Property": "DisabledBorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "PressedBorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "HoverBorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "BorderStyle.Solid",
+                "Property": "BorderStyle",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.BorderColor",
+                "Property": "FocusedBorderColor",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "RGBA(129, 216, 208, 0)",
+                "Property": "Fill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "RGBA(0, 0, 0, 0)",
+                "Property": "DisabledFill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.Fill",
+                "Property": "PressedFill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Self.Fill",
+                "Property": "HoverFill",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Font.'Open Sans'",
+                "Property": "Font",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "FontWeight.Lighter",
+                "Property": "FontWeight",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Align.Center",
+                "Property": "Align",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "VerticalAlign.Middle",
+                "Property": "VerticalAlign",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "(Parent.Width-Self.Width)/2",
+                "Property": "X",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "(Parent.Height-Self.Height)/2+'KPI Card'.KPIFontSize/2",
+                "Property": "Y",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "Parent.Width",
+                "Property": "Width",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "23",
+                "Property": "Height",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "DisplayMode.Edit",
+                "Property": "DisplayMode",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "3",
+                "Property": "ZIndex",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "1.2",
+                "Property": "LineHeight",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "0",
+                "Property": "BorderThickness",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "0",
+                "Property": "FocusedBorderThickness",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "'KPI Card'.TitleAndSubtitleFontSize",
+                "Property": "Size",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "false",
+                "Property": "Italic",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "false",
+                "Property": "Underline",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "false",
+                "Property": "Strikethrough",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "0",
+                "Property": "PaddingTop",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "0",
+                "Property": "PaddingRight",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "0",
+                "Property": "PaddingBottom",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "0",
+                "Property": "PaddingLeft",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "true",
+                "Property": "AutoHeight",
+                "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "!'KPI Card'.ShowIconInsteadOfSubtitle",
+                "Property": "Visible",
+                "RuleProviderType": "Unknown"
+              }
+            ],
+            "StyleName": "defaultLabelStyle",
+            "Template": {
+              "CustomGroupControlTemplateName": "",
+              "FirstParty": true,
+              "Id": "http://microsoft.com/appmagic/label",
+              "IsComponentDefinition": false,
+              "IsCustomGroupControlTemplate": false,
+              "IsPremiumPcfControl": false,
+              "LastModifiedTimestamp": "0",
+              "Name": "label",
+              "OverridableProperties": {},
+              "Version": "2.5.1"
+            },
+            "Type": "ControlInfo",
+            "VariantName": ""
           }
         ],
         "ControlPropertyState": [
@@ -2165,7 +2475,7 @@
         "Name": "Container7",
         "Parent": "KPI Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 136,
+        "PublishOrderIndex": 137,
         "Rules": [
           {
             "Category": "Design",
@@ -2199,13 +2509,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Width",
+            "InvariantScript": "'KPI Card'.Width",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height",
+            "InvariantScript": "'KPI Card'.Height",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -2271,7 +2581,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "6",
+            "InvariantScript": "3",
             "Property": "ZIndex",
             "RuleProviderType": "Unknown"
           }
@@ -2445,7 +2755,7 @@
         "Name": "Button4_4",
         "Parent": "KPI Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 141,
+        "PublishOrderIndex": 142,
         "Rules": [
           {
             "Category": "Data",
@@ -2581,19 +2891,19 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Width",
+            "InvariantScript": "'KPI Card'.Width",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height",
+            "InvariantScript": "'KPI Card'.Height",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "7",
+            "InvariantScript": "4",
             "Property": "ZIndex",
             "RuleProviderType": "Unknown"
           },
@@ -2798,9 +3108,18 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "KPIFontWeight"
+      "KPIFontWeight",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "SampleImage",
+        "InvariantPropertyName": "BackgroundImage",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "ShowBackgroundImage"
     ],
-    "LastModifiedTimestamp": "637977841478901974",
+    "LastModifiedTimestamp": "637977845712196150",
     "Name": "KPI Card",
     "Rules": [
       {
@@ -2879,6 +3198,18 @@
         "Category": "Data",
         "InvariantScript": "\"Text\"",
         "Property": "KPIFontWeight",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "'10744401'",
+        "Property": "BackgroundImage",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "true",
+        "Property": "ShowBackgroundImage",
         "RuleProviderType": "System"
       },
       {
@@ -3060,6 +3391,24 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Background Image",
+      "Hidden": false,
+      "Name": "BackgroundImage",
+      "PropertyDataTypeKey": "Image",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Show Background Image",
+      "Hidden": false,
+      "Name": "ShowBackgroundImage",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -3070,7 +3419,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637977841478901974",
+  "LastModifiedTimestamp": "637977845712196150",
   "Name": "1971400c430d42d2b1aa9d8bc26b7da0",
   "OverridableProperties": {},
   "Version": "637808647836175382"

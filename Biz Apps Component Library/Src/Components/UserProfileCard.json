@@ -195,7 +195,7 @@
             "Name": "imgUserProfilePhoto",
             "Parent": "Container11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 143,
+            "PublishOrderIndex": 144,
             "Rules": [
               {
                 "Category": "Data",
@@ -580,7 +580,7 @@
             "Name": "lblUserProfileName",
             "Parent": "Container11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 144,
+            "PublishOrderIndex": 145,
             "Rules": [
               {
                 "Category": "Data",
@@ -1044,7 +1044,7 @@
             "Name": "lblUserProfileJobTitle",
             "Parent": "Container11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 145,
+            "PublishOrderIndex": 146,
             "Rules": [
               {
                 "Category": "Data",
@@ -1486,7 +1486,7 @@
                 "Name": "imgSendEmail",
                 "Parent": "Container10",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 147,
+                "PublishOrderIndex": 148,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1859,7 +1859,7 @@
                 "Name": "imgCall",
                 "Parent": "Container10",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 148,
+                "PublishOrderIndex": 149,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2198,7 +2198,7 @@
             "Name": "Container10",
             "Parent": "Container11",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 146,
+            "PublishOrderIndex": 147,
             "Rules": [
               {
                 "Category": "Design",
@@ -2406,7 +2406,7 @@
         "Name": "Container11",
         "Parent": "UserProfileCard",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 142,
+        "PublishOrderIndex": 143,
         "Rules": [
           {
             "Category": "Design",
