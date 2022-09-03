@@ -2,9 +2,9 @@ UserProfileCard As CanvasComponent:
     AlignToRight: =false
     Fill: =RGBA(0, 0, 0, 0)
     FontColor: =RGBA(0, 0, 0, 1)
-    Height: =190
+    Height: =200
     IconSize: =50
-    IconXOffset: =10
+    IconYOffset: =10
     ImageSize: =90
     NameFontSize: =18
     UserEmail: ="wellszha@microsoft.com"
@@ -15,12 +15,12 @@ UserProfileCard As CanvasComponent:
     ZIndex: =1
 
     Container11 As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height
+        Height: =Parent.Height-Parent.IconYOffset
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
-        Y: =UserProfileCard.IconXOffset
+        Y: =UserProfileCard.IconYOffset
         ZIndex: =8
 
         imgUserProfilePhoto As image:
@@ -29,7 +29,7 @@ UserProfileCard As CanvasComponent:
             Height: =Self.Width
             HoverBorderColor: =ColorFade(imgUserProfilePhoto.BorderColor, 20%)
             HoverFill: =ColorFade(imgUserProfilePhoto.Fill, 20%)
-            Image: =IfError(Office365Users.UserPhotoV2(UserProfileCard.UserEmail),Blank())
+            Image: =IfError(Office365Users.UserPhotoV2(UserProfileCard.UserEmail),SampleImage)
             LayoutMinHeight: =40
             LayoutMinWidth: =320
             OnSelect: =UserProfileCard.UserImagePressed()
@@ -56,7 +56,7 @@ UserProfileCard As CanvasComponent:
             PaddingLeft: =10
             PaddingTop: =0
             Size: =UserProfileCard.NameFontSize
-            Text: =If(IsBlankOrError(UserProfileCard.UserEmail),"N/A",Office365Users.UserProfileV2(UserProfileCard.UserEmail).displayName)
+            Text: =IfError(Office365Users.UserProfileV2(UserProfileCard.UserEmail).displayName,"N/A")
             Width: =Parent.Width
             X: =imgUserProfilePhoto.X+imgUserProfilePhoto.Width
             Y: =imgUserProfilePhoto.Y+(imgUserProfilePhoto.Height-Self.Height-lblUserProfileJobTitle.Height)/2
@@ -75,7 +75,7 @@ UserProfileCard As CanvasComponent:
             PaddingLeft: =10
             PaddingTop: =0
             Size: =lblUserProfileName.Size-6
-            Text: =If(IsBlankOrError(UserProfileCard.UserEmail),"N/A",Office365Users.UserProfile(UserProfileCard.UserEmail).JobTitle)
+            Text: =IfError(Office365Users.UserProfile(UserProfileCard.UserEmail).JobTitle,"N/A")
             Width: =Parent.Width
             X: =imgUserProfilePhoto.X+imgUserProfilePhoto.Width
             Y: =lblUserProfileName.Y+lblUserProfileName.Height

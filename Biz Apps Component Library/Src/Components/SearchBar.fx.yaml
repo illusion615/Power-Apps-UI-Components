@@ -39,7 +39,7 @@ SearchBar As CanvasComponent:
         BorderColor: =RGBA(237, 237, 237, 1)
         Default: =SearchBar.Default
         FontWeight: =SearchBar.FontWeight
-        Height: =50
+        Height: =Parent.Height-20
         HintText: =SearchBar.SearchHint
         HoverBorderColor: =Self.BorderColor//RGBA(0, 18, 107, 1)
         HoverFill: =Self.Fill//RGBA(186, 202, 226, 1)
@@ -54,7 +54,7 @@ SearchBar As CanvasComponent:
         Color: =RGBA(116, 116, 116, 1)
         DisplayMode: =DisplayMode.View
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =30
+        Height: =TextInput3.Height-16
         RadiusBottomLeft: =5
         RadiusBottomRight: =5
         RadiusTopLeft: =5

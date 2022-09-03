@@ -2232,14 +2232,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "100",
-          "InvariantPropertyName": "IconXOffset",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "IconYOffset",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -2285,7 +2278,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "IconXOffset",
+          "PropertyName": "IconYOffset",
           "RuleProviderType": "System"
         },
         {
@@ -2326,7 +2319,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Behavior",

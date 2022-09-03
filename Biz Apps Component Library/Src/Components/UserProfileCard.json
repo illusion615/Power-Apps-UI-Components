@@ -199,7 +199,7 @@
             "Rules": [
               {
                 "Category": "Data",
-                "InvariantScript": "IfError(Office365Users.UserPhotoV2(UserProfileCard.UserEmail),Blank())",
+                "InvariantScript": "IfError(Office365Users.UserPhotoV2(UserProfileCard.UserEmail),SampleImage)",
                 "Property": "Image",
                 "RuleProviderType": "Unknown"
               },
@@ -389,7 +389,7 @@
               "LastModifiedTimestamp": "0",
               "Name": "image",
               "OverridableProperties": {},
-              "Version": "2.2.1"
+              "Version": "2.2.2"
             },
             "Type": "ControlInfo",
             "VariantName": ""
@@ -596,7 +596,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "If(IsBlankOrError(UserProfileCard.UserEmail),\"N/A\",Office365Users.UserProfileV2(UserProfileCard.UserEmail).displayName)",
+                "InvariantScript": "IfError(Office365Users.UserProfileV2(UserProfileCard.UserEmail).displayName,\"N/A\")",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1060,7 +1060,7 @@
               },
               {
                 "Category": "Data",
-                "InvariantScript": "If(IsBlankOrError(UserProfileCard.UserEmail),\"N/A\",Office365Users.UserProfile(UserProfileCard.UserEmail).JobTitle)",
+                "InvariantScript": "IfError(Office365Users.UserProfile(UserProfileCard.UserEmail).JobTitle,\"N/A\")",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1686,7 +1686,7 @@
                   "LastModifiedTimestamp": "0",
                   "Name": "image",
                   "OverridableProperties": {},
-                  "Version": "2.2.1"
+                  "Version": "2.2.2"
                 },
                 "Type": "ControlInfo",
                 "VariantName": ""
@@ -2059,7 +2059,7 @@
                   "LastModifiedTimestamp": "0",
                   "Name": "image",
                   "OverridableProperties": {},
-                  "Version": "2.2.1"
+                  "Version": "2.2.2"
                 },
                 "Type": "ControlInfo",
                 "VariantName": ""
@@ -2434,7 +2434,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "UserProfileCard.IconXOffset",
+            "InvariantScript": "UserProfileCard.IconYOffset",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -2446,7 +2446,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Parent.Height",
+            "InvariantScript": "Parent.Height-Parent.IconYOffset",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -2587,14 +2587,7 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "100",
-        "InvariantPropertyName": "IconXOffset",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "IconYOffset",
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -2606,7 +2599,7 @@
       "UserImagePressed",
       "FontColor"
     ],
-    "LastModifiedTimestamp": "637951970287999603",
+    "LastModifiedTimestamp": "637977837279430921",
     "Name": "UserProfileCard",
     "Rules": [
       {
@@ -2636,7 +2629,7 @@
       {
         "Category": "Data",
         "InvariantScript": "10",
-        "Property": "IconXOffset",
+        "Property": "IconYOffset",
         "RuleProviderType": "System"
       },
       {
@@ -2683,9 +2676,9 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "190",
+        "InvariantScript": "200",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Behavior",
@@ -2712,7 +2705,7 @@
       "Name": "UserEmail",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -2721,7 +2714,7 @@
       "Name": "ImageSize",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -2730,7 +2723,7 @@
       "Name": "NameFontSize",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -2739,16 +2732,16 @@
       "Name": "IconSize",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
-      "DisplayName": "Icon X Offset",
+      "DisplayName": "Icon Y Offset",
       "Hidden": false,
-      "Name": "IconXOffset",
+      "Name": "IconYOffset",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -2757,7 +2750,7 @@
       "Name": "AlignToRight",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 2,
@@ -2766,7 +2759,7 @@
       "Name": "UserImagePressed",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -2775,7 +2768,7 @@
       "Name": "FontColor",
       "PropertyDataTypeKey": "Color",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.325\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2786,7 +2779,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637951970287999603",
+  "LastModifiedTimestamp": "637977837279430921",
   "Name": "358a94f082174377b669900514930a86",
   "OverridableProperties": {},
   "Version": "637812244992815843"
