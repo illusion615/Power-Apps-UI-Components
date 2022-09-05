@@ -189,10 +189,10 @@ Home As screen:
 
             "'KPI Card_1' As 'KPI Card'":
                 BackgroundFill: =RGBA(237,237,237,.5)
-                FontColor: =Gray
+                FontColor: =RGBA(255, 255, 255, 1)
                 Height: =135
                 KPI: ="80%"
-                KPIColor: =DarkBlue
+                KPIColor: =RGBA(255, 255, 0, 1)
                 KPIFontWeight: =FontWeight.Normal
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
@@ -205,10 +205,10 @@ Home As screen:
 
             "'KPI Card_2' As 'KPI Card'":
                 BackgroundFill: =RGBA(237,237,237,.5)
-                FontColor: =Gray
+                FontColor: =RGBA(255, 255, 255, 1)
                 Height: =135
                 KPI: ="100%"
-                KPIColor: =DarkBlue
+                KPIColor: =RGBA(255, 255, 0, 1)
                 KPIFontWeight: =FontWeight.Normal
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
@@ -224,10 +224,10 @@ Home As screen:
 
             "'KPI Card_3' As 'KPI Card'":
                 BackgroundFill: =RGBA(237,237,237,.5)
-                FontColor: =Gray
+                FontColor: =RGBA(255, 255, 255, 1)
                 Height: =135
                 KPI: ="60%"
-                KPIColor: =DarkBlue
+                KPIColor: =RGBA(255, 255, 0, 1)
                 KPIFontWeight: =FontWeight.Normal
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640

@@ -849,7 +849,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgUserProfile",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2159,7 +2159,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TopPanel_Welcome",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

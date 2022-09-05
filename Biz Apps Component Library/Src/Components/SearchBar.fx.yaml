@@ -82,7 +82,7 @@ SearchBar As CanvasComponent:
 
         iconSearch As icon.Check:
             Color: =SearchBar.ButtonColor
-            Height: =40
+            Height: =TextInput3.Height
             Icon: =Icon.Check
             OnSelect: =SearchBar.OnSearchButtonClicked()
             PaddingBottom: =5
@@ -90,12 +90,12 @@ SearchBar As CanvasComponent:
             PaddingRight: =5
             PaddingTop: =5
             Visible: =SearchBar.ShowSearchButton
-            Width: =40
+            Width: =Self.Height
             ZIndex: =1
 
         iconAddNew As icon.Add:
             Color: =SearchBar.ButtonColor
-            Height: =40
+            Height: =TextInput3.Height
             Icon: =Icon.Add
             OnSelect: =SearchBar.OnAddNewClicked()
             PaddingBottom: =5
@@ -103,12 +103,12 @@ SearchBar As CanvasComponent:
             PaddingRight: =5
             PaddingTop: =5
             Visible: =SearchBar.ShowAddNewButton
-            Width: =40
+            Width: =Self.Height
             ZIndex: =2
 
         iconRefresh As icon.Reload:
             Color: =SearchBar.ButtonColor
-            Height: =40
+            Height: =TextInput3.Height
             Icon: =Icon.Reload
             OnSelect: =SearchBar.OnRefreshClicked()
             PaddingBottom: =5
@@ -116,12 +116,12 @@ SearchBar As CanvasComponent:
             PaddingRight: =5
             PaddingTop: =5
             Visible: =SearchBar.ShowRefreshButton
-            Width: =40
+            Width: =Self.Height
             ZIndex: =3
 
         iconSort As icon.ArrowsUpDown:
             Color: =SearchBar.ButtonColor
-            Height: =40
+            Height: =TextInput3.Height
             Icon: =Icon.Sort
             OnSelect: |-
                 =Set(
@@ -137,7 +137,7 @@ SearchBar As CanvasComponent:
             PaddingRight: =5
             PaddingTop: =5
             Visible: =SearchBar.ShowSortButton
-            Width: =40
+            Width: =Self.Height
             ZIndex: =4
 
     Icon8 As icon.Search:

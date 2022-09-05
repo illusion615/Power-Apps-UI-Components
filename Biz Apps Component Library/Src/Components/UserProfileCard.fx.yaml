@@ -120,7 +120,7 @@ UserProfileCard As CanvasComponent:
                 LayoutMinHeight: =320
                 LayoutMinWidth: =320
                 OnSelect: |-
-                    =Launch("tel:"&Office365Users.UserProfileV2(UserProfileCard.UserEmail).mobilePhone)
+                    =IfError(Launch("tel:"&Office365Users.UserProfileV2(UserProfileCard.UserEmail).mobilePhone),Notify("Error when calling phone."))
                 PaddingBottom: =10
                 PaddingLeft: =10
                 PaddingRight: =10
