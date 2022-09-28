@@ -37,7 +37,12 @@
         "SelectedDateFill",
         "SelectedDateColor",
         "CalendarEventColor",
-        "IconColor"
+        "IconColor",
+        "SelectedDate",
+        "CalendarHeaderFontSize",
+        "CalendarDateFontSize",
+        "PaddingLeft",
+        "PaddingRight"
       ],
       "DynamicProperties": [
         {
@@ -128,6 +133,31 @@
         {
           "Category": "Data",
           "PropertyName": "IconColor",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "SelectedDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "CalendarHeaderFontSize",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "CalendarDateFontSize",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "PaddingLeft",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "PaddingRight",
           "RuleProviderType": "System"
         },
         {

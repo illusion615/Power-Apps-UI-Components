@@ -13,6 +13,7 @@
 
         CalendarViewer_1 As CalendarViewer:
             Height: =480
+            LayoutMinHeight: =640
             TitleFontSize: =16
             ZIndex: =2
 

@@ -1,46 +1,22 @@
 CalendarViewer As CanvasComponent:
+    CalendarDateFontSize: =12
     CalendarEventColor: =RGBA(202, 80, 16, 1)
     CalendarEvents: |-
         =Table({Start: Today()-1, Title: "Test task"})
+    CalendarHeaderFontSize: =14
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
+    Height: =400
     IconColor: =RGBA(202, 80, 16, 1)
     OnReset: |-
         =If(
             IsBlank(_dateSelected),
-            Set(
-                _dateSelected,
-                Today()
-            );
-            Set(
-                _firstDayOfMonth,
-                DateAdd(
-                    Today(),
-                    1 - Day(Today()),
-                    Days
-                )
-            );
-            Set(
-                _firstDayInView,
-                DateAdd(
-                    _firstDayOfMonth,
-                    -(Weekday(_firstDayOfMonth) - 2 + 1),
-                    Days
-                )
-            );
-            Set(
-                _lastDayOfMonth,
-                DateAdd(
-                    DateAdd(
-                        _firstDayOfMonth,
-                        1,
-                        Months
-                    ),
-                    -1,
-                    Days
-                )
-            )
-        )
+            Set(_dateSelected,Today());
+            Set(_firstDayOfMonth,DateAdd(Today(),1-Day(Today()),Days));
+            Set(_firstDayInView,DateAdd(_firstDayOfMonth,-(Weekday(_firstDayOfMonth)-2+1),Days));
+            Set(_lastDayOfMonth,DateAdd(DateAdd(_firstDayOfMonth,1,Months),-1,Days)))
+    PaddingLeft: =10
+    PaddingRight: =10
+    SelectedDate: =Now()
     SelectedDateColor: =RGBA(0, 0, 0, 1)
     SelectedDateFill: =RGBA(202, 80, 16, 1)
     Title: ="Text"
@@ -56,6 +32,7 @@ CalendarViewer As CanvasComponent:
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =10
         LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =CalendarViewer.PaddingLeft
         Width: =CalendarViewer.Width
         ZIndex: =4
 
@@ -182,7 +159,7 @@ CalendarViewer As CanvasComponent:
                 Align: =Align.Center
                 Height: =Parent.TemplateHeight
                 OnSelect: =Select(Parent)
-                Size: =17 * Parent.TemplateWidth / 77
+                Size: =CalendarViewer.CalendarHeaderFontSize
                 Text: =Upper(ThisItem.Value)
                 Width: =Parent.TemplateWidth
                 ZIndex: =1
@@ -231,27 +208,16 @@ CalendarViewer As CanvasComponent:
                     =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
                     If(
                         /*Date selected is today*/
-                        DateAdd(_firstDayInView, ThisItem.Value) = Today() && DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(0,0,0,0),
+                    DateAdd(_firstDayInView,ThisItem.Value)=Today()&&DateAdd(_firstDayInView,ThisItem.Value)=_dateSelected,RGBA(0,0,0,0),
                         /*Today when it is not selected*/
-                        DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1_1.Fill, 0.67), 
+                    DateAdd(_firstDayInView,ThisItem.Value)=Today(),ColorFade(Subcircle1_1.Fill,0.9),
                         /*The day is outside the range of the currently selected month*/
-                        Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
+                    Abs(Self.Text-ThisItem.Value)>10,RGBA(200,200,200,0.2),RGBA(0,0,0,0))
                 FontWeight: =FontWeight.Lighter
                 Height: =Parent.TemplateHeight
                 OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, Days))
-                Size: =17 * Parent.TemplateWidth / 91
+                Size: =CalendarViewer.CalendarDateFontSize
                 Text: =Day(DateAdd(_firstDayInView,ThisItem.Value,Days))
                 Width: =Parent.TemplateWidth
                 ZIndex: =3
-
-        LblCalendarEventsHeader1_1 As label:
-            Fill: =RGBA(240, 240, 240, 1)
-            Height: =70
-            LayoutMinHeight: =70
-            LayoutMinWidth: =560
-            PaddingLeft: =30
-            Size: =14
-            Text: =Text(_dateSelected, DateTimeFormat.ShortDate)
-            Width: =560
-            ZIndex: =5
 

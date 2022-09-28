@@ -149,7 +149,7 @@
         "Name": "gbp_button1",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 104,
+        "PublishOrderIndex": 103,
         "Rules": [
           {
             "Category": "Data",
@@ -529,7 +529,7 @@
         "Name": "gbp_button2",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 105,
+        "PublishOrderIndex": 104,
         "Rules": [
           {
             "Category": "Data",
@@ -909,7 +909,7 @@
         "Name": "gbp_button3",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 106,
+        "PublishOrderIndex": 105,
         "Rules": [
           {
             "Category": "Data",
@@ -1289,7 +1289,7 @@
         "Name": "gbp_button4",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 107,
+        "PublishOrderIndex": 106,
         "Rules": [
           {
             "Category": "Data",
@@ -1669,7 +1669,7 @@
         "Name": "gbp_button5",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 108,
+        "PublishOrderIndex": 107,
         "Rules": [
           {
             "Category": "Data",
@@ -2001,7 +2001,7 @@
         "Name": "gbp_button1_image",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 109,
+        "PublishOrderIndex": 108,
         "Rules": [
           {
             "Category": "Data",
@@ -2305,7 +2305,7 @@
         "Name": "gbp_button2_image",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 110,
+        "PublishOrderIndex": 109,
         "Rules": [
           {
             "Category": "Data",
@@ -2615,7 +2615,7 @@
         "Name": "gbp_button3_image",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 111,
+        "PublishOrderIndex": 110,
         "Rules": [
           {
             "Category": "Data",
@@ -2925,7 +2925,7 @@
         "Name": "gbp_button4_image",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 112,
+        "PublishOrderIndex": 111,
         "Rules": [
           {
             "Category": "Data",
@@ -3235,7 +3235,7 @@
         "Name": "gbp_button5_image",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 113,
+        "PublishOrderIndex": 112,
         "Rules": [
           {
             "Category": "Data",
@@ -3583,7 +3583,7 @@
         "Name": "gbp_button1_text",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 114,
+        "PublishOrderIndex": 113,
         "Rules": [
           {
             "Category": "Data",
@@ -3999,7 +3999,7 @@
         "Name": "gbp_button2_text",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 115,
+        "PublishOrderIndex": 114,
         "Rules": [
           {
             "Category": "Data",
@@ -4421,7 +4421,7 @@
         "Name": "gbp_button3_text",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 116,
+        "PublishOrderIndex": 115,
         "Rules": [
           {
             "Category": "Data",
@@ -4843,7 +4843,7 @@
         "Name": "gbp_button4_text",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 117,
+        "PublishOrderIndex": 116,
         "Rules": [
           {
             "Category": "Data",
@@ -5265,7 +5265,7 @@
         "Name": "gbp_button5_text",
         "Parent": "GeneralBottomPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 118,
+        "PublishOrderIndex": 117,
         "Rules": [
           {
             "Category": "Data",
@@ -5752,7 +5752,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637999701873967697",
+    "LastModifiedTimestamp": "637999738549067653",
     "Name": "GeneralBottomPanel",
     "Rules": [
       {
@@ -6187,7 +6187,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637999701873967697",
+  "LastModifiedTimestamp": "637999738549067653",
   "Name": "c2368fe708f74fbbb15d00650731b69e",
   "OverridableProperties": {},
   "TemplateOriginalName": "1440a9a5d6724135b59da502897e6716",
