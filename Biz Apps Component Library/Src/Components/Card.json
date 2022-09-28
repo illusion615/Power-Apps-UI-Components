@@ -73,7 +73,7 @@
         "Name": "HtmlText2",
         "Parent": "Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 77,
+        "PublishOrderIndex": 83,
         "Rules": [
           {
             "Category": "Data",
@@ -316,7 +316,7 @@
         "Name": "Label5",
         "Parent": "Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 78,
+        "PublishOrderIndex": 84,
         "Rules": [
           {
             "Category": "Data",
@@ -705,7 +705,7 @@
         "Name": "background",
         "Parent": "Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 79,
+        "PublishOrderIndex": 85,
         "Rules": [
           {
             "Category": "Data",
@@ -1059,7 +1059,7 @@
         "Name": "imgCardbackground",
         "Parent": "Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 80,
+        "PublishOrderIndex": 86,
         "Rules": [
           {
             "Category": "Data",
@@ -1348,7 +1348,7 @@
         "Name": "imgCardTopRight",
         "Parent": "Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 81,
+        "PublishOrderIndex": 87,
         "Rules": [
           {
             "Category": "Data",
@@ -1569,7 +1569,7 @@
             "Name": "galleryTemplate1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 83,
+            "PublishOrderIndex": 89,
             "Rules": [
               {
                 "Category": "Design",
@@ -1679,7 +1679,7 @@
             "Name": "Label7",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 84,
+            "PublishOrderIndex": 90,
             "Rules": [
               {
                 "Category": "Data",
@@ -1856,7 +1856,7 @@
             "Name": "Image12",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 85,
+            "PublishOrderIndex": 91,
             "Rules": [
               {
                 "Category": "Data",
@@ -2157,7 +2157,7 @@
             "Name": "Label7_1",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 86,
+            "PublishOrderIndex": 92,
             "Rules": [
               {
                 "Category": "Data",
@@ -2373,7 +2373,7 @@
         "Name": "Gallery1",
         "Parent": "Card",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 82,
+        "PublishOrderIndex": 88,
         "Rules": [
           {
             "Category": "Data",

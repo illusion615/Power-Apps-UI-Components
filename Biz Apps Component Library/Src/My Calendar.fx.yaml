@@ -8,12 +8,65 @@
         ZIndex: =1
 
         GeneralTopBanner_4 As GeneralTopBanner:
+            IconColor: =RGBA(241, 244, 249, 1)
+            IconSize: =40
             LayoutMinHeight: =640
+            Subtitle: =""
+            Title: ="My Calendar"
             ZIndex: =1
 
         CalendarViewer_1 As CalendarViewer:
-            Height: =480
             LayoutMinHeight: =640
             TitleFontSize: =16
             ZIndex: =2
+
+        Label11 As label:
+            AlignInContainer: =AlignInContainer.Stretch
+            AutoHeight: =true
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            PaddingBottom: =10
+            PaddingLeft: =20
+            PaddingTop: =10
+            Size: =16
+            Text: =Text(CalendarViewer_1.SelectedDate,DateTimeFormat.LongDate)
+            Width: =560
+            ZIndex: =3
+
+        Gallery2 As gallery.galleryVertical:
+            Items: =Filter(CalendarViewer_1.CalendarEvents,Start=CalendarViewer_1.SelectedDate)
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            TemplateSize: =80
+            ZIndex: =4
+
+            Label14 As label:
+                AutoHeight: =true
+                Height: =70
+                OnSelect: =Select(Parent)
+                PaddingLeft: =20
+                PaddingRight: =20
+                Size: =16
+                Text: =ThisItem.Title
+                Width: =560
+                ZIndex: =1
+
+            Label15 As label:
+                AutoHeight: =true
+                Height: =70
+                OnSelect: =Select(Parent)
+                PaddingLeft: =20
+                PaddingRight: =20
+                Size: =14
+                Text: =ThisItem.Start
+                Width: =Parent.TemplateWidth
+                Y: =45
+                ZIndex: =2
+
+        GeneralBottomPanel_3 As GeneralBottomPanel:
+            Fill: =GeneralBottomPanel_3.BackgroundFill
+            LayoutMinHeight: =640
+            ZIndex: =5
 

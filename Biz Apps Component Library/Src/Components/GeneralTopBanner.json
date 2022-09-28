@@ -101,7 +101,7 @@
         "Name": "Image3",
         "Parent": "GeneralTopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 123,
+        "PublishOrderIndex": 129,
         "Rules": [
           {
             "Category": "Data",
@@ -428,7 +428,7 @@
         "Name": "Label4_4",
         "Parent": "GeneralTopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 124,
+        "PublishOrderIndex": 130,
         "Rules": [
           {
             "Category": "Data",
@@ -771,7 +771,7 @@
         "Name": "Icon2_3",
         "Parent": "GeneralTopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 125,
+        "PublishOrderIndex": 131,
         "Rules": [
           {
             "Category": "Design",
@@ -1062,7 +1062,7 @@
         "Name": "Label4_5",
         "Parent": "GeneralTopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 126,
+        "PublishOrderIndex": 132,
         "Rules": [
           {
             "Category": "Data",
@@ -1345,7 +1345,14 @@
       "ZIndex",
       "Title",
       "Subtitle",
-      "BackIconClicked",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "BackIconClicked",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -1435,7 +1442,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637999738548901092",
+    "LastModifiedTimestamp": "637999751982737808",
     "Name": "GeneralTopBanner",
     "Rules": [
       {
@@ -1554,7 +1561,7 @@
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "true",
+        "InvariantScript": "Back()",
         "Property": "BackIconClicked",
         "RuleProviderType": "System"
       }
@@ -1705,7 +1712,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637999738548901092",
+  "LastModifiedTimestamp": "637999751982737808",
   "Name": "59aff2b6d2c441dcb266eefea26c64af",
   "OverridableProperties": {},
   "TemplateOriginalName": "5df70a18abd04ec79ed8b614f4e3522a",

@@ -16,7 +16,7 @@ CalendarViewer As CanvasComponent:
             Set(_lastDayOfMonth,DateAdd(DateAdd(_firstDayOfMonth,1,Months),-1,Days)))
     PaddingLeft: =10
     PaddingRight: =10
-    SelectedDate: =Now()
+    SelectedDate: =_dateSelected
     SelectedDateColor: =RGBA(0, 0, 0, 1)
     SelectedDateFill: =RGBA(202, 80, 16, 1)
     Title: ="Text"
@@ -56,6 +56,7 @@ CalendarViewer As CanvasComponent:
             Label6 As label:
                 AutoHeight: =true
                 FillPortions: =1
+                FontWeight: =FontWeight.Semibold
                 Height: =64
                 LayoutMinHeight: =30
                 LayoutMinWidth: =100
@@ -158,6 +159,7 @@ CalendarViewer As CanvasComponent:
 
             Label13 As label:
                 Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
                 Height: =Parent.TemplateHeight
                 OnSelect: =Select(Parent)
                 Size: =CalendarViewer.CalendarHeaderFontSize

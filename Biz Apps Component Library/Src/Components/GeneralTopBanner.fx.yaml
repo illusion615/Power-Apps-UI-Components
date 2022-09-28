@@ -2,7 +2,7 @@ GeneralTopBanner As CanvasComponent:
     BackgroundFill: =RGBA(237, 237, 237, .5)
     BackgroundImage: ='10744401'
     BackgroundImageYOffset: =-50
-    BackIconClicked: =true
+    BackIconClicked: =Back()
     Fill: =Self.BackgroundFill
     Height: =100
     IconColor: =White

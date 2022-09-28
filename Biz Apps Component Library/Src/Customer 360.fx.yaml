@@ -3,7 +3,6 @@
 
     GeneralTopBanner_2 As GeneralTopBanner:
         BackgroundImageYOffset: =-250
-        BackIconClicked: =Back()
         IconColor: =RGBA(204, 231, 246, 1)
         IconSize: =40
         Subtitle: |-

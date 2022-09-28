@@ -1058,7 +1058,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "Button4Clicked",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Behavior",

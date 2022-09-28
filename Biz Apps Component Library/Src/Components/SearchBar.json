@@ -99,7 +99,7 @@
         "Name": "searchBarBackground",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 138,
+        "PublishOrderIndex": 144,
         "Rules": [
           {
             "Category": "Data",
@@ -470,7 +470,7 @@
         "Name": "TextInput3",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 139,
+        "PublishOrderIndex": 145,
         "Rules": [
           {
             "Category": "Data",
@@ -884,7 +884,7 @@
             "Name": "iconSearch",
             "Parent": "Container9",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 141,
+            "PublishOrderIndex": 147,
             "Rules": [
               {
                 "Category": "Design",
@@ -1229,7 +1229,7 @@
             "Name": "iconRefresh",
             "Parent": "Container9",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 142,
+            "PublishOrderIndex": 148,
             "Rules": [
               {
                 "Category": "Design",
@@ -1574,7 +1574,7 @@
             "Name": "iconSort",
             "Parent": "Container9",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 143,
+            "PublishOrderIndex": 149,
             "Rules": [
               {
                 "Category": "Design",
@@ -1919,7 +1919,7 @@
             "Name": "iconAddNew",
             "Parent": "Container9",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 144,
+            "PublishOrderIndex": 150,
             "Rules": [
               {
                 "Category": "Design",
@@ -2174,7 +2174,7 @@
         "Name": "Container9",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 140,
+        "PublishOrderIndex": 146,
         "Rules": [
           {
             "Category": "Design",
@@ -2409,7 +2409,7 @@
         "Name": "Icon8",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 145,
+        "PublishOrderIndex": 151,
         "Rules": [
           {
             "Category": "Design",
@@ -2742,7 +2742,7 @@
         "Name": "resultIndicator",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 146,
+        "PublishOrderIndex": 152,
         "Rules": [
           {
             "Category": "Data",

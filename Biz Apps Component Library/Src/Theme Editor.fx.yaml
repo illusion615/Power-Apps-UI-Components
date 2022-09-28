@@ -3,7 +3,6 @@
 
     GeneralTopBanner_3 As GeneralTopBanner:
         BackgroundFill: =RGBA(0, 0, 0, 0)
-        BackIconClicked: =Back()
         IconColor: =RGBA(153, 207, 236, 1)
         IconSize: =40
         Subtitle: ="Create your theme in one single place"

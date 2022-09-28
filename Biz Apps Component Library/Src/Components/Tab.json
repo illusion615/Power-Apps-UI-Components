@@ -162,7 +162,7 @@
         "Name": "Label1_1",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 147,
+        "PublishOrderIndex": 153,
         "Rules": [
           {
             "Category": "Data",
@@ -591,7 +591,7 @@
         "Name": "Label2",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 148,
+        "PublishOrderIndex": 154,
         "Rules": [
           {
             "Category": "Data",
@@ -1020,7 +1020,7 @@
         "Name": "Label3",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 149,
+        "PublishOrderIndex": 155,
         "Rules": [
           {
             "Category": "Data",
@@ -1449,7 +1449,7 @@
         "Name": "Label4",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 150,
+        "PublishOrderIndex": 156,
         "Rules": [
           {
             "Category": "Data",
@@ -1788,7 +1788,7 @@
         "Name": "Rectangle1",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 151,
+        "PublishOrderIndex": 157,
         "Rules": [
           {
             "Category": "Design",
@@ -1973,7 +1973,7 @@
         "Name": "Rectangle1_1",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 152,
+        "PublishOrderIndex": 158,
         "Rules": [
           {
             "Category": "Design",
@@ -2164,7 +2164,7 @@
         "Name": "Rectangle1_2",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 153,
+        "PublishOrderIndex": 159,
         "Rules": [
           {
             "Category": "Design",
@@ -2355,7 +2355,7 @@
         "Name": "Rectangle1_3",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 154,
+        "PublishOrderIndex": 160,
         "Rules": [
           {
             "Category": "Design",
@@ -2546,7 +2546,7 @@
         "Name": "Rectangle1_4",
         "Parent": "Tab",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 155,
+        "PublishOrderIndex": 161,
         "Rules": [
           {
             "Category": "Design",
