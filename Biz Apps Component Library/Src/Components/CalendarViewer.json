@@ -4219,6 +4219,14 @@
             "InvariantPropertyName": "PaddingLeft",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "0",
+            "InvariantPropertyName": "PaddingRight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
           }
         ],
         "ControlUniqueId": "95",
@@ -4349,6 +4357,12 @@
             "InvariantScript": "CalendarViewer.PaddingLeft",
             "Property": "PaddingLeft",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "CalendarViewer.PaddingRight",
+            "Property": "PaddingRight",
+            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "",
@@ -4459,7 +4473,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637999747374685667",
+    "LastModifiedTimestamp": "637999747561115940",
     "Name": "CalendarViewer",
     "Rules": [
       {
@@ -4705,7 +4719,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637999747374685667",
+  "LastModifiedTimestamp": "637999747561115940",
   "Name": "9024cbc2af7c4aa8933f5517a161cd0e",
   "OverridableProperties": {},
   "Version": "637999652842309171"

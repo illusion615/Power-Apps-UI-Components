@@ -33,6 +33,7 @@ CalendarViewer As CanvasComponent:
         LayoutGap: =10
         LayoutMode: =LayoutMode.Auto
         PaddingLeft: =CalendarViewer.PaddingLeft
+        PaddingRight: =CalendarViewer.PaddingRight
         Width: =CalendarViewer.Width
         ZIndex: =4
 
