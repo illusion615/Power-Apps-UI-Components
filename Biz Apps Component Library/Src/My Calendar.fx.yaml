@@ -1,9 +1,18 @@
 "'My Calendar' As screen":
 
     Container12 As groupContainer.verticalAutoLayoutContainer:
-        Height: =225
+        Height: =App.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =App.Width
         ZIndex: =1
+
+        GeneralTopBanner_4 As GeneralTopBanner:
+            LayoutMinHeight: =640
+            ZIndex: =1
+
+        CalendarViewer_1 As CalendarViewer:
+            Height: =480
+            TitleFontSize: =16
+            ZIndex: =2
 

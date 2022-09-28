@@ -1,9 +1,10 @@
 CalendarViewer As CanvasComponent:
-    CalendarEventColor: =RGBA(0, 0, 0, 1)
+    CalendarEventColor: =RGBA(202, 80, 16, 1)
     CalendarEvents: |-
         =Table({Start: Today()-1, Title: "Test task"})
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
+    IconColor: =RGBA(202, 80, 16, 1)
     OnReset: |-
         =If(
             IsBlank(_dateSelected),
@@ -41,7 +42,7 @@ CalendarViewer As CanvasComponent:
             )
         )
     SelectedDateColor: =RGBA(0, 0, 0, 1)
-    SelectedDateFill: =RGBA(0, 0, 0, 1)
+    SelectedDateFill: =RGBA(202, 80, 16, 1)
     Title: ="Text"
     TitleFontSize: =20
     Width: =640
@@ -88,18 +89,40 @@ CalendarViewer As CanvasComponent:
                 ZIndex: =1
 
             Icon1 As icon.BackArrow:
+                Color: =CalendarViewer.IconColor
                 Height: =50
                 Icon: =Icon.BackArrow
                 LayoutMinHeight: =50
+                OnSelect: |-
+                    =/*changes month view to previous month*/
+                               
+                    Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, -1, Months));           
+                    Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));           
+                    Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));           
+                    /*collects calendar events for all days in current month view. Updates _minDate to prevent duplicate data collection if user returns to this month view*/           
+                    If(_minDate > _firstDayOfMonth,           
+                     Collect(MyCalendarEvents,Filter(CalendarViewer.CalendarEvents,Start>_firstDayInView And Start<DateAdd(_minDate, -1, Days)));           
+                     Set(_minDate, _firstDayInView))
                 PaddingLeft: =10
                 PaddingRight: =10
                 Width: =50
                 ZIndex: =2
 
             Icon4 As icon.NextArrow:
+                Color: =CalendarViewer.IconColor
                 Height: =50
                 Icon: =Icon.NextArrow
                 LayoutMinHeight: =50
+                OnSelect: |-
+                    =/*changes month view to next month*/
+                               
+                    Set(_firstDayOfMonth, DateAdd(_firstDayOfMonth, 1, Months));           
+                    Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));           
+                    /*collects calendar events for all days in current month view. Updates _maxDate to prevent duplicate data collection if user returns to this month view*/           
+                    Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days));           
+                    If(_maxDate < _lastDayOfMonth,           
+                     Collect(MyCalendarEvents, Filter(CalendarViewer.CalendarEvents,Start>DateAdd(_maxDate, 1, Days) And Start<DateAdd(_firstDayInView, 40, Days)));   
+                     Set(_maxDate, DateAdd(_firstDayInView, 40, Days)))
                 PaddingLeft: =10
                 PaddingRight: =10
                 Width: =50
@@ -116,7 +139,8 @@ CalendarViewer As CanvasComponent:
                 Label12 As label:
                     Align: =Align.Center
                     AutoHeight: =true
-                    FontWeight: =FontWeight.Lighter
+                    Color: =CalendarViewer.IconColor
+                    FontWeight: =FontWeight.Semibold
                     Height: =Icon5.Height
                     Size: =10
                     Text: =DateDiff(Date(Year(Today()), Month(Today()), 1), Today(), Days) + 1
@@ -125,6 +149,7 @@ CalendarViewer As CanvasComponent:
                     ZIndex: =1
 
                 Icon5 As icon.CalendarBlank:
+                    Color: =CalendarViewer.IconColor
                     Height: =50
                     Icon: =Icon.CalendarBlank
                     OnSelect: |-
@@ -176,7 +201,8 @@ CalendarViewer As CanvasComponent:
 
             Circle2_1 As circle:
                 BorderColor: =RGBA(166, 166, 166, 1)
-                Fill: =ColorFade(RGBA(202, 80, 16, 1), -50%)
+                BorderStyle: =BorderStyle.None
+                Fill: =CalendarViewer.CalendarEventColor
                 Height: =Self.Width
                 OnSelect: =Select(Parent)
                 Visible: |-
@@ -189,7 +215,7 @@ CalendarViewer As CanvasComponent:
 
             Subcircle1_1 As circle:
                 BorderStyle: =BorderStyle.None
-                Fill: =RGBA(202, 80, 16, 1)
+                Fill: =CalendarViewer.SelectedDateFill
                 Height: =3 * Label10.Size
                 OnSelect: =Select(Parent)
                 Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Label10.Visible)
@@ -201,6 +227,15 @@ CalendarViewer As CanvasComponent:
             Label10 As label:
                 Align: =Align.Center
                 Color: =If(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(255, 255, 255, 1), DateAdd(_firstDayInView, ThisItem.Value) = Today(), RGBA(47, 41, 43, 1), Label6.Color)
+                Fill: |-
+                    =/*Fill value changes if the gallery item day = today, or if it lies outside of the current month*/             
+                    If(
+                        /*Date selected is today*/
+                        DateAdd(_firstDayInView, ThisItem.Value) = Today() && DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, RGBA(0,0,0,0),
+                        /*Today when it is not selected*/
+                        DateAdd(_firstDayInView, ThisItem.Value) = Today(), ColorFade(Subcircle1_1.Fill, 0.67), 
+                        /*The day is outside the range of the currently selected month*/
+                        Abs(Self.Text - ThisItem.Value) > 10,RGBA(200, 200, 200, 0.3), RGBA(0, 0, 0, 0))
                 FontWeight: =FontWeight.Lighter
                 Height: =Parent.TemplateHeight
                 OnSelect: =Set(_dateSelected, DateAdd(_firstDayInView, ThisItem.Value, Days))

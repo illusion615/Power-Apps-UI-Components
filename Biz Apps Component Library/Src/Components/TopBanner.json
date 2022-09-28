@@ -121,7 +121,7 @@
         "Name": "imgBackground",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 154,
+        "PublishOrderIndex": 157,
         "Rules": [
           {
             "Category": "Data",
@@ -411,7 +411,7 @@
         "Name": "imgLogo",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 155,
+        "PublishOrderIndex": 158,
         "Rules": [
           {
             "Category": "Data",
@@ -752,7 +752,7 @@
         "Name": "lblAppName",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 156,
+        "PublishOrderIndex": 159,
         "Rules": [
           {
             "Category": "Data",
@@ -1129,7 +1129,7 @@
         "Name": "imgUserProfile",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 157,
+        "PublishOrderIndex": 160,
         "Rules": [
           {
             "Category": "Data",
@@ -1507,7 +1507,7 @@
         "Name": "TopPanel_Welcome",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 158,
+        "PublishOrderIndex": 161,
         "Rules": [
           {
             "Category": "Data",
@@ -1870,7 +1870,7 @@
         "Name": "iconWaffle",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 159,
+        "PublishOrderIndex": 162,
         "Rules": [
           {
             "Category": "Design",
@@ -2210,7 +2210,7 @@
         "Name": "TopPanel_UserName",
         "Parent": "TopBanner",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 160,
+        "PublishOrderIndex": 163,
         "Rules": [
           {
             "Category": "Data",
