@@ -75,8 +75,8 @@ TopBanner As CanvasComponent:
         PaddingTop: =0
         Size: =lblAppName.Size*2/3
         Text: =User().FullName
-        Width: =Len(Self.Text)*Self.Size*.8
-        X: =imgUserProfile.X-Self.Width
+        Width: =Len(Self.Text)*Self.Size
+        X: =imgUserProfile.X-Self.Width-10
         Y: =TopPanel_Welcome.Y+TopPanel_Welcome.Height
         ZIndex: =5
 
@@ -96,7 +96,7 @@ TopBanner As CanvasComponent:
         Size: =TopPanel_UserName.Size-4
         Text: ="Welcome,"
         Width: =Len(Self.Text)*Self.Size
-        X: =imgUserProfile.X-Self.Width
+        X: =imgUserProfile.X-Self.Width-10
         Y: =imgUserProfile.Y+(imgUserProfile.Height-Self.Height-TopPanel_UserName.Height)/2
         ZIndex: =6
 

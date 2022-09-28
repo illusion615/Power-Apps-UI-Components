@@ -1,0 +1,212 @@
+CalendarViewer As CanvasComponent:
+    CalendarEvents: |-
+        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    OnReset: |-
+        =If(
+            IsBlank(_dateSelected),
+            Set(
+                _dateSelected,
+                Today()
+            );
+            Set(
+                _firstDayOfMonth,
+                DateAdd(
+                    Today(),
+                    1 - Day(Today()),
+                    Days
+                )
+            );
+            Set(
+                _firstDayInView,
+                DateAdd(
+                    _firstDayOfMonth,
+                    -(Weekday(_firstDayOfMonth) - 2 + 1),
+                    Days
+                )
+            );
+            Set(
+                _lastDayOfMonth,
+                DateAdd(
+                    DateAdd(
+                        _firstDayOfMonth,
+                        1,
+                        Months
+                    ),
+                    -1,
+                    Days
+                )
+            )
+        )
+    Title: ="Text"
+    TitleFontSize: =20
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container4 As groupContainer.verticalAutoLayoutContainer:
+        Height: =CalendarViewer.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =10
+        LayoutMode: =LayoutMode.Auto
+        Width: =CalendarViewer.Width
+        ZIndex: =4
+
+        Container3 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            ContentLanguage: =
+            FillPortions: =0
+            Height: =50
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutGap: =10
+            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            PaddingRight: =10
+            Width: =CalendarViewer.Width
+            ZIndex: =1
+
+            Label6 As label:
+                AutoHeight: =true
+                FillPortions: =1
+                FontWeight: =FontWeight.Semibold
+                Height: =64
+                LayoutMinHeight: =30
+                LayoutMinWidth: =100
+                PaddingBottom: =0
+                PaddingTop: =0
+                Size: =CalendarViewer.TitleFontSize
+                Text: =Text(_firstDayOfMonth, "mmmm yyyy")
+                Width: =Parent.Width
+                ZIndex: =1
+
+            Icon1 As icon.BackArrow:
+                Height: =50
+                Icon: =Icon.BackArrow
+                LayoutMinHeight: =50
+                PaddingLeft: =10
+                PaddingRight: =10
+                Width: =50
+                ZIndex: =2
+
+            Icon4 As icon.NextArrow:
+                Height: =50
+                Icon: =Icon.NextArrow
+                LayoutMinHeight: =50
+                PaddingLeft: =10
+                PaddingRight: =10
+                Width: =50
+                ZIndex: =3
+
+            Container5 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =225
+                LayoutMinHeight: =Icon5.Height
+                LayoutMinWidth: =10
+                Width: =Icon5.Width
+                ZIndex: =4
+
+                Label12 As label:
+                    Align: =Align.Center
+                    AutoHeight: =true
+                    FontWeight: =FontWeight.Lighter
+                    Height: =Icon5.Height
+                    Size: =10
+                    Text: =DateDiff(Date(Year(Today()), Month(Today()), 1), Today(), Days) + 1
+                    Width: =Icon5.Width
+                    Y: =(Parent.Height-Self.Height)/2+3
+                    ZIndex: =1
+
+                Icon5 As icon.CalendarBlank:
+                    Height: =50
+                    Icon: =Icon.CalendarBlank
+                    OnSelect: |-
+                        =/*resets calendar view and date selection to today*/
+                                 
+                        Set(_dateSelected, Today());         
+                        Set(_firstDayOfMonth, DateAdd(Today(), 1 - Day(Today()), Days));         
+                        Set(_firstDayInView, DateAdd(_firstDayOfMonth, -(Weekday(_firstDayOfMonth) - 2 + 1), Days));         
+                        Set(_lastDayOfMonth, DateAdd(DateAdd(_firstDayOfMonth, 1, Months), -1, Days))
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    Width: =Self.Height
+                    ZIndex: =2
+
+        WeekdayGallery As gallery.galleryHorizontal:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =45
+            Items: =Calendar.WeekdaysShort()
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =Self.Width/7
+            Width: =Parent.Width-Self.X*2
+            Y: =40
+            ZIndex: =2
+
+            Label13 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.TemplateHeight
+                OnSelect: =Select(Parent)
+                Size: =17 * Parent.TemplateWidth / 77
+                Text: =Upper(ThisItem.Value)
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+        MonthDayGallery As gallery.galleryVertical:
+            Items: =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19, 20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            ShowScrollbar: =false
+            TemplateSize: =Self.Width/6
+            WrapCount: =7
+            ZIndex: =4
+
+            Label10 As label:
+                Align: =Align.Center
+                Height: =Parent.TemplateHeight
+                OnSelect: =Select(Parent)
+                Size: =21
+                Text: =Day(DateAdd(_firstDayInView,ThisItem.Value,Days))
+                Width: =Parent.TemplateWidth
+                ZIndex: =1
+
+            Subcircle1_2 As circle:
+                Height: =3 * Label10.Size
+                OnSelect: =Select(Parent)
+                Visible: =And(DateAdd(_firstDayInView, ThisItem.Value) = _dateSelected, Label10.Visible)
+                Width: =Self.Height
+                X: =Parent.TemplateWidth/2 - Self.Width/2
+                Y: =Parent.TemplateHeight / 2 - Self.Height / 2
+                ZIndex: =2
+
+            Circle2_1 As circle:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Fill: =ColorFade(RGBA(202, 80, 16, 1), -50%)
+                Height: =Self.Width
+                OnSelect: =Select(Parent)
+                Visible: =/*Visible if calendar events are found on this day*/               
+                Width: =6.5
+                X: =Parent.TemplateWidth / 2 - Self.Width / 2
+                Y: =Parent.TemplateHeight * (0.75)
+                ZIndex: =3
+
+        LblCalendarEventsHeader1_1 As label:
+            Fill: =RGBA(240, 240, 240, 1)
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =14
+            Text: =Text(_dateSelected, DateTimeFormat.ShortDate)
+            Width: =560
+            ZIndex: =5
+
