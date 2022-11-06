@@ -15,3 +15,22 @@ About As screen:
         Y: =250
         ZIndex: =2
 
+    ImageButton_1 As ImageButton:
+        Disabled: =true
+        Fill: =If(ImageButton_1.TransperentBackground,RGBA(0,0,0,0),ImageButton_1.BackgroundFill)
+        X: =111
+        Y: =501
+        ZIndex: =3
+
+    ImageButton_2 As ImageButton:
+        Fill: =If(ImageButton_2.TransperentBackground,RGBA(0,0,0,0),ImageButton_2.BackgroundFill)
+        X: =259
+        Y: =501
+        ZIndex: =4
+
+    ImageButton_3 As ImageButton:
+        Fill: =If(ImageButton_3.TransperentBackground,RGBA(0,0,0,0),ImageButton_3.BackgroundFill)
+        X: =407
+        Y: =501
+        ZIndex: =5
+

@@ -102,6 +102,11 @@
       "Properties": [
         {
           "Category": "Data",
+          "PropertyName": "CalendarEvents",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
           "PropertyName": "Title",
           "RuleProviderType": "System"
         },
@@ -109,11 +114,6 @@
           "Category": "Data",
           "PropertyName": "TitleFontSize",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "CalendarEvents",
-          "RuleProviderType": "System"
         },
         {
           "Category": "Data",

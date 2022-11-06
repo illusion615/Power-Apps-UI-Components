@@ -7,7 +7,7 @@ SearchBar As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     FontSize: =12
     FontWeight: ="Text"
-    Height: =70
+    Height: =80
     OnAddNewClicked: =true
     OnRefreshClicked: =true
     OnSearchButtonClicked: =true
@@ -68,8 +68,12 @@ SearchBar As CanvasComponent:
         ZIndex: =3
 
     Container9 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =iconRefresh.Height
+        Height: =TextInput3.Height
         LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
         Width: |-
             =If(SearchBar.ShowRefreshButton,iconRefresh.Width,0) 
             + If(SearchBar.ShowSortButton,iconSort.Width,0) 
@@ -81,9 +85,12 @@ SearchBar As CanvasComponent:
         ZIndex: =4
 
         iconSearch As icon.Check:
+            AlignInContainer: =AlignInContainer.Stretch
             Color: =SearchBar.ButtonColor
             Height: =TextInput3.Height
             Icon: =Icon.Check
+            LayoutMinHeight: =20
+            LayoutMinWidth: =40
             OnSelect: =SearchBar.OnSearchButtonClicked()
             PaddingBottom: =5
             PaddingLeft: =5
@@ -94,9 +101,12 @@ SearchBar As CanvasComponent:
             ZIndex: =1
 
         iconAddNew As icon.Add:
+            AlignInContainer: =AlignInContainer.Stretch
             Color: =SearchBar.ButtonColor
             Height: =TextInput3.Height
             Icon: =Icon.Add
+            LayoutMinHeight: =20
+            LayoutMinWidth: =40
             OnSelect: =SearchBar.OnAddNewClicked()
             PaddingBottom: =5
             PaddingLeft: =5
@@ -107,9 +117,12 @@ SearchBar As CanvasComponent:
             ZIndex: =2
 
         iconRefresh As icon.Reload:
+            AlignInContainer: =AlignInContainer.Stretch
             Color: =SearchBar.ButtonColor
             Height: =TextInput3.Height
             Icon: =Icon.Reload
+            LayoutMinHeight: =20
+            LayoutMinWidth: =40
             OnSelect: =SearchBar.OnRefreshClicked()
             PaddingBottom: =5
             PaddingLeft: =5
@@ -120,9 +133,12 @@ SearchBar As CanvasComponent:
             ZIndex: =3
 
         iconSort As icon.ArrowsUpDown:
+            AlignInContainer: =AlignInContainer.Stretch
             Color: =SearchBar.ButtonColor
             Height: =TextInput3.Height
             Icon: =Icon.Sort
+            LayoutMinHeight: =20
+            LayoutMinWidth: =40
             OnSelect: |-
                 =Set(
                     SortDirection,

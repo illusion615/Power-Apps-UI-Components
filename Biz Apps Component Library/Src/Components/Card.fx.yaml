@@ -89,7 +89,7 @@ Card As CanvasComponent:
         Y: =50
         ZIndex: =4
 
-        Label7 As Label:
+        Label7 As 标签:
             AutoHeight: =true
             Color: =Card.TextColor
             DisplayMode: =DisplayMode.Edit
@@ -111,7 +111,7 @@ Card As CanvasComponent:
             Y: =(Parent.TemplateHeight-Self.Height)/2
             ZIndex: =2
 
-        Label7_1 As Label:
+        Label7_1 As 标签:
             AutoHeight: =true
             Color: =Card.TextColor
             DisplayMode: =DisplayMode.Edit
