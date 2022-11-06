@@ -401,7 +401,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "100",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "IconSize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -466,7 +466,7 @@
         {
           "Category": "Data",
           "PropertyName": "IconSize",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -580,7 +580,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "100",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "IconSize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -638,7 +638,7 @@
         {
           "Category": "Data",
           "PropertyName": "IconSize",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -752,7 +752,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "100",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "IconSize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -810,7 +810,7 @@
         {
           "Category": "Data",
           "PropertyName": "IconSize",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

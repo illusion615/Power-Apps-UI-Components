@@ -52,6 +52,7 @@ ImageButton As CanvasComponent:
         ZIndex: =2
 
     Button1 As button:
+        BorderStyle: =BorderStyle.None
         DisabledBorderColor: =RGBA(166, 166, 166, .3)
         DisabledFill: =RGBA(244, 244, 244, .7)
         DisplayMode: =If(ImageButton.Disabled,DisplayMode.Disabled, DisplayMode.Edit)

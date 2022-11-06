@@ -27,7 +27,14 @@
           },
           "PressedBorderColor",
           "HoverBorderColor",
-          "BorderStyle",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "BorderStyle",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "FocusedBorderColor",
           "Color",
           "DisabledColor",
@@ -169,7 +176,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "BorderStyle.Solid",
+            "InvariantScript": "BorderStyle.None",
             "Property": "BorderStyle",
             "RuleProviderType": "Unknown"
           },
@@ -1211,7 +1218,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032988534942467",
+    "LastModifiedTimestamp": "638032998804946377",
     "Name": "ImageButton",
     "Rules": [
       {
@@ -1406,7 +1413,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032988534942467",
+  "LastModifiedTimestamp": "638032998804946377",
   "Name": "baf1314eee464a65871f04bb061c0834",
   "OverridableProperties": {},
   "TemplateOriginalName": "44a0f16bf3164e57b69d6814dd602227",
