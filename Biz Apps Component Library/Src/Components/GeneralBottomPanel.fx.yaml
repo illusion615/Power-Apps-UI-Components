@@ -26,6 +26,7 @@ GeneralBottomPanel As CanvasComponent:
         ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1024%200q141%200%20272%2036t244%20104%20207%20160%20161%20207%20103%20245%2037%20272q0%20141-36%20272t-104%20244-160%20207-207%20161-245%20103-272%2037q-141%200-272-36t-245-103-207-160-160-208-103-244-37-273q0-141%2036-272t104-244%20160-207%20207-161T752%2037t272-37zm0%201920q124%200%20238-32t214-90%20181-140%20140-181%2091-214%2032-239q0-124-32-238t-90-214-140-181-181-140-214-91-239-32q-124%200-238%2032t-214%2090-181%20140-140%20181-91%20214-32%20239q0%20124%2032%20238t90%20214%20140%20182%20181%20140%20214%2090%20239%2032zm64-961h448v128h-448v449H960v-449H512V959h448V512h128v447z%27%20fill%3D%27%23a4262c%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
     Button5Text: ="Button5"
     ButtonBorderRadius: =20
+    ButtonImageSize: =45
     ButtonNumber: =5
     Fill: =GeneralBottomPanel.BackgroundFill
     FontSize: =14
@@ -38,10 +39,10 @@ GeneralBottomPanel As CanvasComponent:
 
     gbp_button1_image As image:
         DisplayMode: =If(GeneralBottomPanel.Button1Disabled,DisplayMode.Disabled, DisplayMode.Edit)
-        Height: =40
+        Height: =Parent.ButtonImageSize
         Image: =GeneralBottomPanel.Button1Image
         OnSelect: =true
-        Width: =45
+        Width: =Parent.ButtonImageSize
         X: =(Parent.Width / GeneralBottomPanel.ButtonNumber - Self.Width) / 2
         Y: =(Parent.Height-Self.Height-gbp_button1_text.Height)/2
         ZIndex: =1
@@ -64,11 +65,11 @@ GeneralBottomPanel As CanvasComponent:
 
     gbp_button2_image As image:
         DisplayMode: =If(GeneralBottomPanel.Button2Disabled,DisplayMode.Disabled, DisplayMode.Edit)
-        Height: =40
+        Height: =Parent.ButtonImageSize
         Image: =GeneralBottomPanel.Button2Image
         OnSelect: =true
         Visible: =If(GeneralBottomPanel.ButtonNumber>1,true,false)
-        Width: =45
+        Width: =Parent.ButtonImageSize
         X: =Parent.Width/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
         Y: =(Parent.Height-Self.Height-gbp_button2_text.Height)/2
         ZIndex: =3
@@ -92,11 +93,11 @@ GeneralBottomPanel As CanvasComponent:
 
     gbp_button3_image As image:
         DisplayMode: =If(GeneralBottomPanel.Button3Disabled,DisplayMode.Disabled, DisplayMode.Edit)
-        Height: =40
+        Height: =Parent.ButtonImageSize
         Image: =GeneralBottomPanel.Button3Image
         OnSelect: =true
         Visible: =If(GeneralBottomPanel.ButtonNumber>2,true,false)
-        Width: =45
+        Width: =Parent.ButtonImageSize
         X: =Parent.Width*2/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
         Y: =(Parent.Height-Self.Height-gbp_button3_text.Height)/2
         ZIndex: =5
@@ -120,11 +121,11 @@ GeneralBottomPanel As CanvasComponent:
 
     gbp_button4_image As image:
         DisplayMode: =If(GeneralBottomPanel.Button4Disabled,DisplayMode.Disabled, DisplayMode.Edit)
-        Height: =40
+        Height: =Parent.ButtonImageSize
         Image: =GeneralBottomPanel.Button4Image
         OnSelect: =true
         Visible: =If(GeneralBottomPanel.ButtonNumber>3,true,false)
-        Width: =45
+        Width: =Parent.ButtonImageSize
         X: =Parent.Width*3/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
         Y: =(Parent.Height-Self.Height-gbp_button4_text.Height)/2
         ZIndex: =7
@@ -148,11 +149,11 @@ GeneralBottomPanel As CanvasComponent:
 
     gbp_button5_image As image:
         DisplayMode: =If(GeneralBottomPanel.Button5Disabled,DisplayMode.Disabled, DisplayMode.Edit)
-        Height: =40
+        Height: =Parent.ButtonImageSize
         Image: =GeneralBottomPanel.Button5Image
         OnSelect: =true
         Visible: =If(GeneralBottomPanel.ButtonNumber>3,true,false)
-        Width: =45
+        Width: =Parent.ButtonImageSize
         X: =Parent.Width*4/GeneralBottomPanel.ButtonNumber+(Parent.Width/GeneralBottomPanel.ButtonNumber-Self.Width)/2
         Y: =(Parent.Height-Self.Height-gbp_button5_text.Height)/2
         ZIndex: =9

@@ -816,7 +816,8 @@
           "InvariantPropertyName": "ButtonBorderRadius",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "ButtonImageSize"
       ],
       "DynamicProperties": [
         {
@@ -972,6 +973,11 @@
         {
           "Category": "Data",
           "PropertyName": "ButtonBorderRadius",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ButtonImageSize",
           "RuleProviderType": "System"
         },
         {

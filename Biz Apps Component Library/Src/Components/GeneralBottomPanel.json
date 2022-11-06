@@ -2035,13 +2035,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "45",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -2417,13 +2417,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "45",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -2727,13 +2727,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "45",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -3037,13 +3037,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "45",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -3251,7 +3251,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -3305,7 +3305,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "45",
+            "InvariantScript": "Parent.ButtonImageSize",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -5750,9 +5750,17 @@
         "InvariantPropertyName": "ButtonBorderRadius",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "ButtonImageSize",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638032982185858425",
+    "LastModifiedTimestamp": "638032997663999690",
     "Name": "GeneralBottomPanel",
     "Rules": [
       {
@@ -5876,6 +5884,12 @@
         "RuleProviderType": "System"
       },
       {
+        "Category": "Data",
+        "InvariantScript": "45",
+        "Property": "ButtonImageSize",
+        "RuleProviderType": "System"
+      },
+      {
         "Category": "Design",
         "InvariantScript": "GeneralBottomPanel.BackgroundFill",
         "Property": "Fill",
@@ -5964,6 +5978,15 @@
     },
     {
       "Category": 0,
+      "DisplayName": "Button Image Size",
+      "Hidden": false,
+      "Name": "ButtonImageSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "自定义属性",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
       "DisplayName": "Button Border Radius",
       "Hidden": false,
       "Name": "ButtonBorderRadius",
@@ -6000,21 +6023,21 @@
     },
     {
       "Category": 0,
+      "DisplayName": "Button4 Disabled",
+      "Hidden": false,
+      "Name": "Button4Disabled",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
       "DisplayName": "Button1 Text",
       "Hidden": false,
       "Name": "Button1Text",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 2,
-      "DisplayName": "Button4 Clicked",
-      "Hidden": false,
-      "Name": "Button4Clicked",
-      "PropertyDataTypeKey": "Boolean",
-      "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -6036,21 +6059,21 @@
     },
     {
       "Category": 2,
+      "DisplayName": "Button4 Clicked",
+      "Hidden": false,
+      "Name": "Button4Clicked",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
       "DisplayName": "Button1 Clicked",
       "Hidden": false,
       "Name": "Button1Clicked",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "Button5 Text",
-      "Hidden": false,
-      "Name": "Button5Text",
-      "PropertyDataTypeKey": "String",
-      "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -6080,6 +6103,15 @@
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
+      "Category": 0,
+      "DisplayName": "Button5 Text",
+      "Hidden": false,
+      "Name": "Button5Text",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
       "Category": 2,
       "DisplayName": "Button2 Clicked",
       "Hidden": false,
@@ -6087,15 +6119,6 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "Button5 Image",
-      "Hidden": false,
-      "Name": "Button5Image",
-      "PropertyDataTypeKey": "Image",
-      "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -6135,21 +6158,21 @@
     },
     {
       "Category": 0,
+      "DisplayName": "Button5 Image",
+      "Hidden": false,
+      "Name": "Button5Image",
+      "PropertyDataTypeKey": "Image",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
       "DisplayName": "Button4 Text",
       "Hidden": false,
       "Name": "Button4Text",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "Button5 Disabled",
-      "Hidden": false,
-      "Name": "Button5Disabled",
-      "PropertyDataTypeKey": "Boolean",
-      "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -6162,9 +6185,9 @@
     },
     {
       "Category": 0,
-      "DisplayName": "Button4 Disabled",
+      "DisplayName": "Button5 Disabled",
       "Hidden": false,
-      "Name": "Button4Disabled",
+      "Name": "Button5Disabled",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.326\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
@@ -6187,7 +6210,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638032982185858425",
+  "LastModifiedTimestamp": "638032997663999690",
   "Name": "c2368fe708f74fbbb15d00650731b69e",
   "OverridableProperties": {},
   "TemplateOriginalName": "1440a9a5d6724135b59da502897e6716",
