@@ -57,7 +57,6 @@
 
         Image8 As image:
             Height: =107
-            Image: ='Screenshot 2022-02-15 024905'
             Visible: =Tab_1.SelectedTab="Purchased"
             Width: =107
             X: =45
@@ -66,7 +65,6 @@
 
         Image8_1 As image:
             Height: =107
-            Image: ='Screenshot 2022-02-15 025008'
             Visible: =Tab_1.SelectedTab="Purchased"
             Width: =107
             X: =45
@@ -195,7 +193,6 @@
 
         Image8_2 As image:
             Height: =107
-            Image: ='Screenshot 2022-02-15 024905'
             Visible: =OnCommunicationHistory
             Width: =107
             X: =40

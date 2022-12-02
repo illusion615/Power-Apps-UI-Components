@@ -125,7 +125,7 @@ UserProfileCard As CanvasComponent:
                 PaddingLeft: =10
                 PaddingRight: =10
                 PaddingTop: =10
-                Tooltip: =Office365Users.UserProfileV2(UserProfileCard.UserEmail).mobilePhone
+                Tooltip: =IfError(Office365Users.UserProfileV2(UserProfileCard.UserEmail).mobilePhone,"N/A")
                 Width: =UserProfileCard.IconSize
                 X: =
                 Y: =(Parent.Height-Self.Height)/2

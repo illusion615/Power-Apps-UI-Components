@@ -1,7 +1,7 @@
 "'KPI Card' As CanvasComponent":
     BackgroundFill: |-
         =ColorValue("#158bb8")
-    BackgroundImage: ='10744401'
+    BackgroundImage: ='POC Sharing Background'
     EnableOnClick: =true
     Fill: =RGBA(0, 0, 0, 0)
     FontColor: =White

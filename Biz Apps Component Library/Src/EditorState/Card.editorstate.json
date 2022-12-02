@@ -493,7 +493,7 @@
           "Category": "Data",
           "NameMap": "{\"Description\":\"Description\",\"Image\":\"Image\",\"Title\":\"Title\"}",
           "PropertyName": "Table",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

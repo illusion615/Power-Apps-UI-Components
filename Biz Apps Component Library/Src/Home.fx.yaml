@@ -57,7 +57,6 @@ Home As screen:
 
         Image1 As image:
             Height: =Self.Width
-            Image: ='WeChat Image_20220215013551'
             RadiusBottomLeft: =100
             RadiusBottomRight: =100
             RadiusTopLeft: =100

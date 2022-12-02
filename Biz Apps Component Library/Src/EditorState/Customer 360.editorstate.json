@@ -140,7 +140,7 @@
         {
           "Category": "Data",
           "PropertyName": "BackgroundImage",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
@@ -154,7 +154,7 @@
         },
         {
           "Category": "Data",
-          "NameMap": "{\"Description\":\"Description\",\"Image\":\"Image\",\"Title\":\"Title\"}",
+          "NameMap": "{\"Description\":\"Description\",\"Title\":\"Title\",\"Image\":\"Image\"}",
           "PropertyName": "Table",
           "RuleProviderType": "Unknown"
         },
@@ -1092,7 +1092,7 @@
         {
           "Category": "Data",
           "PropertyName": "BackgroundImage",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
@@ -1895,14 +1895,7 @@
     "Image8": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "SampleImage",
-          "InvariantPropertyName": "Image",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Image",
         "ImagePosition",
         "ImageRotation",
         "X",
@@ -2110,14 +2103,7 @@
     "Image8_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "SampleImage",
-          "InvariantPropertyName": "Image",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Image",
         "ImagePosition",
         "ImageRotation",
         "X",
@@ -2325,14 +2311,7 @@
     "Image8_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "SampleImage",
-          "InvariantPropertyName": "Image",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Image",
         "ImagePosition",
         "ImageRotation",
         "X",

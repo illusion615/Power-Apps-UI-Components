@@ -955,7 +955,7 @@
         {
           "Category": "Data",
           "PropertyName": "BackgroundImage",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",

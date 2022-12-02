@@ -8,7 +8,7 @@ GeneralCard As CanvasComponent:
     FontColor: =White
     FontSize: =18
     Height: =340
-    Image: ='10744401'
+    Image: ='POC Sharing Background'
     OnReset: =Set(GeneralCardBackgroundFill,Substitute(JSON(GeneralCard.BackgroundFill,JSONFormat.IgnoreUnsupportedTypes),Char(34),""))
     RightTopIcon: |-
         ="data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%202048%202048%27%3E%3Cpath%20fill%3D%27%230abab5%27%20d%3D%27M256%20896q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10zm768%200q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10zm768%200q27%200%2050%2010t40%2027%2028%2041%2010%2050q0%2027-10%2050t-27%2040-41%2028-50%2010q-27%200-50-10t-40-27-28-41-10-50q0-27%2010-50t27-40%2041-28%2050-10z%27%2F%3E%3C%2Fsvg%3E"

@@ -1,6 +1,6 @@
 Card As CanvasComponent:
     BackgroundFill: =RGBA(250, 250, 250, .1)
-    BackgroundImage: ='10744401'
+    BackgroundImage: ='POC Sharing Background'
     BorderColor: =RGBA(0, 0, 0, 1)
     BorderRadius: =10
     CapitalTitleFontSize: =18
@@ -22,12 +22,12 @@ Card As CanvasComponent:
             {
                 Title: "Forever Jewery",
                 Description: "Forever Love Heart Pendant Necklaces for Women 925 Sterling Silver with Birthstone Zirconia, Birthday Anniversary Jewelry Gift for Women Wife Girls.",
-                Image: 'Screenshot 2022-02-15 024905'
+                Image: SampleImage
             },
             {
                 Title: "Forever Jewery",
                 Description: "Forever Love Heart Pendant Necklaces for Women 925 Sterling Silver with Birthstone Zirconia, Birthday Anniversary Jewelry Gift for Women Wife Girls.",
-                Image: 'Screenshot 2022-02-15 023949'
+                Image: SampleImage
             }
         )
     TextColor: =White
@@ -89,7 +89,7 @@ Card As CanvasComponent:
         Y: =50
         ZIndex: =4
 
-        Label7 As 标签:
+        Label7 As Label:
             AutoHeight: =true
             Color: =Card.TextColor
             DisplayMode: =DisplayMode.Edit
@@ -111,7 +111,7 @@ Card As CanvasComponent:
             Y: =(Parent.TemplateHeight-Self.Height)/2
             ZIndex: =2
 
-        Label7_1 As 标签:
+        Label7_1 As Label:
             AutoHeight: =true
             Color: =Card.TextColor
             DisplayMode: =DisplayMode.Edit
