@@ -11,24 +11,30 @@ Tab As CanvasComponent:
     SelectedTabFontWeight: =FontWeight.Semibold
     SplitterColor: =RGBA(237, 237, 237, 1)
     Tab1Clicked: =true
+    Tab1Key: ="Text"
     Tab1Title: ="Tab1 Title"
     Tab2Clicked: =true
+    Tab2Key: ="Text"
     Tab2Title: ="Tab2 Title"
     Tab3Clicked: =true
+    Tab3Key: ="Text"
     Tab3Title: ="Tab3 Title"
     Tab4Clicked: =true
+    Tab4Key: ="Text"
     Tab4Title: ="Tab4 Title"
     TabFillColor: =RGBA(237, 237, 237, 0)
     TabFontColor: =RGBA(0, 0, 0, 1)
     TabFontSize: =12
     TabFontWeight: =FontWeight.Lighter
+    TabList: |-
+        =Table({TabIndex:1,TabKey: "Tab1", TabTitle: "Tab1 Title", DefaultSelected: true},{TabIndex:2,TabKey: "Tab2", TabTitle: "Tab2 Title", DefaultSelected: true},{TabIndex:3,TabKey: "Tab3", TabTitle: "Tab3 Title", DefaultSelected: true},{TabIndex:4,TabKey: "Tab4", TabTitle: "Tab4 Title", DefaultSelected: true})
     TabTotal: =4
     Width: =640
     X: =0
     Y: =0
     ZIndex: =2
 
-    Label1_1 As label:
+    lblTab1 As label:
         Align: =Align.Center
         AutoHeight: =true
         Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
@@ -40,7 +46,7 @@ Tab As CanvasComponent:
                 Parent.TabFontWeight
             )
         Height: =50
-        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab1Clicked()
+        OnSelect: =Set(selectedTab,Tab.Tab1Key);Parent.Tab1Clicked()
         PaddingBottom: =12
         Size: =Parent.TabFontSize
         Text: =Tab.Tab1Title
@@ -50,7 +56,7 @@ Tab As CanvasComponent:
         Y: =Parent.Height-Self.Height
         ZIndex: =1
 
-    Label2 As label:
+    lblTab2 As label:
         Align: =Align.Center
         AutoHeight: =true
         Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
@@ -62,7 +68,7 @@ Tab As CanvasComponent:
                 Parent.TabFontWeight
             )
         Height: =50
-        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab2Clicked()
+        OnSelect: =Set(selectedTab,Tab.Tab2Key);Parent.Tab2Clicked()
         PaddingBottom: =12
         Size: =Parent.TabFontSize
         Text: =Tab.Tab2Title
@@ -72,7 +78,7 @@ Tab As CanvasComponent:
         Y: =Parent.Height-Self.Height
         ZIndex: =2
 
-    Label3 As label:
+    lblTab3 As label:
         Align: =Align.Center
         AutoHeight: =true
         Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
@@ -84,7 +90,7 @@ Tab As CanvasComponent:
                 Parent.TabFontWeight
             )
         Height: =50
-        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab3Clicked()
+        OnSelect: =Set(selectedTab,Tab.Tab3Key);Parent.Tab3Clicked()
         PaddingBottom: =12
         Size: =Parent.TabFontSize
         Text: =Tab.Tab3Title
@@ -94,7 +100,7 @@ Tab As CanvasComponent:
         Y: =Parent.Height-Self.Height
         ZIndex: =3
 
-    Label4 As label:
+    lblTab4 As label:
         Align: =Align.Center
         AutoHeight: =true
         Color: =If(Self.Text=selectedTab ,Parent.SelectedTabFontColor,Parent.TabFontColor)
@@ -106,7 +112,7 @@ Tab As CanvasComponent:
                 Parent.TabFontWeight
             )
         Height: =50
-        OnSelect: =Set(selectedTab,Self.Text);Parent.Tab4Clicked()
+        OnSelect: =Set(selectedTab,Tab.Tab4Key);Parent.Tab4Clicked()
         PaddingBottom: =12
         Size: =Parent.TabFontSize
         Text: =Tab.Tab4Title
@@ -128,14 +134,14 @@ Tab As CanvasComponent:
         Height: =6
         Visible: |-
             =Or(
-                Label1_1.Text = selectedTab,
+                lblTab1.Text = selectedTab,
                 And(
                     IsBlank(selectedTab),
-                    Label1_1.Text = Parent.DefaultSelectedTab
+                    lblTab1.Text = Parent.DefaultSelectedTab
                 )
             )
         Width: =Parent.IndicatorSize
-        X: =Label1_1.X+(Label1_1.Width-Self.Width)/2
+        X: =lblTab1.X+(lblTab1.Width-Self.Width)/2
         Y: =Parent.Height-Self.Height
         ZIndex: =6
 
@@ -144,14 +150,14 @@ Tab As CanvasComponent:
         Height: =6
         Visible: |-
             =Or(
-                Label2.Text = selectedTab,
+                lblTab2.Text = selectedTab,
                 And(
                     IsBlank(selectedTab),
-                    Label2.Text = Parent.DefaultSelectedTab
+                    lblTab2.Text = Parent.DefaultSelectedTab
                 )
             )
         Width: =Parent.IndicatorSize
-        X: =Label2.X+(Label2.Width-Self.Width)/2
+        X: =lblTab2.X+(lblTab2.Width-Self.Width)/2
         Y: =Parent.Height-Self.Height
         ZIndex: =7
 
@@ -160,14 +166,14 @@ Tab As CanvasComponent:
         Height: =6
         Visible: |-
             =Or(
-                Label3.Text = selectedTab,
+                lblTab3.Text = selectedTab,
                 And(
                     IsBlank(selectedTab),
-                    Label3.Text = Parent.DefaultSelectedTab
+                    lblTab3.Text = Parent.DefaultSelectedTab
                 )
             )
         Width: =Parent.IndicatorSize
-        X: =Label3.X+(Label3.Width-Self.Width)/2
+        X: =lblTab3.X+(lblTab3.Width-Self.Width)/2
         Y: =Parent.Height-Self.Height
         ZIndex: =8
 
@@ -176,14 +182,14 @@ Tab As CanvasComponent:
         Height: =6
         Visible: |-
             =Or(
-                Label4.Text = selectedTab,
+                lblTab4.Text = selectedTab,
                 And(
                     IsBlank(selectedTab),
-                    Label4.Text = Parent.DefaultSelectedTab
+                    lblTab4.Text = Parent.DefaultSelectedTab
                 )
             )
         Width: =Parent.IndicatorSize
-        X: =Label4.X+(Label4.Width-Self.Width)/2
+        X: =lblTab4.X+(lblTab4.Width-Self.Width)/2
         Y: =Parent.Height-Self.Height
         ZIndex: =9
 

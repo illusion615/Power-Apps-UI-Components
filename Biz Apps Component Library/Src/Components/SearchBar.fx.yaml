@@ -1,4 +1,6 @@
 SearchBar As CanvasComponent:
+    AddNewIcon: |-
+        ="data:image/svg+xml,%3Csvg%20width%3D%2715%27%20height%3D%2715%27%20viewBox%3D%270%200%2015%2015%27%20fill%3D%27none%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%20%3Cpath%20fill-rule%3D%27evenodd%27%20clip-rule%3D%27evenodd%27%20d%3D%27M7%207V1H8V7H14V8H8V14H7V8H1V7H7Z%27%20fill%3D%27%23174278%27%2F%3E%20%3C%2Fsvg%3E"
     BackgroundFill: =RGBA(250, 250, 250, 1)
     BackgroundRadius: =10
     ButtonColor: |-
@@ -11,14 +13,20 @@ SearchBar As CanvasComponent:
     OnAddNewClicked: =true
     OnRefreshClicked: =true
     OnSearchButtonClicked: =true
+    RefreshIcon: |-
+        ="data:image/svg+xml," & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g><path fill='none' d='M0 0h24v24H0z'/><path fill='#174278' d='M5.463 4.433A9.961 9.961 0 0 1 12 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 0 0 6.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0 1 12 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0 0 13.54 5.772l.997 1.795z'/></g></svg>")
     ResultCount: =99999
     SearchHint: ="Search hint..."
+    SearchIcon: |-
+        ="data:image/svg+xml,%3Csvg%20%20%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20%20%20width%3D%2724%27%20%20%20height%3D%2724%27%20%20%20viewBox%3D%270%200%2024%2024%27%20%20%20fill%3D%27none%27%20%20%20stroke%3D%27%23174278%27%20%20%20stroke-width%3D%272%27%20%20%20stroke-linecap%3D%27round%27%20%20%20stroke-linejoin%3D%27round%27%20%3E%20%20%20%3Ccircle%20cx%3D%2711%27%20cy%3D%2711%27%20r%3D%278%27%20%2F%3E%20%20%20%3Cline%20x1%3D%2721%27%20y1%3D%2721%27%20x2%3D%2716.65%27%20y2%3D%2716.65%27%20%2F%3E%20%3C%2Fsvg%3E"
     SearchText: =TextInput3.Text
     ShowAddNewButton: =true
     ShowRefreshButton: =true
     ShowSearchButton: =true
     ShowSearchResult: =true
     ShowSortButton: =true
+    SortIcon: |-
+        ="data:image/svg+xml," & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='#174278' d='M8 18L5 18 10 22 10 19 10 18 10 2 8 2zM14 2L14 5 14 6 14 22 16 22 16 6 19 6z'/></svg>")
     SortOrder: =SortDirection
     Width: =620
     X: =0
@@ -84,6 +92,58 @@ SearchBar As CanvasComponent:
         Y: =(Parent.Height-Self.Height)/2
         ZIndex: =4
 
+        imgSearch As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.SearchIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =50
+            ZIndex: =1
+
+        imgAddNew As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.AddNewIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =50
+            ZIndex: =2
+
+        imgRefresh As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.RefreshIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =50
+            ZIndex: =3
+
+        imgSort As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.SortIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =50
+            ZIndex: =4
+
         iconSearch As icon.Check:
             AlignInContainer: =AlignInContainer.Stretch
             Color: =SearchBar.ButtonColor
@@ -98,7 +158,7 @@ SearchBar As CanvasComponent:
             PaddingTop: =5
             Visible: =SearchBar.ShowSearchButton
             Width: =Self.Height
-            ZIndex: =1
+            ZIndex: =5
 
         iconAddNew As icon.Add:
             AlignInContainer: =AlignInContainer.Stretch
@@ -114,7 +174,7 @@ SearchBar As CanvasComponent:
             PaddingTop: =5
             Visible: =SearchBar.ShowAddNewButton
             Width: =Self.Height
-            ZIndex: =2
+            ZIndex: =6
 
         iconRefresh As icon.Reload:
             AlignInContainer: =AlignInContainer.Stretch
@@ -130,7 +190,7 @@ SearchBar As CanvasComponent:
             PaddingTop: =5
             Visible: =SearchBar.ShowRefreshButton
             Width: =Self.Height
-            ZIndex: =3
+            ZIndex: =7
 
         iconSort As icon.ArrowsUpDown:
             AlignInContainer: =AlignInContainer.Stretch
@@ -154,7 +214,7 @@ SearchBar As CanvasComponent:
             PaddingTop: =5
             Visible: =SearchBar.ShowSortButton
             Width: =Self.Height
-            ZIndex: =4
+            ZIndex: =8
 
     Icon8 As icon.Search:
         Color: =RGBA(219, 219, 219, 1)
