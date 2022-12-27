@@ -71,7 +71,7 @@
 
         Image8 As image:
             Height: =107
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =107
             X: =45
             Y: =695
@@ -79,7 +79,7 @@
 
         Image8_1 As image:
             Height: =107
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =107
             X: =45
             Y: =827
@@ -91,7 +91,7 @@
             Height: =50
             Size: =14
             Text: ="Victoria™ Series"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =173
             Y: =827
@@ -103,7 +103,7 @@
             Height: =50
             Size: =14
             Text: ="Schlumberger Series"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =297
             X: =173
             Y: =695
@@ -114,7 +114,7 @@
             Height: =50
             Size: =14
             Text: ="铂金镶钻藤蔓耳坠"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =173
             Y: =861
@@ -126,7 +126,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =380
             Y: =861
@@ -138,7 +138,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 307,000"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =173
             Y: =895
@@ -149,7 +149,7 @@
             Height: =50
             Size: =14
             Text: ="Sixteen Stone"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =173
             Y: =729
@@ -161,7 +161,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =380
             Y: =729
@@ -173,7 +173,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 96,000"
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =227
             X: =173
             Y: =763
@@ -182,7 +182,7 @@
         Icon2_2 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =25
             X: =571
             Y: =695
@@ -191,7 +191,7 @@
         Icon2_4 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =OnPurchaseHistory
+            Visible: ='Tab2.0_1'.SelectedTabKey="services"
             Width: =25
             X: =571
             Y: =828
@@ -199,7 +199,7 @@
 
     Container6 As groupContainer:
         Height: =313
-        Visible: =OnCommunicationHistory
+        Visible: ='Tab2.0_1'.SelectedTabKey="purchased"
         Width: =631
         X: =5
         Y: =697
@@ -434,7 +434,7 @@
     Icon2_6 As icon.More:
         Height: =31
         Icon: =Icon.More
-        Visible: =OnPurchaseHistory
+        Visible: ='Tab2.0_1'.SelectedTabKey="purchased"
         Width: =25
         X: =582
         Y: =23
@@ -442,24 +442,7 @@
 
     "'Tab2.0_1' As 'Tab2.0'":
         FontSize: =16
-        OnTabSelected: |-
-            =Switch(
-                Self.SelectedTabKey,
-                "purchased",
-                UpdateContext(
-                    {
-                        OnPurchaseHistory: false,
-                        OnCommunicationHistory: true
-                    }
-                ),
-                "services",
-                UpdateContext(
-                    {
-                        OnPurchaseHistory: true,
-                        OnCommunicationHistory: false
-                    }
-                )
-            )
+        OnTabSelected: =
         Tabs: |-
             =Table(
                 {

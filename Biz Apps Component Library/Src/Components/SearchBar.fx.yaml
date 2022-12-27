@@ -43,6 +43,112 @@ SearchBar As CanvasComponent:
         Width: =Parent.Width
         ZIndex: =1
 
+    Container9 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =TextInput3.Height
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        Width: |-
+            =If(
+                Parent.ShowAddNewButton,
+                imgAddNew.Width,
+                0
+            ) + If(
+                Parent.ShowRefreshButton,
+                imgRefresh.Width,
+                0
+            ) + If(
+                Parent.ShowSearchButton,
+                imgSearch.Width,
+                0
+            ) + If(
+                Parent.ShowSortButton,
+                imgSort.Width,
+                0
+            ) + If(
+                Or(
+                    Parent.ShowAddNewButton,
+                    Parent.ShowRefreshButton,
+                    Parent.ShowSearchButton,
+                    Parent.ShowSortButton
+                ),
+                10,
+                0
+            )
+        X: =searchBarBackground.X+searchBarBackground.Width-Self.Width-10
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =2
+
+        imgSearch As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.SearchIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            OnSelect: =SearchBar.OnSearchButtonClicked()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowSearchButton
+            Width: =Self.Height
+            ZIndex: =2
+
+        imgAddNew As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.AddNewIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            OnSelect: =SearchBar.OnAddNewClicked()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowAddNewButton
+            Width: =50
+            ZIndex: =3
+
+        imgRefresh As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.RefreshIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            OnSelect: =SearchBar.OnRefreshClicked()
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowRefreshButton
+            Width: =50
+            ZIndex: =4
+
+        imgSort As image:
+            AlignInContainer: =AlignInContainer.Stretch
+            Height: =320
+            Image: =SearchBar.SortIcon
+            LayoutMinHeight: =20
+            LayoutMinWidth: =320
+            OnSelect: |-
+                =Set(
+                    SortDirection,
+                    If(
+                        SortDirection = SortOrder.Ascending,
+                        Descending,
+                        Ascending
+                    )
+                )
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =SearchBar.ShowSortButton
+            Width: =50
+            ZIndex: =5
+
     TextInput3 As text:
         BorderColor: =RGBA(237, 237, 237, 1)
         Default: =SearchBar.Default
@@ -56,7 +162,7 @@ SearchBar As CanvasComponent:
         Width: =Container9.X-Self.X-10
         X: =20
         Y: =(Parent.Height-Self.Height)/2
-        ZIndex: =2
+        ZIndex: =3
 
     resultIndicator As button:
         Color: =RGBA(116, 116, 116, 1)
@@ -73,148 +179,7 @@ SearchBar As CanvasComponent:
         Width: =70
         X: =TextInput3.X+TextInput3.Width-Self.Width-10
         Y: =(Parent.Height-Self.Height)/2
-        ZIndex: =3
-
-    Container9 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =TextInput3.Height
-        LayoutMode: =LayoutMode.Auto
-        PaddingBottom: =5
-        PaddingLeft: =5
-        PaddingRight: =5
-        PaddingTop: =5
-        Width: |-
-            =If(SearchBar.ShowRefreshButton,iconRefresh.Width,0) 
-            + If(SearchBar.ShowSortButton,iconSort.Width,0) 
-            + If(SearchBar.ShowAddNewButton,iconAddNew.Width,0) 
-            + If(SearchBar.ShowSearchButton,iconSearch.Width,0) 
-            + If(Or(SearchBar.ShowAddNewButton,SearchBar.ShowRefreshButton,SearchBar.ShowSortButton,SearchBar.ShowSearchButton),Self.PaddingLeft + Self.PaddingRight,0)
-        X: =searchBarBackground.X+searchBarBackground.Width-Self.Width-10
-        Y: =(Parent.Height-Self.Height)/2
         ZIndex: =4
-
-        imgSearch As image:
-            AlignInContainer: =AlignInContainer.Stretch
-            Height: =320
-            Image: =SearchBar.SearchIcon
-            LayoutMinHeight: =20
-            LayoutMinWidth: =320
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =50
-            ZIndex: =1
-
-        imgAddNew As image:
-            AlignInContainer: =AlignInContainer.Stretch
-            Height: =320
-            Image: =SearchBar.AddNewIcon
-            LayoutMinHeight: =20
-            LayoutMinWidth: =320
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =50
-            ZIndex: =2
-
-        imgRefresh As image:
-            AlignInContainer: =AlignInContainer.Stretch
-            Height: =320
-            Image: =SearchBar.RefreshIcon
-            LayoutMinHeight: =20
-            LayoutMinWidth: =320
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =50
-            ZIndex: =3
-
-        imgSort As image:
-            AlignInContainer: =AlignInContainer.Stretch
-            Height: =320
-            Image: =SearchBar.SortIcon
-            LayoutMinHeight: =20
-            LayoutMinWidth: =320
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Width: =50
-            ZIndex: =4
-
-        iconSearch As icon.Check:
-            AlignInContainer: =AlignInContainer.Stretch
-            Color: =SearchBar.ButtonColor
-            Height: =TextInput3.Height
-            Icon: =Icon.Check
-            LayoutMinHeight: =20
-            LayoutMinWidth: =40
-            OnSelect: =SearchBar.OnSearchButtonClicked()
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Visible: =SearchBar.ShowSearchButton
-            Width: =Self.Height
-            ZIndex: =5
-
-        iconAddNew As icon.Add:
-            AlignInContainer: =AlignInContainer.Stretch
-            Color: =SearchBar.ButtonColor
-            Height: =TextInput3.Height
-            Icon: =Icon.Add
-            LayoutMinHeight: =20
-            LayoutMinWidth: =40
-            OnSelect: =SearchBar.OnAddNewClicked()
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Visible: =SearchBar.ShowAddNewButton
-            Width: =Self.Height
-            ZIndex: =6
-
-        iconRefresh As icon.Reload:
-            AlignInContainer: =AlignInContainer.Stretch
-            Color: =SearchBar.ButtonColor
-            Height: =TextInput3.Height
-            Icon: =Icon.Reload
-            LayoutMinHeight: =20
-            LayoutMinWidth: =40
-            OnSelect: =SearchBar.OnRefreshClicked()
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Visible: =SearchBar.ShowRefreshButton
-            Width: =Self.Height
-            ZIndex: =7
-
-        iconSort As icon.ArrowsUpDown:
-            AlignInContainer: =AlignInContainer.Stretch
-            Color: =SearchBar.ButtonColor
-            Height: =TextInput3.Height
-            Icon: =Icon.Sort
-            LayoutMinHeight: =20
-            LayoutMinWidth: =40
-            OnSelect: |-
-                =Set(
-                    SortDirection,
-                    If(
-                        SortDirection = SortOrder.Ascending,
-                        Descending,
-                        Ascending
-                    )
-                )
-            PaddingBottom: =5
-            PaddingLeft: =5
-            PaddingRight: =5
-            PaddingTop: =5
-            Visible: =SearchBar.ShowSortButton
-            Width: =Self.Height
-            ZIndex: =8
 
     Icon8 As icon.Search:
         Color: =RGBA(219, 219, 219, 1)

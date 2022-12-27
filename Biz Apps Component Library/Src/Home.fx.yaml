@@ -252,10 +252,9 @@ Home As screen:
 
     SearchBar_1 As SearchBar:
         Default: =""
+        FontSize: =14
         ResultCount: =0
         SearchHint: ="Search customers"
-        ShowRefreshButton: =false
-        ShowSortButton: =false
         X: =10
         Y: =236
         ZIndex: =29
