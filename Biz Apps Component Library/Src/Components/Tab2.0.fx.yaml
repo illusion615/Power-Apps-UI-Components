@@ -1,0 +1,93 @@
+"'Tab2.0' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    FontColor: =RGBA(0, 0, 0, 1)
+    FontSize: =12
+    FontWeight: =FontWeight.Lighter
+    Height: =50
+    IndicatorColor: =RGBA(129, 216, 208, 1)
+    IndicatorSize: =100
+    OnReset: =Set(OnSelectedTab,LookUp(Self.Tabs,DefaultTab))
+    OnTabSelected: =true
+    SelectedTabFillColor: =RGBA(56, 96, 178, 0)
+    SelectedTabFontColor: =RGBA(0, 0, 0, 1)
+    SelectedTabFontWeight: =FontWeight.Semibold
+    SelectedTabKey: =Gallery3.Selected.TabKey
+    SplitterColor: =RGBA(237, 237, 237, 1)
+    TabFillColor: =RGBA(237, 237, 237, 0)
+    Tabs: |-
+        =Table(
+            {
+                TabText: "Tab 1",
+                TabIndex: 1,
+                TabKey: "Tab1",
+                DefaultTab: true
+            },
+                {
+                TabText: "Tab 2",
+                TabIndex: 2,
+                TabKey: "Tab2",
+                DefaultTab: false
+            },    {
+                TabText: "Tab 3",
+                TabIndex: 3,
+                TabKey: "Tab3",
+                DefaultTab: false
+            },    {
+                TabText: "Tab 4",
+                TabIndex: 4,
+                TabKey: "Tab4",
+                DefaultTab: false
+            }
+        )
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle1_5 As rectangle:
+        Fill: =Parent.SplitterColor
+        Height: =6
+        Width: =Parent.Width
+        Y: =Parent.Height-Self.Height
+        ZIndex: =1
+
+    Gallery3 As gallery.galleryHorizontal:
+        Height: =Parent.Height
+        Items: =Sort('Tab2.0'.Tabs,TabIndex,Ascending)
+        OnSelect: ='Tab2.0'.OnTabSelected()
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Parent.Width/CountRows('Tab2.0'.Tabs)
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Container13 As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.TemplateHeight
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.End
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.TemplateWidth
+            ZIndex: =1
+
+            Label2 As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                AutoHeight: =true
+                FontWeight: =If(ThisItem.IsSelected,'Tab2.0'.SelectedTabFontWeight, 'Tab2.0'.FontWeight)
+                Height: =70
+                LayoutMinHeight: =10
+                LayoutMinWidth: =560
+                OnSelect: ='Tab2.0'.OnTabSelected()
+                Size: ='Tab2.0'.FontSize
+                Text: =ThisItem.TabText
+                Width: =Gallery3.TemplateWidth
+                ZIndex: =1
+
+            Rectangle2 As rectangle:
+                Fill: =If(ThisItem.IsSelected,'Tab2.0'.IndicatorColor,RGBA(0,0,0,0))
+                Height: =6
+                OnSelect: ='Tab2.0'.OnTabSelected()
+                Width: ='Tab2.0'.IndicatorSize
+                ZIndex: =2
+

@@ -2530,7 +2530,7 @@
           "Category": "Data",
           "NameMap": "{\"DefaultSelected\":\"DefaultSelected\",\"TabIndex\":\"TabIndex\",\"TabKey\":\"TabKey\",\"TabTitle\":\"TabTitle\"}",
           "PropertyName": "TabList",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",

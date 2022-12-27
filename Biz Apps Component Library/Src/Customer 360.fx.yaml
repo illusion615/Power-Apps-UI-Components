@@ -1,5 +1,5 @@
 "'Customer 360' As screen":
-    OnVisible: =Reset(Tab_1)
+    OnVisible: =Reset('Tab2.0_1')
 
     GeneralTopBanner_2 As GeneralTopBanner:
         BackgroundImageYOffset: =-250
@@ -22,6 +22,19 @@
             当前到货情况：有货
             库存：20"
         ShadowMargin: =5
+        Table: |-
+            =Table(
+                {
+                    Title: "News 1",
+                    Description: "This is the right day to spend your money for joy.",
+                    Image: SampleImage
+                },
+                {
+                    Title: "News 2",
+                    Description: "Why hassitate? you can buy your desired gift, with our splendid financial plan.",
+                    Image: SampleImage
+                }
+            )
         TextColor: =RGBA(255, 255, 255, 1)
         Width: =611
         X: =16
@@ -38,6 +51,7 @@
         Button3Image: |-
             ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1936%20256q23%200%2043%209t36%2024%2024%2035%209%2044v1184q0%2023-9%2043t-24%2036-35%2024-44%209H112q-23%200-43-9t-36-24-24-35-9-44V368q0-23%209-43t24-36%2035-24%2044-9h1824zm-16%20128H640v139q33-11%2064-11%2040%200%2075%2015t61%2041%2041%2061%2015%2075q0%2031-11%2064h1035V384zM384%20704q0%2026%2019%2045t45%2019h64v-64q0-26-19-45t-45-19q-26%200-45%2019t-19%2045zm320%2064q26%200%2045-19t19-45q0-26-19-45t-45-19q-26%200-45%2019t-19%2045v64h64zM128%20384v384h139q-11-33-11-64%200-40%2015-75t41-61%2061-41%2075-15q31%200%2064%2011V384H128zm0%201152h384V987l-147%20146-90-90%20146-147H128v640zm1792%200V896H731l146%20147-90%2090-147-146v549h1280z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
         Button3Text: ="发送祝福"
+        Button4Clicked: =Notify("Button4 Clicked");
         Button4Image: |-
             ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M1664%20896q79%200%20149%2030t122%2082%2083%20123%2030%20149q0%2080-30%20149t-82%20122-123%2083-149%2030q-60%200-117-18t-105-53l-437%20436q-19%2019-45%2019t-45-19-19-45q0-26%2019-45l436-437q-35-48-53-105t-18-117q0-79%2030-149t82-122%20122-83%20150-30zm0%20640q53%200%2099-20t82-55%2055-81%2020-100q0-53-20-99t-55-82-81-55-100-20q-53%200-99%2020t-82%2055-55%2081-20%20100q0%2053%2020%2099t55%2082%2081%2055%20100%2020zm-1280%2064q0%2015%208%2027t19%2023q29%2029%2073%2051t95%2037%20100%2026%2089%2016v128h-8q-6%200-8-1-39-5-90-15t-107-27-108-40-95-56-68-74-26-95V448q0-48%2022-86t58-70%2083-54%2096-41%2095-29%2084-18q66-11%20132-16t132-6q67%200%20133%205t132%2018q36%206%2083%2017t95%2029%2096%2040%2083%2055%2059%2069%2023%2087v320h-128V637q-58%2037-130%2062t-148%2040-153%2022-145%207q-68%200-144-6t-153-22-149-41-130-62v963zM960%20256q-57%200-130%206t-148%2020-143%2040-115%2063q-14%2011-27%2027t-13%2036q0%2019%2013%2035t27%2028q46%2038%20114%2063t143%2039%20148%2021%20131%206q57%200%20130-6t148-20%20143-40%20114-63q14-11%2027-27t14-36q0-19-13-35t-28-28q-46-38-114-63t-142-39-148-21-131-6z%27%20fill%3D%27%2300b7c3%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
         Button4Text: ="查找商品"
@@ -57,7 +71,7 @@
 
         Image8 As image:
             Height: =107
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =107
             X: =45
             Y: =695
@@ -65,7 +79,7 @@
 
         Image8_1 As image:
             Height: =107
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =107
             X: =45
             Y: =827
@@ -77,7 +91,7 @@
             Height: =50
             Size: =14
             Text: ="Victoria™ Series"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =173
             Y: =827
@@ -89,7 +103,7 @@
             Height: =50
             Size: =14
             Text: ="Schlumberger Series"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =297
             X: =173
             Y: =695
@@ -100,7 +114,7 @@
             Height: =50
             Size: =14
             Text: ="铂金镶钻藤蔓耳坠"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =173
             Y: =861
@@ -112,7 +126,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =380
             Y: =861
@@ -124,7 +138,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 307,000"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =173
             Y: =895
@@ -135,7 +149,7 @@
             Height: =50
             Size: =14
             Text: ="Sixteen Stone"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =173
             Y: =729
@@ -147,7 +161,7 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =380
             Y: =729
@@ -159,7 +173,7 @@
             Height: =50
             Size: =14
             Text: ="¥ 96,000"
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =227
             X: =173
             Y: =763
@@ -168,7 +182,7 @@
         Icon2_2 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =25
             X: =571
             Y: =695
@@ -177,7 +191,7 @@
         Icon2_4 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =Tab_1.SelectedTab="Purchased"
+            Visible: =OnPurchaseHistory
             Width: =25
             X: =571
             Y: =828
@@ -185,7 +199,7 @@
 
     Container6 As groupContainer:
         Height: =313
-        Visible: =Tab_1.SelectedTab="Service"
+        Visible: =OnCommunicationHistory
         Width: =631
         X: =5
         Y: =697
@@ -193,7 +207,6 @@
 
         Image8_2 As image:
             Height: =107
-            Visible: =OnCommunicationHistory
             Width: =107
             X: =40
             Y: =1
@@ -204,7 +217,6 @@
             Height: =24
             Size: =14
             Text: ="Tiffany & Co. Schlumberger 系列"
-            Visible: =OnCommunicationHistory
             Width: =308
             X: =167
             Y: =4
@@ -215,7 +227,6 @@
             Height: =50
             Size: =14
             Text: ="Sixteen Stone 戒指"
-            Visible: =OnCommunicationHistory
             Width: =227
             X: =165
             Y: =27
@@ -227,7 +238,6 @@
             Height: =50
             Size: =14
             Text: ="2019-10-10"
-            Visible: =OnCommunicationHistory
             Width: =120
             X: =165
             Y: =69
@@ -236,7 +246,6 @@
         Icon2_5 As icon.More:
             Height: =31
             Icon: =Icon.More
-            Visible: =OnCommunicationHistory
             Width: =25
             X: =572
             ZIndex: =5
@@ -247,7 +256,6 @@
             Height: =50
             Size: =14
             Text: ="改尺寸"
-            Visible: =OnCommunicationHistory
             Width: =227
             X: =305
             Y: =69
@@ -259,7 +267,6 @@
             Height: =50
             Size: =14
             Text: ="清洗"
-            Visible: =OnCommunicationHistory
             Width: =227
             X: =305
             Y: =108
@@ -271,7 +278,6 @@
             Height: =50
             Size: =14
             Text: ="2020-02-01"
-            Visible: =OnCommunicationHistory
             Width: =120
             X: =165
             Y: =108
@@ -283,7 +289,6 @@
             Height: =50
             Size: =14
             Text: ="清洗"
-            Visible: =OnCommunicationHistory
             Width: =227
             X: =305
             Y: =146
@@ -295,7 +300,6 @@
             Height: =50
             Size: =14
             Text: ="2021-01-18"
-            Visible: =OnCommunicationHistory
             Width: =120
             X: =165
             Y: =146
@@ -436,19 +440,41 @@
         Y: =23
         ZIndex: =56
 
-    Tab_1 As Tab:
-        DefaultSelectedTab: ="Purchased"
-        SelectedTabFontWeight: =FontWeight.Normal
-        Tab1Clicked: |-
-            =UpdateContext({OnPurchaseHistory:true,OnCommunicationHistory:false})
-        Tab1Title: ="Purchased"
-        Tab2Clicked: |-
-            =UpdateContext({OnPurchaseHistory:false,OnCommunicationHistory:true})
-        Tab2Title: ="Service"
-        TabFontSize: =16
-        TabTotal: =2
-        Width: =Parent.Width-Self.X*2
-        X: =25
+    "'Tab2.0_1' As 'Tab2.0'":
+        FontSize: =16
+        OnTabSelected: |-
+            =Switch(
+                Self.SelectedTabKey,
+                "purchased",
+                UpdateContext(
+                    {
+                        OnPurchaseHistory: false,
+                        OnCommunicationHistory: true
+                    }
+                ),
+                "services",
+                UpdateContext(
+                    {
+                        OnPurchaseHistory: true,
+                        OnCommunicationHistory: false
+                    }
+                )
+            )
+        Tabs: |-
+            =Table(
+                {
+                    TabText: "Purchased",
+                    TabIndex: 1,
+                    TabKey: "purchased",
+                    DefaultTab: true
+                },
+                {
+                    TabText: "Services",
+                    TabIndex: 2,
+                    TabKey: "services",
+                    DefaultTab: false
+                }
+            )
         Y: =Card_1.Y+Card_1.Height+5
-        ZIndex: =57
+        ZIndex: =58
 

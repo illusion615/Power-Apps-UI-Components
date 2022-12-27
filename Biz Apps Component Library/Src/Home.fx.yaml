@@ -154,7 +154,7 @@ Home As screen:
         Icon2 As icon.More:
             Height: =31
             Icon: =Icon.More
-            OnSelect: =Reset(Tab_1);Navigate('Customer 360',ScreenTransition.Fade)
+            OnSelect: =Reset('Tab2.0_1');Navigate('Customer 360',ScreenTransition.Fade)
             Width: =25
             X: =594
             Y: =9
