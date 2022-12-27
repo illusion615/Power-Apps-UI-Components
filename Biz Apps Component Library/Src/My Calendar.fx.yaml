@@ -16,6 +16,8 @@
             ZIndex: =1
 
         CalendarViewer_1 As CalendarViewer:
+            CalendarEvents: |-
+                =Table({Start: Today()-1, Title: "Test task"}) 
             LayoutMinHeight: =640
             TitleFontSize: =16
             ZIndex: =2

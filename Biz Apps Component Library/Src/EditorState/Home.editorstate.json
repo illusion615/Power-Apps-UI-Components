@@ -1674,7 +1674,14 @@
           "NameMapSourceSchema": "?"
         },
         "BackgroundImage",
-        "ShowBackgroundImage"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ShowBackgroundImage",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -1805,7 +1812,7 @@
         {
           "Category": "Data",
           "PropertyName": "ShowBackgroundImage",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

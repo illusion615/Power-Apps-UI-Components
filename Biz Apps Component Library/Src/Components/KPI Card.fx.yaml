@@ -33,14 +33,14 @@
         Fill: ='KPI Card'.BackgroundFill
         Font: =Font.'Open Sans Condensed'
         FontWeight: =FontWeight.Lighter
-        Height: ='KPI Card'.Height
+        Height: =Parent.Height
         Size: =24
         Text: =
-        Width: ='KPI Card'.Width
+        Width: =Parent.Width
         ZIndex: =1
 
     Image4 As image:
-        Height: ='KPI Card'.Height
+        Height: =Parent.Height
         Image: ='KPI Card'.BackgroundImage
         ImagePosition: =ImagePosition.Fill
         RadiusBottomLeft: =Button4_3.RadiusBottomLeft
@@ -48,16 +48,16 @@
         RadiusTopLeft: =Button4_3.RadiusTopLeft
         RadiusTopRight: =Button4_3.RadiusTopRight
         Visible: ='KPI Card'.ShowBackgroundImage
-        Width: ='KPI Card'.Width
+        Width: =Parent.Width
         ZIndex: =2
 
     Container7 As groupContainer.verticalAutoLayoutContainer:
-        Height: ='KPI Card'.Height
+        Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
-        Width: ='KPI Card'.Width
+        Width: =Parent.Width
         ZIndex: =3
 
         Label1_31 As label:
@@ -139,13 +139,13 @@
         Fill: =RGBA(0, 0, 0, 0)
         Font: =Font.'Open Sans Condensed'
         FontWeight: =FontWeight.Lighter
-        Height: ='KPI Card'.Height
+        Height: =Parent.Height
         HoverColor: =RGBA(255, 255, 255, 0)
         HoverFill: =//ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnSelect: ='KPI Card'.OnClick()
         Size: =24
         Text: =
         Visible: ='KPI Card'.EnableOnClick
-        Width: ='KPI Card'.Width
+        Width: =Parent.Width
         ZIndex: =4
 
