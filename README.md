@@ -1,4 +1,4 @@
-# Power Apps Developer Toolkit
+# Power Apps UI Components
 
 ## Component Library
 
@@ -6,7 +6,7 @@ Use components library to accelerate the speed of Power Apps development with hi
 
 This component library is made for my daily POC projects, and you can use this as example or make your own library.
 
-Hope this could be a good start point for you to quickly understand how components library can benefits our dialy low code development.
+Hope this could be a good start point for you to quickly understand how components library can benefits your dialy low code development.
 
 Components library includes:
 
